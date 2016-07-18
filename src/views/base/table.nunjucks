@@ -1,0 +1,37 @@
+<label class="base--block-label" for="textarea1">Table:</label>
+<table class="base--table">
+  <thead class="base--thead">
+    <tr class="base--tr">
+      <td class="base--td">First Name</td>
+      <td class="base--td">Last Name</td>
+      <td class="base--td">Role</td>
+    </tr>
+  </thead>
+  <tbody class="base--tbody">
+    <tr class="base--tr">
+      <td class="base--td">Westley</td>
+      <td class="base--td">--</td>
+      <td class="base--td">The Man in Black</td>
+    </tr>
+    <tr class="base--tr">
+      <td class="base--td">Princess</td>
+      <td class="base--td">Buttercup</td>
+      <td class="base--td">The Princess Bride</td>
+    </tr>
+    <tr class="base--tr">
+      <td class="base--td">Prince</td>
+      <td class="base--td">Humperdinck</td>
+      <td class="base--td">The Obnoxious Prince</td>
+    </tr>
+    <tr class="base--tr">
+      <td class="base--td">Barack</td>
+      <td class="base--td">Obama</td>
+      <td class="base--td">President</td>
+    </tr>
+    <tr class="base--tr">
+      <td class="base--td">John</td>
+      <td class="base--td">Doe</td>
+      <td class="base--td">Placeholder</td>
+    </tr>
+  </tbody>
+</table>

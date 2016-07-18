@@ -1,0 +1,8 @@
+<label class="base--block-label" for="input15">Basic Hidden Input</label>
+<input type="hidden" id="input15" class="base--hidden-input"></input>
+
+<label class="base--block-label" for="input16">Placeholder Hidden</label>
+<input type="hidden" id="input16" placeholder="This is placeholder hidden" class="base--hidden-input"></input>
+
+<label class="base--block-label" for="input17">Disabled Hidden Input</label>
+<input type="hidden" id="input17" placeholder="Can't click me" class="base--hidden-input" disabled></input>

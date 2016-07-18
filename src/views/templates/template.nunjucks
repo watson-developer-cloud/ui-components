@@ -1,0 +1,6 @@
+{# A sample template #}
+{% extends "templates/base.nunjucks" %}
+
+{% block body %}
+
+{% endblock %}

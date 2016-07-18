@@ -1,0 +1,2 @@
+<label class="base--block-label" for="textarea1">Textarea:</label>
+<textarea class="base--textarea" name="text-area" id="textarea1" cols="30" rows="10"></textarea>

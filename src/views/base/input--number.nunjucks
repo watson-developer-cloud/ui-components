@@ -1,0 +1,8 @@
+<label class="base--block-label" for="input21">Basic Number Input</label>
+<input type="number" id="input21" class="base--number-input"></input>
+
+<label class="base--block-label" for="input22">Placeholder Number</label>
+<input type="number" id="input22" placeholder="This is placeholder number" class="base--number-input"></input>
+
+<label class="base--block-label" for="input23">Disabled Number Input</label>
+<input type="number" id="input23" placeholder="Can't touch this" class="base--number-input" disabled></input>

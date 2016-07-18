@@ -1,0 +1,8 @@
+<label class="base--block-label" for="input36">Basic Text Input</label>
+<input type="text" id="input36" class="base--text-input"></input>
+
+<label class="base--block-label" for="input37">Placeholder Text</label>
+<input type="text" id="input37" placeholder="This is placeholder text" class="base--text-input"></input>
+
+<label class="base--block-label" for="input38">Disabled Text Input</label>
+<input type="text" id="input38" placeholder="Can't touch this" class="base--text-input" disabled></input>

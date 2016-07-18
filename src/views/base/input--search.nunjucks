@@ -1,0 +1,8 @@
+<label class="base--block-label" for="input29">Basic Search Input</label>
+<input type="search" id="input29" class="base--search-input"></input>
+
+<label class="base--block-label" for="input30">Placeholder Search</label>
+<input type="search" id="input30" placeholder="This is placeholder search" class="base--search-input"></input>
+
+<label class="base--block-label" for="input31">Disabled Search Input</label>
+<input type="search" id="input31" placeholder="Can't touch this" class="base--search-input" disabled></input>

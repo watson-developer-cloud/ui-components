@@ -1,0 +1,8 @@
+<label class="base--block-label" for="input45">Basic Week Input</label>
+<input type="week" id="input45" class="base--week-input"></input>
+
+<label class="base--block-label" for="input46">Placeholder Week</label>
+<input type="week" id="input46" placeholder="This is placeholder week" class="base--week-input"></input>
+
+<label class="base--block-label" for="input47">Disabled Week Input</label>
+<input type="week" id="input47" placeholder="Can't click me" class="base--week-input" disabled></input>

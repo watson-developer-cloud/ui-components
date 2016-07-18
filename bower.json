@@ -1,0 +1,26 @@
+{
+  "name": "pattern-library",
+  "description": "A bare bones template for creating a pattern library using Sass",
+  "main": "gulpfile.js",
+  "authors": [
+    "James Zhang <james.zhang75024@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "pattern",
+    "library",
+    "sass"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "breakpoint-sass": "^2.7.0",
+    "modular-scale": "^2.1.3"
+  }
+}

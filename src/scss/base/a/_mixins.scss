@@ -1,0 +1,16 @@
+@mixin base--a($color: null, $background: null) {
+
+  @include smart-underline($position: 100%, $text: color('teal', 10));
+  color: color('teal', 10);
+
+  &:visited {
+    @include smart-underline($position: 100%, $text: color('teal', 20));
+    color: color('teal', 20);
+  }
+
+  &:hover,
+  &:focus {
+    @include smart-underline($position: 100%, $text: color('gray', 20));
+    color: color('gray', 20);
+  }
+}

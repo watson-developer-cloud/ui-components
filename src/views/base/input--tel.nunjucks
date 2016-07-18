@@ -1,0 +1,11 @@
+<label class="base--block-label" for="input32">Basic Tel Input</label>
+<input type="tel" id="input32" class="base--tel-input"></input>
+
+<label class="base--block-label" for="input33">Placeholder with Default Tel Pattern</label>
+<input type="tel" id="input33" placeholder="8882121881" class="base--tel-input"></input>
+
+<label class="base--block-label" for="input34">Pattern Based on USA Phone Number</label>
+<input type="tel" id="input34" placeholder="123-343-9938" pattern="\d{3}[\-]\d{3}[\-]\d{4}" class="base--tel-input"></input>
+
+<label class="base--block-label" for="input35">Disabled Tel Input</label>
+<input type="tel" id="input35" placeholder="8882121881" class="base--tel-input" disabled></input>

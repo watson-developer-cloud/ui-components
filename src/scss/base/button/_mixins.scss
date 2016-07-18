@@ -1,0 +1,38 @@
+@mixin base--button($color: color('gray', 10), $background: get('primary color'), $border: $background, $block: false) {
+  padding: 0.5em 1em;
+  color: $color;
+  font-weight: bold;
+  background-color: $background;
+  border: 3px solid $border;
+  border-radius: 4px;
+  box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.26);
+  transition: 0.2s;
+
+  @if $block {
+    display: block;
+  }
+  @else {
+    display: inline-block;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.35);
+    background-color: lighten($background, 5%);
+    border-color: lighten($background, 5%);
+    outline: none;
+  }
+  &:active {
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.35);
+    transition: 0s;
+    transform: translateY(2px);
+  }
+}
+
+@mixin button--strip-styles() {
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  padding: 0rem;
+  margin: 0rem;
+}

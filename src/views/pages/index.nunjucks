@@ -1,0 +1,60 @@
+{% extends "templates/template.nunjucks" %}
+
+{% block body %}
+<div class="_container">
+  <h1 class="base--h1">Pattern Library Template</h1>
+  <div class="content--heading">Typography</div>
+  <hr class="base--hr">
+  <div class="row">
+    {% include "base/h1.nunjucks" %}
+    {% include "base/h2.nunjucks" %}
+    {% include "base/h3.nunjucks" %}
+    {% include "base/h4.nunjucks" %}
+    {% include "base/h5.nunjucks" %}
+    {% include "base/h6.nunjucks" %}
+  </div>
+  {% include "base/p.nunjucks" %}
+  {% include "base/a.nunjucks" %}
+  {% include "base/em.nunjucks" %}
+  {% include "base/strong.nunjucks" %}
+  {% include "base/blockquote.nunjucks" %}
+  {% include "base/code.nunjucks" %}
+
+  <div class="content--heading">Button</div>
+  <hr class="base--hr">
+  {% include "base/button.nunjucks" %}
+
+  <div class="content--heading">Checkbox and dropdown</div>
+  <hr class="base--hr">
+  {% include "base/checkbox.nunjucks" %}
+  {% include "base/radio.nunjucks" %}
+  {% include "base/select.nunjucks" %}
+
+  <div class="content--heading">Input, Textarea & Table</div>
+  <hr class="base--hr">
+  {% include "base/input.nunjucks" %}
+  {% include "base/input--color.nunjucks" %}
+  {% include "base/input--date.nunjucks" %}
+  {% include "base/input--datetime-local.nunjucks" %}
+  {% include "base/input--file.nunjucks" %}
+  {% include "base/input--hidden.nunjucks" %}
+  {% include "base/input--month.nunjucks" %}
+  {% include "base/input--number.nunjucks" %}
+  {% include "base/input--password.nunjucks" %}
+  {% include "base/input--range.nunjucks" %}
+  {% include "base/input--search.nunjucks" %}
+  {% include "base/input--tel.nunjucks" %}
+  {% include "base/input--text.nunjucks" %}
+  {% include "base/input--time.nunjucks" %}
+  {% include "base/input--url.nunjucks" %}
+  {% include "base/input--week.nunjucks" %}
+  {% include "base/textarea.nunjucks" %}
+  {% include "base/table.nunjucks" %}
+
+  <div class="content--heading">Colors</div>
+  <hr class="base--hr">
+  {% include "core/colors.nunjucks" %}
+
+  </div>
+</div>
+{% endblock %}

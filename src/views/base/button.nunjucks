@@ -1,0 +1,3 @@
+<button class="base--button">Button</button>
+<button class="base--button base--button_submit" type="submit">Submit Button</button>
+<button class="base--button base--button_reset" type="reset">Reset Button</button>

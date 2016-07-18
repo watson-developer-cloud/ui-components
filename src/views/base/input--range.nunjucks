@@ -1,0 +1,5 @@
+<label class="base--block-label" for="input27">Basic Range Input</label>
+<input type="range" id="input27" class="base--range-input"></input>
+
+<label class="base--block-label" for="input28">Disabled Range Input</label>
+<input type="range" id="input28" class="base--range-input" disabled></input>

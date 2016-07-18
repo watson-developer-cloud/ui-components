@@ -1,0 +1,55 @@
+<div class="colors">
+  <h5 class="base--h5">Red</h5>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <h5 class="base--h5">Orange</h5>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <h5 class="base--h5">Yellow</h5>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <h5 class="base--h5">Green</h5>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <h5 class="base--h5">Turquoise</h5>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <h5 class="base--h5">Blue</h5>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <h5 class="base--h5">Purple</h5>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <h5 class="base--h5">White</h5>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <h5 class="base--h5">Gray</h5>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <h5 class="base--h5">Black</h5>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+</div>
+
+<script>
+var unquote = function(str) {
+  var result = str;
+  if (str.charAt(0) == '\"') {
+    result = result.substring(1, result.length);
+  }
+  if (str.charAt(str.length - 1) == '\"') {
+    result = result.substring(0, result.length - 1);
+  }
+  return result;
+}
+var colorTiles = document.querySelectorAll('.color-tile');
+var content = [];
+for (var i = 0; i < colorTiles.length; i++) {
+  content = window.getComputedStyle(colorTiles[i], ':after').content.split('|');
+  for (var j = 0; j < content.length; j++) {
+    colorTiles[i].innerHTML += '<p class="base--p color-tile--details">' + unquote(content[j]) + '</p>';
+  }
+}
+  </script>

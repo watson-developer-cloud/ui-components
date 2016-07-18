@@ -1,0 +1,2 @@
+<label class="base--block-label" for="input4">Basic Color Input</label>
+<input type="color" id="input4" class="base--color-input" disabled></input>

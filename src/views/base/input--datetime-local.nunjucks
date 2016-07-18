@@ -1,0 +1,5 @@
+<label class="base--block-label" for="input7">Basic Datetime-local Input</label>
+<input type="datetime-local" id="input7" class="base--datetime-local-input"></input>
+
+<label class="base--block-label" for="input8">Disabled Datetime-local Input</label>
+<input type="datetime-local" id="input8" placeholder="Can't click me" class="base--datetime-local-input" disabled></input>

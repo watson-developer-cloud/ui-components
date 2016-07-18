@@ -1,0 +1,14 @@
+@import 'mixins';
+@import 'extends';
+
+.base--button {
+  @extend %base--button;
+
+  &_submit {
+    @include base--button($background: color('green', 10), $color: color('gray', 10));
+  }
+
+  &_reset {
+    @include base--button($background: color('orange', 10), $color: color('gray', 10));
+  }
+}

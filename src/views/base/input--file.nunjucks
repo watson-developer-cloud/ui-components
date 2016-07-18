@@ -1,0 +1,8 @@
+<label class="base--block-label" for="input12">Basic File Input</label>
+<input type="file" id="input12" class="base--file-input"></input>
+
+<label class="base--block-label" for="input13">Placeholder File</label>
+<input type="file" id="input13" placeholder="This is a placeholder file" class="base--file-input"></input>
+
+<label class="base--block-label" for="input14">Disabled File Input</label>
+<input type="file" id="input14" placeholder="Can't click me" class="base--file-input" disabled></input>
