@@ -1,22 +1,30 @@
+{% from "macros/ui-macros.nunjucks" import codeblock as codeblock %}
+
 {% extends "templates/template.nunjucks" %}
 
 {% block body %}
 <div class="_container">
-  <h1 class="base--h1">Pattern Library Template</h1>
+  <h1 class="base--h1">Mentos</h1>
+
+  <div class="content--heading">Colors</div>
+  <hr class="base--hr">
+  {% include "core/colors.nunjucks" %}
+
   <div class="content--heading">Typography</div>
   <hr class="base--hr">
-  <div class="row">
+  {% call codeblock() %}
     {% include "base/h1.nunjucks" %}
     {% include "base/h2.nunjucks" %}
     {% include "base/h3.nunjucks" %}
     {% include "base/h4.nunjucks" %}
     {% include "base/h5.nunjucks" %}
     {% include "base/h6.nunjucks" %}
-  </div>
-  {% include "base/p.nunjucks" %}
-  {% include "base/a.nunjucks" %}
-  {% include "base/em.nunjucks" %}
-  {% include "base/strong.nunjucks" %}
+    {% include "base/p.nunjucks" %}
+    {% include "base/a.nunjucks" %}
+    {% include "base/em.nunjucks" %}
+    {% include "base/strong.nunjucks" %}
+  {% endcall %}
+
   {% include "base/blockquote.nunjucks" %}
   {% include "base/code.nunjucks" %}
 
@@ -32,28 +40,61 @@
 
   <div class="content--heading">Input, Textarea & Table</div>
   <hr class="base--hr">
-  {% include "base/input.nunjucks" %}
-  {% include "base/input--color.nunjucks" %}
-  {% include "base/input--date.nunjucks" %}
-  {% include "base/input--datetime-local.nunjucks" %}
-  {% include "base/input--file.nunjucks" %}
-  {% include "base/input--hidden.nunjucks" %}
-  {% include "base/input--month.nunjucks" %}
-  {% include "base/input--number.nunjucks" %}
-  {% include "base/input--password.nunjucks" %}
-  {% include "base/input--range.nunjucks" %}
-  {% include "base/input--search.nunjucks" %}
-  {% include "base/input--tel.nunjucks" %}
-  {% include "base/input--text.nunjucks" %}
-  {% include "base/input--time.nunjucks" %}
-  {% include "base/input--url.nunjucks" %}
-  {% include "base/input--week.nunjucks" %}
-  {% include "base/textarea.nunjucks" %}
-  {% include "base/table.nunjucks" %}
+  {% call codeblock() %}
+    {% include "base/input.nunjucks" %}
+  {% endcall %}
 
-  <div class="content--heading">Colors</div>
-  <hr class="base--hr">
-  {% include "core/colors.nunjucks" %}
+  {% call codeblock() %}
+    {% include "base/input--color.nunjucks" %}
+  {% endcall %}
+  {% call codeblock() %}
+    {% include "base/input--date.nunjucks" %}
+  {% endcall %}
+  {% call codeblock() %}
+    {% include "base/input--datetime-local.nunjucks" %}
+  {% endcall %}
+  {% call codeblock() %}
+    {% include "base/input--file.nunjucks" %}
+  {% endcall %}
+  {% call codeblock() %}
+    {% include "base/input--hidden.nunjucks" %}
+  {% endcall %}
+  {% call codeblock() %}
+    {% include "base/input--month.nunjucks" %}
+  {% endcall %}
+  {% call codeblock() %}
+    {% include "base/input--number.nunjucks" %}
+  {% endcall %}
+  {% call codeblock() %}
+    {% include "base/input--password.nunjucks" %}
+  {% endcall %}
+  {% call codeblock() %}
+    {% include "base/input--range.nunjucks" %}
+  {% endcall %}
+  {% call codeblock() %}
+    {% include "base/input--search.nunjucks" %}
+  {% endcall %}
+  {% call codeblock() %}
+    {% include "base/input--tel.nunjucks" %}
+  {% endcall %}
+  {% call codeblock() %}
+    {% include "base/input--text.nunjucks" %}
+  {% endcall %}
+  {% call codeblock() %}
+    {% include "base/input--time.nunjucks" %}
+  {% endcall %}
+  {% call codeblock() %}
+    {% include "base/input--url.nunjucks" %}
+  {% endcall %}
+  {% call codeblock() %}
+    {% include "base/input--week.nunjucks" %}
+  {% endcall %}
+  {% call codeblock() %}
+    {% include "base/textarea.nunjucks" %}
+  {% endcall %}
+  {% call codeblock() %}
+    {% include "base/table.nunjucks" %}
+  {% endcall %}
 
   </div>
 </div>

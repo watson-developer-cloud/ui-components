@@ -5,10 +5,10 @@
   @extend %base--button;
 
   &_submit {
-    @include base--button($background: color('green', 10), $color: color('gray', 10));
+    @include base--button($background: color('teal', 50));
   }
 
   &_reset {
-    @include base--button($background: color('orange', 10), $color: color('gray', 10));
+    @include base--button($background: color('gray', 50));
   }
 }

@@ -1,0 +1,47 @@
+
+
+.code-block {
+  &--code {
+    @include grid(6);
+  }
+
+  &--ui {
+    @include grid(6, $has-right-gutter: false);
+  }
+}
+
+.color-tile {
+  height: 8rem;
+  width: 8rem;
+  padding: get('rhythm') / 4;
+  display: inline-block;
+  float: left;
+  // margin: 0rem get('rhythm') / 2 get('rhythm') / 2 0rem;
+  margin: 0rem;
+
+  $index: 1;
+  $colors: ('purple', 'teal', 'gray', 'white');
+  @each $key in $colors {
+    @each $tone, $color in map-get($ColorPalette, $key) {
+      &:nth-of-type(#{$index}) {
+        background-color: $color;
+        font-weight: get('weight medium');
+
+        &:after {
+          content: "#{$key} #{$tone} | #{$color}";
+          display: none;
+        }
+
+        .base--p {
+          color: set-text-color($color);
+        }
+      }
+
+      $index: $index + 1;
+    }
+  }
+
+  &--details {
+    margin-top: 0rem;
+  }
+}

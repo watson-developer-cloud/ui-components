@@ -15,10 +15,102 @@
 <body>
   
 <div class="_container">
-  <h1 class="base--h1">Pattern Library Template</h1>
+  <h1 class="base--h1">Mentos</h1>
+
+  <div class="content--heading">Colors</div>
+  <hr class="base--hr">
+  <div class="colors">
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+</div>
+
+<script>
+var unquote = function(str) {
+  var result = str;
+  if (str.charAt(0) == '\"') {
+    result = result.substring(1, result.length);
+  }
+  if (str.charAt(str.length - 1) == '\"') {
+    result = result.substring(0, result.length - 1);
+  }
+  return result;
+}
+var colorTiles = document.querySelectorAll('.color-tile');
+var content = [];
+for (var i = 0; i < colorTiles.length; i++) {
+  content = window.getComputedStyle(colorTiles[i], ':after').content.split('|');
+  for (var j = 0; j < content.length; j++) {
+    colorTiles[i].innerHTML += '<p class="base--p color-tile--details">' + unquote(content[j]) + '</p>';
+  }
+}
+  </script>
+
+
   <div class="content--heading">Typography</div>
   <hr class="base--hr">
-  <div class="row">
+  
+
+<div class="code-block">
+  <div class="code-block--code">
+    <pre class="base--pre">
+
+    &lt;h1 class="base--h1">H1&lt;/h1>
+
+    &lt;h2 class="base--h2">H2&lt;/h2>
+
+    &lt;h3 class="base--h3">H3&lt;/h3>
+
+    &lt;h4 class="base--h4">H4&lt;/h4>
+
+    &lt;h5 class="base--h5">H5&lt;/h5>
+
+    &lt;h6 class="base--h6">H6&lt;/h6>
+
+    &lt;p class="base--p">Paragraph&lt;/p>
+
+    &lt;a href="#" class="base--a">Hyperlink&lt;/a>
+
+    &lt;em class="base--em">emphasized text&lt;/em>
+
+    &lt;strong class="base--strong">Strong Text&lt;/strong>
+
+  
+    </pre>
+  </div>
+  <div class="code-block--ui">
+    
     <h1 class="base--h1">H1</h1>
 
     <h2 class="base--h2">H2</h2>
@@ -31,14 +123,19 @@
 
     <h6 class="base--h6">H6</h6>
 
+    <p class="base--p">Paragraph</p>
+
+    <a href="#" class="base--a">Hyperlink</a>
+
+    <em class="base--em">emphasized text</em>
+
+    <strong class="base--strong">Strong Text</strong>
+
+  
   </div>
-  <p class="base--p">Paragraph</p>
+</div>
 
-  <a href="#" class="base--a">Hyperlink</a>
 
-  <em class="base--em">emphasized text</em>
-
-  <strong class="base--strong">Strong Text</strong>
 
   
 <blockquote class="base--blockquote">
@@ -75,7 +172,27 @@
 
   <div class="content--heading">Input, Textarea & Table</div>
   <hr class="base--hr">
-  <label class="base--block-label" for="input1">Basic Input</label>
+  
+
+<div class="code-block">
+  <div class="code-block--code">
+    <pre class="base--pre">
+
+    &lt;label class="base--block-label" for="input1">Basic Input&lt;/label>
+&lt;input type="" id="input1" class="base--input">&lt;/input>
+
+&lt;label class="base--block-label" for="input1">Basic Input with Placeholder Text&lt;/label>
+&lt;input type="" id="input2" placeholder="This is placeholder text" class="base--input">&lt;/input>
+
+&lt;label class="base--block-label" for="input1">Disabled Basic Input&lt;/label>
+&lt;input type="" id="input3" placeholder="Can't touch this" class="base--input" disabled>&lt;/input>
+
+  
+    </pre>
+  </div>
+  <div class="code-block--ui">
+    
+    <label class="base--block-label" for="input1">Basic Input</label>
 <input type="" id="input1" class="base--input"></input>
 
 <label class="base--block-label" for="input1">Basic Input with Placeholder Text</label>
@@ -84,22 +201,111 @@
 <label class="base--block-label" for="input1">Disabled Basic Input</label>
 <input type="" id="input3" placeholder="Can't touch this" class="base--input" disabled></input>
 
-  <label class="base--block-label" for="input4">Basic Color Input</label>
+  
+  </div>
+</div>
+
+
+
+  
+
+<div class="code-block">
+  <div class="code-block--code">
+    <pre class="base--pre">
+
+    &lt;label class="base--block-label" for="input4">Basic Color Input&lt;/label>
+&lt;input type="color" id="input4" class="base--color-input" disabled>&lt;/input>
+
+  
+    </pre>
+  </div>
+  <div class="code-block--ui">
+    
+    <label class="base--block-label" for="input4">Basic Color Input</label>
 <input type="color" id="input4" class="base--color-input" disabled></input>
 
-  <label class="base--block-label" for="input5">Basic Date Input</label>
+  
+  </div>
+</div>
+
+
+  
+
+<div class="code-block">
+  <div class="code-block--code">
+    <pre class="base--pre">
+
+    &lt;label class="base--block-label" for="input5">Basic Date Input&lt;/label>
+&lt;input type="date" id="input5" class="base--date-input">&lt;/input>
+
+&lt;label class="base--block-label" for="input6">Disabled Date Input&lt;/label>
+&lt;input type="date" id="input6" placeholder="Can't click me" class="base--date-input" disabled>&lt;/input>
+
+  
+    </pre>
+  </div>
+  <div class="code-block--ui">
+    
+    <label class="base--block-label" for="input5">Basic Date Input</label>
 <input type="date" id="input5" class="base--date-input"></input>
 
 <label class="base--block-label" for="input6">Disabled Date Input</label>
 <input type="date" id="input6" placeholder="Can't click me" class="base--date-input" disabled></input>
 
-  <label class="base--block-label" for="input7">Basic Datetime-local Input</label>
+  
+  </div>
+</div>
+
+
+  
+
+<div class="code-block">
+  <div class="code-block--code">
+    <pre class="base--pre">
+
+    &lt;label class="base--block-label" for="input7">Basic Datetime-local Input&lt;/label>
+&lt;input type="datetime-local" id="input7" class="base--datetime-local-input">&lt;/input>
+
+&lt;label class="base--block-label" for="input8">Disabled Datetime-local Input&lt;/label>
+&lt;input type="datetime-local" id="input8" placeholder="Can't click me" class="base--datetime-local-input" disabled>&lt;/input>
+
+  
+    </pre>
+  </div>
+  <div class="code-block--ui">
+    
+    <label class="base--block-label" for="input7">Basic Datetime-local Input</label>
 <input type="datetime-local" id="input7" class="base--datetime-local-input"></input>
 
 <label class="base--block-label" for="input8">Disabled Datetime-local Input</label>
 <input type="datetime-local" id="input8" placeholder="Can't click me" class="base--datetime-local-input" disabled></input>
 
-  <label class="base--block-label" for="input12">Basic File Input</label>
+  
+  </div>
+</div>
+
+
+  
+
+<div class="code-block">
+  <div class="code-block--code">
+    <pre class="base--pre">
+
+    &lt;label class="base--block-label" for="input12">Basic File Input&lt;/label>
+&lt;input type="file" id="input12" class="base--file-input">&lt;/input>
+
+&lt;label class="base--block-label" for="input13">Placeholder File&lt;/label>
+&lt;input type="file" id="input13" placeholder="This is a placeholder file" class="base--file-input">&lt;/input>
+
+&lt;label class="base--block-label" for="input14">Disabled File Input&lt;/label>
+&lt;input type="file" id="input14" placeholder="Can't click me" class="base--file-input" disabled>&lt;/input>
+
+  
+    </pre>
+  </div>
+  <div class="code-block--ui">
+    
+    <label class="base--block-label" for="input12">Basic File Input</label>
 <input type="file" id="input12" class="base--file-input"></input>
 
 <label class="base--block-label" for="input13">Placeholder File</label>
@@ -108,7 +314,32 @@
 <label class="base--block-label" for="input14">Disabled File Input</label>
 <input type="file" id="input14" placeholder="Can't click me" class="base--file-input" disabled></input>
 
-  <label class="base--block-label" for="input15">Basic Hidden Input</label>
+  
+  </div>
+</div>
+
+
+  
+
+<div class="code-block">
+  <div class="code-block--code">
+    <pre class="base--pre">
+
+    &lt;label class="base--block-label" for="input15">Basic Hidden Input&lt;/label>
+&lt;input type="hidden" id="input15" class="base--hidden-input">&lt;/input>
+
+&lt;label class="base--block-label" for="input16">Placeholder Hidden&lt;/label>
+&lt;input type="hidden" id="input16" placeholder="This is placeholder hidden" class="base--hidden-input">&lt;/input>
+
+&lt;label class="base--block-label" for="input17">Disabled Hidden Input&lt;/label>
+&lt;input type="hidden" id="input17" placeholder="Can't click me" class="base--hidden-input" disabled>&lt;/input>
+
+  
+    </pre>
+  </div>
+  <div class="code-block--ui">
+    
+    <label class="base--block-label" for="input15">Basic Hidden Input</label>
 <input type="hidden" id="input15" class="base--hidden-input"></input>
 
 <label class="base--block-label" for="input16">Placeholder Hidden</label>
@@ -117,7 +348,32 @@
 <label class="base--block-label" for="input17">Disabled Hidden Input</label>
 <input type="hidden" id="input17" placeholder="Can't click me" class="base--hidden-input" disabled></input>
 
-  <label class="base--block-label" for="input18">Basic Month Input</label>
+  
+  </div>
+</div>
+
+
+  
+
+<div class="code-block">
+  <div class="code-block--code">
+    <pre class="base--pre">
+
+    &lt;label class="base--block-label" for="input18">Basic Month Input&lt;/label>
+&lt;input type="month" id="input18" class="base--month-input">&lt;/input>
+
+&lt;label class="base--block-label" for="input19">Placeholder Month&lt;/label>
+&lt;input type="month" id="input19" placeholder="Placeholder Month" class="base--month-input" >&lt;/input>
+
+&lt;label class="base--block-label" for="input20">Disabled Month Input&lt;/label>
+&lt;input type="month" id="input20" placeholder="Can't click me" class="base--month-input" disabled>&lt;/input>
+
+  
+    </pre>
+  </div>
+  <div class="code-block--ui">
+    
+    <label class="base--block-label" for="input18">Basic Month Input</label>
 <input type="month" id="input18" class="base--month-input"></input>
 
 <label class="base--block-label" for="input19">Placeholder Month</label>
@@ -126,7 +382,32 @@
 <label class="base--block-label" for="input20">Disabled Month Input</label>
 <input type="month" id="input20" placeholder="Can't click me" class="base--month-input" disabled></input>
 
-  <label class="base--block-label" for="input21">Basic Number Input</label>
+  
+  </div>
+</div>
+
+
+  
+
+<div class="code-block">
+  <div class="code-block--code">
+    <pre class="base--pre">
+
+    &lt;label class="base--block-label" for="input21">Basic Number Input&lt;/label>
+&lt;input type="number" id="input21" class="base--number-input">&lt;/input>
+
+&lt;label class="base--block-label" for="input22">Placeholder Number&lt;/label>
+&lt;input type="number" id="input22" placeholder="This is placeholder number" class="base--number-input">&lt;/input>
+
+&lt;label class="base--block-label" for="input23">Disabled Number Input&lt;/label>
+&lt;input type="number" id="input23" placeholder="Can't touch this" class="base--number-input" disabled>&lt;/input>
+
+  
+    </pre>
+  </div>
+  <div class="code-block--ui">
+    
+    <label class="base--block-label" for="input21">Basic Number Input</label>
 <input type="number" id="input21" class="base--number-input"></input>
 
 <label class="base--block-label" for="input22">Placeholder Number</label>
@@ -135,7 +416,32 @@
 <label class="base--block-label" for="input23">Disabled Number Input</label>
 <input type="number" id="input23" placeholder="Can't touch this" class="base--number-input" disabled></input>
 
-  <label class="base--block-label" for="input24">Basic Password Input</label>
+  
+  </div>
+</div>
+
+
+  
+
+<div class="code-block">
+  <div class="code-block--code">
+    <pre class="base--pre">
+
+    &lt;label class="base--block-label" for="input24">Basic Password Input&lt;/label>
+&lt;input type="password" id="input24" class="base--password-input">&lt;/input>
+
+&lt;label class="base--block-label" for="input25">Placeholder Password&lt;/label>
+&lt;input type="password" id="input25" placeholder="This is placeholder password" class="base--password-input">&lt;/input>
+
+&lt;label class="base--block-label" for="input26">Disabled Password Input&lt;/label>
+&lt;input type="password" id="input26" placeholder="Can't touch this" class="base--password-input" disabled>&lt;/input>
+
+  
+    </pre>
+  </div>
+  <div class="code-block--ui">
+    
+    <label class="base--block-label" for="input24">Basic Password Input</label>
 <input type="password" id="input24" class="base--password-input"></input>
 
 <label class="base--block-label" for="input25">Placeholder Password</label>
@@ -144,13 +450,60 @@
 <label class="base--block-label" for="input26">Disabled Password Input</label>
 <input type="password" id="input26" placeholder="Can't touch this" class="base--password-input" disabled></input>
 
-  <label class="base--block-label" for="input27">Basic Range Input</label>
+  
+  </div>
+</div>
+
+
+  
+
+<div class="code-block">
+  <div class="code-block--code">
+    <pre class="base--pre">
+
+    &lt;label class="base--block-label" for="input27">Basic Range Input&lt;/label>
+&lt;input type="range" id="input27" class="base--range-input">&lt;/input>
+
+&lt;label class="base--block-label" for="input28">Disabled Range Input&lt;/label>
+&lt;input type="range" id="input28" class="base--range-input" disabled>&lt;/input>
+
+  
+    </pre>
+  </div>
+  <div class="code-block--ui">
+    
+    <label class="base--block-label" for="input27">Basic Range Input</label>
 <input type="range" id="input27" class="base--range-input"></input>
 
 <label class="base--block-label" for="input28">Disabled Range Input</label>
 <input type="range" id="input28" class="base--range-input" disabled></input>
 
-  <label class="base--block-label" for="input29">Basic Search Input</label>
+  
+  </div>
+</div>
+
+
+  
+
+<div class="code-block">
+  <div class="code-block--code">
+    <pre class="base--pre">
+
+    &lt;label class="base--block-label" for="input29">Basic Search Input&lt;/label>
+&lt;input type="search" id="input29" class="base--search-input">&lt;/input>
+
+&lt;label class="base--block-label" for="input30">Placeholder Search&lt;/label>
+&lt;input type="search" id="input30" placeholder="This is placeholder search" class="base--search-input">&lt;/input>
+
+&lt;label class="base--block-label" for="input31">Disabled Search Input&lt;/label>
+&lt;input type="search" id="input31" placeholder="Can't touch this" class="base--search-input" disabled>&lt;/input>
+
+  
+    </pre>
+  </div>
+  <div class="code-block--ui">
+    
+    <label class="base--block-label" for="input29">Basic Search Input</label>
 <input type="search" id="input29" class="base--search-input"></input>
 
 <label class="base--block-label" for="input30">Placeholder Search</label>
@@ -159,7 +512,35 @@
 <label class="base--block-label" for="input31">Disabled Search Input</label>
 <input type="search" id="input31" placeholder="Can't touch this" class="base--search-input" disabled></input>
 
-  <label class="base--block-label" for="input32">Basic Tel Input</label>
+  
+  </div>
+</div>
+
+
+  
+
+<div class="code-block">
+  <div class="code-block--code">
+    <pre class="base--pre">
+
+    &lt;label class="base--block-label" for="input32">Basic Tel Input&lt;/label>
+&lt;input type="tel" id="input32" class="base--tel-input">&lt;/input>
+
+&lt;label class="base--block-label" for="input33">Placeholder with Default Tel Pattern&lt;/label>
+&lt;input type="tel" id="input33" placeholder="8882121881" class="base--tel-input">&lt;/input>
+
+&lt;label class="base--block-label" for="input34">Pattern Based on USA Phone Number&lt;/label>
+&lt;input type="tel" id="input34" placeholder="123-343-9938" pattern="\d{3}[\-]\d{3}[\-]\d{4}" class="base--tel-input">&lt;/input>
+
+&lt;label class="base--block-label" for="input35">Disabled Tel Input&lt;/label>
+&lt;input type="tel" id="input35" placeholder="8882121881" class="base--tel-input" disabled>&lt;/input>
+
+  
+    </pre>
+  </div>
+  <div class="code-block--ui">
+    
+    <label class="base--block-label" for="input32">Basic Tel Input</label>
 <input type="tel" id="input32" class="base--tel-input"></input>
 
 <label class="base--block-label" for="input33">Placeholder with Default Tel Pattern</label>
@@ -171,7 +552,32 @@
 <label class="base--block-label" for="input35">Disabled Tel Input</label>
 <input type="tel" id="input35" placeholder="8882121881" class="base--tel-input" disabled></input>
 
-  <label class="base--block-label" for="input36">Basic Text Input</label>
+  
+  </div>
+</div>
+
+
+  
+
+<div class="code-block">
+  <div class="code-block--code">
+    <pre class="base--pre">
+
+    &lt;label class="base--block-label" for="input36">Basic Text Input&lt;/label>
+&lt;input type="text" id="input36" class="base--text-input">&lt;/input>
+
+&lt;label class="base--block-label" for="input37">Placeholder Text&lt;/label>
+&lt;input type="text" id="input37" placeholder="This is placeholder text" class="base--text-input">&lt;/input>
+
+&lt;label class="base--block-label" for="input38">Disabled Text Input&lt;/label>
+&lt;input type="text" id="input38" placeholder="Can't touch this" class="base--text-input" disabled>&lt;/input>
+
+  
+    </pre>
+  </div>
+  <div class="code-block--ui">
+    
+    <label class="base--block-label" for="input36">Basic Text Input</label>
 <input type="text" id="input36" class="base--text-input"></input>
 
 <label class="base--block-label" for="input37">Placeholder Text</label>
@@ -180,7 +586,32 @@
 <label class="base--block-label" for="input38">Disabled Text Input</label>
 <input type="text" id="input38" placeholder="Can't touch this" class="base--text-input" disabled></input>
 
-  <label class="base--block-label" for="input39">Basic Time Input</label>
+  
+  </div>
+</div>
+
+
+  
+
+<div class="code-block">
+  <div class="code-block--code">
+    <pre class="base--pre">
+
+    &lt;label class="base--block-label" for="input39">Basic Time Input&lt;/label>
+&lt;input type="time" id="input39" class="base--time-input">&lt;/input>
+
+&lt;label class="base--block-label" for="input40">Placeholder Time&lt;/label>
+&lt;input type="time" id="input40" placeholder="This is placeholder time" class="base--time-input">&lt;/input>
+
+&lt;label class="base--block-label" for="input41">Disabled Time Input&lt;/label>
+&lt;input type="time" id="input41" placeholder="Can't Click me" class="base--time-input" disabled>&lt;/input>
+
+  
+    </pre>
+  </div>
+  <div class="code-block--ui">
+    
+    <label class="base--block-label" for="input39">Basic Time Input</label>
 <input type="time" id="input39" class="base--time-input"></input>
 
 <label class="base--block-label" for="input40">Placeholder Time</label>
@@ -189,7 +620,32 @@
 <label class="base--block-label" for="input41">Disabled Time Input</label>
 <input type="time" id="input41" placeholder="Can't Click me" class="base--time-input" disabled></input>
 
-  <label class="base--block-label" for="input42">Basic URL Input</label>
+  
+  </div>
+</div>
+
+
+  
+
+<div class="code-block">
+  <div class="code-block--code">
+    <pre class="base--pre">
+
+    &lt;label class="base--block-label" for="input42">Basic URL Input&lt;/label>
+&lt;input type="url" id="input42" class="base--url-input">&lt;/input>
+
+&lt;label class="base--block-label" for="input43">Placeholder URL&lt;/label>
+&lt;input type="url" id="input43" placeholder="Placeholder URL" class="base--url-input">&lt;/input>
+
+&lt;label class="base--block-label" for="input44">Disabled URL Input&lt;/label>
+&lt;input type="url" id="input44" placeholder="Placeholder URL" class="base--url-input" disabled>&lt;/input>
+
+  
+    </pre>
+  </div>
+  <div class="code-block--ui">
+    
+    <label class="base--block-label" for="input42">Basic URL Input</label>
 <input type="url" id="input42" class="base--url-input"></input>
 
 <label class="base--block-label" for="input43">Placeholder URL</label>
@@ -198,7 +654,32 @@
 <label class="base--block-label" for="input44">Disabled URL Input</label>
 <input type="url" id="input44" placeholder="Placeholder URL" class="base--url-input" disabled></input>
 
-  <label class="base--block-label" for="input45">Basic Week Input</label>
+  
+  </div>
+</div>
+
+
+  
+
+<div class="code-block">
+  <div class="code-block--code">
+    <pre class="base--pre">
+
+    &lt;label class="base--block-label" for="input45">Basic Week Input&lt;/label>
+&lt;input type="week" id="input45" class="base--week-input">&lt;/input>
+
+&lt;label class="base--block-label" for="input46">Placeholder Week&lt;/label>
+&lt;input type="week" id="input46" placeholder="This is placeholder week" class="base--week-input">&lt;/input>
+
+&lt;label class="base--block-label" for="input47">Disabled Week Input&lt;/label>
+&lt;input type="week" id="input47" placeholder="Can't click me" class="base--week-input" disabled>&lt;/input>
+
+  
+    </pre>
+  </div>
+  <div class="code-block--ui">
+    
+    <label class="base--block-label" for="input45">Basic Week Input</label>
 <input type="week" id="input45" class="base--week-input"></input>
 
 <label class="base--block-label" for="input46">Placeholder Week</label>
@@ -207,10 +688,83 @@
 <label class="base--block-label" for="input47">Disabled Week Input</label>
 <input type="week" id="input47" placeholder="Can't click me" class="base--week-input" disabled></input>
 
-  <label class="base--block-label" for="textarea1">Textarea:</label>
+  
+  </div>
+</div>
+
+
+  
+
+<div class="code-block">
+  <div class="code-block--code">
+    <pre class="base--pre">
+
+    &lt;label class="base--block-label" for="textarea1">Textarea:&lt;/label>
+&lt;textarea class="base--textarea" name="text-area" id="textarea1" cols="30" rows="10">&lt;/textarea>
+
+  
+    </pre>
+  </div>
+  <div class="code-block--ui">
+    
+    <label class="base--block-label" for="textarea1">Textarea:</label>
 <textarea class="base--textarea" name="text-area" id="textarea1" cols="30" rows="10"></textarea>
 
-  <label class="base--block-label" for="textarea1">Table:</label>
+  
+  </div>
+</div>
+
+
+  
+
+<div class="code-block">
+  <div class="code-block--code">
+    <pre class="base--pre">
+
+    &lt;label class="base--block-label" for="textarea1">Table:&lt;/label>
+&lt;table class="base--table">
+  &lt;thead class="base--thead">
+    &lt;tr class="base--tr">
+      &lt;td class="base--td">First Name&lt;/td>
+      &lt;td class="base--td">Last Name&lt;/td>
+      &lt;td class="base--td">Role&lt;/td>
+    &lt;/tr>
+  &lt;/thead>
+  &lt;tbody class="base--tbody">
+    &lt;tr class="base--tr">
+      &lt;td class="base--td">Westley&lt;/td>
+      &lt;td class="base--td">--&lt;/td>
+      &lt;td class="base--td">The Man in Black&lt;/td>
+    &lt;/tr>
+    &lt;tr class="base--tr">
+      &lt;td class="base--td">Princess&lt;/td>
+      &lt;td class="base--td">Buttercup&lt;/td>
+      &lt;td class="base--td">The Princess Bride&lt;/td>
+    &lt;/tr>
+    &lt;tr class="base--tr">
+      &lt;td class="base--td">Prince&lt;/td>
+      &lt;td class="base--td">Humperdinck&lt;/td>
+      &lt;td class="base--td">The Obnoxious Prince&lt;/td>
+    &lt;/tr>
+    &lt;tr class="base--tr">
+      &lt;td class="base--td">Barack&lt;/td>
+      &lt;td class="base--td">Obama&lt;/td>
+      &lt;td class="base--td">President&lt;/td>
+    &lt;/tr>
+    &lt;tr class="base--tr">
+      &lt;td class="base--td">John&lt;/td>
+      &lt;td class="base--td">Doe&lt;/td>
+      &lt;td class="base--td">Placeholder&lt;/td>
+    &lt;/tr>
+  &lt;/tbody>
+&lt;/table>
+
+  
+    </pre>
+  </div>
+  <div class="code-block--ui">
+    
+    <label class="base--block-label" for="textarea1">Table:</label>
 <table class="base--table">
   <thead class="base--thead">
     <tr class="base--tr">
@@ -248,64 +802,10 @@
   </tbody>
 </table>
 
-
-  <div class="content--heading">Colors</div>
-  <hr class="base--hr">
-  <div class="colors">
-  <h5 class="base--h5">Red</h5>
-  <div class="color-tile"></div>
-  <div class="color-tile"></div>
-  <h5 class="base--h5">Orange</h5>
-  <div class="color-tile"></div>
-  <div class="color-tile"></div>
-  <h5 class="base--h5">Yellow</h5>
-  <div class="color-tile"></div>
-  <div class="color-tile"></div>
-  <h5 class="base--h5">Green</h5>
-  <div class="color-tile"></div>
-  <div class="color-tile"></div>
-  <h5 class="base--h5">Turquoise</h5>
-  <div class="color-tile"></div>
-  <div class="color-tile"></div>
-  <h5 class="base--h5">Blue</h5>
-  <div class="color-tile"></div>
-  <div class="color-tile"></div>
-  <h5 class="base--h5">Purple</h5>
-  <div class="color-tile"></div>
-  <div class="color-tile"></div>
-  <h5 class="base--h5">White</h5>
-  <div class="color-tile"></div>
-  <div class="color-tile"></div>
-  <div class="color-tile"></div>
-  <h5 class="base--h5">Gray</h5>
-  <div class="color-tile"></div>
-  <div class="color-tile"></div>
-  <h5 class="base--h5">Black</h5>
-  <div class="color-tile"></div>
-  <div class="color-tile"></div>
-  <div class="color-tile"></div>
+  
+  </div>
 </div>
 
-<script>
-var unquote = function(str) {
-  var result = str;
-  if (str.charAt(0) == '\"') {
-    result = result.substring(1, result.length);
-  }
-  if (str.charAt(str.length - 1) == '\"') {
-    result = result.substring(0, result.length - 1);
-  }
-  return result;
-}
-var colorTiles = document.querySelectorAll('.color-tile');
-var content = [];
-for (var i = 0; i < colorTiles.length; i++) {
-  content = window.getComputedStyle(colorTiles[i], ':after').content.split('|');
-  for (var j = 0; j < content.length; j++) {
-    colorTiles[i].innerHTML += '<p class="base--p color-tile--details">' + unquote(content[j]) + '</p>';
-  }
-}
-  </script>
 
 
   </div>
