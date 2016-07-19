@@ -1,6 +1,8 @@
 
 
 .code-block {
+  margin-bottom: get('rhythm') * 1.5;
+
   &--code {
     @include grid(6);
   }

@@ -10,7 +10,4 @@ body {
     margin-top: get('rhythm') / 2;
   }
 
-  ::selection {
-    background-color: lighten(color('teal', 10), 40%);
-  }
 }

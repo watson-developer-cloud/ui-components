@@ -1,11 +1,10 @@
-@mixin base--button($color: color('white', 10), $background: get('primary color'), $border: $background, $block: false) {
-  padding: 0.5em 1em;
+@mixin base--button($color: color('purple', 50), $background: transparent, $border: color('purple', 50), $block: false) {
+  padding: 0.25em 2em;
   color: $color;
-  font-weight: bold;
+  font-weight: 500;
   background-color: $background;
-  border: 3px solid $border;
-  border-radius: 4px;
-  box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.26);
+  border: 2px solid $border;
+  border-radius: 10rem;
   transition: 0.2s;
 
   @if $block {
@@ -17,13 +16,11 @@
 
   &:hover,
   &:focus {
-    box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.35);
-    background-color: lighten($background, 5%);
-    border-color: lighten($background, 5%);
-    outline: none;
+    background-color: lighten($background, 15%);
+    border-color: lighten($border, 15%);
+    color: lighten($color, 15%);
   }
   &:active {
-    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.35);
     transition: 0s;
     transform: translateY(2px);
   }

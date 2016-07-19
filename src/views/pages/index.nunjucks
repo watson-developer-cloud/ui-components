@@ -13,87 +13,100 @@
   <div class="content--heading">Typography</div>
   <hr class="base--hr">
   {% call codeblock() %}
-    {% include "base/h1.nunjucks" %}
-    {% include "base/h2.nunjucks" %}
-    {% include "base/h3.nunjucks" %}
-    {% include "base/h4.nunjucks" %}
-    {% include "base/h5.nunjucks" %}
-    {% include "base/h6.nunjucks" %}
-    {% include "base/p.nunjucks" %}
-    {% include "base/a.nunjucks" %}
-    {% include "base/em.nunjucks" %}
-    {% include "base/strong.nunjucks" %}
+{% include "base/h1.nunjucks" %}
+{% include "base/h2.nunjucks" %}
+{% include "base/h3.nunjucks" %}
+{% include "base/h4.nunjucks" %}
+{% include "base/h5.nunjucks" %}
+{% include "base/h6.nunjucks" %}
+{% include "base/p.nunjucks" %}
+{% include "base/a.nunjucks" %}
+{% include "base/em.nunjucks" %}
+{% include "base/strong.nunjucks" %}
   {% endcall %}
 
-  {% include "base/blockquote.nunjucks" %}
-  {% include "base/code.nunjucks" %}
+  {% call codeblock() %}
+{% include "base/blockquote.nunjucks" %}
+  {% endcall %}
+
+  {% call codeblock() %}
+{% include "base/code.nunjucks" %}
+  {% endcall %}
 
   <div class="content--heading">Button</div>
   <hr class="base--hr">
-  {% include "base/button.nunjucks" %}
+  {% call codeblock() %}
+{% include "base/button.nunjucks" %}
+  {% endcall %}
 
   <div class="content--heading">Checkbox and dropdown</div>
   <hr class="base--hr">
-  {% include "base/checkbox.nunjucks" %}
-  {% include "base/radio.nunjucks" %}
-  {% include "base/select.nunjucks" %}
+  {% call codeblock() %}
+{% include "base/checkbox.nunjucks" %}
+  {% endcall %}
+  {% call codeblock() %}
+{% include "base/radio.nunjucks" %}
+  {% endcall %}
+  {% call codeblock() %}
+{% include "base/select.nunjucks" %}
+  {% endcall %}
 
   <div class="content--heading">Input, Textarea & Table</div>
   <hr class="base--hr">
   {% call codeblock() %}
-    {% include "base/input.nunjucks" %}
+{% include "base/input.nunjucks" %}
   {% endcall %}
 
   {% call codeblock() %}
-    {% include "base/input--color.nunjucks" %}
+{% include "base/input--color.nunjucks" %}
   {% endcall %}
   {% call codeblock() %}
-    {% include "base/input--date.nunjucks" %}
+{% include "base/input--date.nunjucks" %}
   {% endcall %}
   {% call codeblock() %}
-    {% include "base/input--datetime-local.nunjucks" %}
+{% include "base/input--datetime-local.nunjucks" %}
   {% endcall %}
   {% call codeblock() %}
-    {% include "base/input--file.nunjucks" %}
+{% include "base/input--file.nunjucks" %}
   {% endcall %}
   {% call codeblock() %}
-    {% include "base/input--hidden.nunjucks" %}
+{% include "base/input--hidden.nunjucks" %}
   {% endcall %}
   {% call codeblock() %}
-    {% include "base/input--month.nunjucks" %}
+{% include "base/input--month.nunjucks" %}
   {% endcall %}
   {% call codeblock() %}
-    {% include "base/input--number.nunjucks" %}
+{% include "base/input--number.nunjucks" %}
   {% endcall %}
   {% call codeblock() %}
-    {% include "base/input--password.nunjucks" %}
+{% include "base/input--password.nunjucks" %}
   {% endcall %}
   {% call codeblock() %}
-    {% include "base/input--range.nunjucks" %}
+{% include "base/input--range.nunjucks" %}
   {% endcall %}
   {% call codeblock() %}
-    {% include "base/input--search.nunjucks" %}
+{% include "base/input--search.nunjucks" %}
   {% endcall %}
   {% call codeblock() %}
-    {% include "base/input--tel.nunjucks" %}
+{% include "base/input--tel.nunjucks" %}
   {% endcall %}
   {% call codeblock() %}
-    {% include "base/input--text.nunjucks" %}
+{% include "base/input--text.nunjucks" %}
   {% endcall %}
   {% call codeblock() %}
-    {% include "base/input--time.nunjucks" %}
+{% include "base/input--time.nunjucks" %}
   {% endcall %}
   {% call codeblock() %}
-    {% include "base/input--url.nunjucks" %}
+{% include "base/input--url.nunjucks" %}
   {% endcall %}
   {% call codeblock() %}
-    {% include "base/input--week.nunjucks" %}
+{% include "base/input--week.nunjucks" %}
   {% endcall %}
   {% call codeblock() %}
-    {% include "base/textarea.nunjucks" %}
+{% include "base/textarea.nunjucks" %}
   {% endcall %}
   {% call codeblock() %}
-    {% include "base/table.nunjucks" %}
+{% include "base/table.nunjucks" %}
   {% endcall %}
 
   </div>
