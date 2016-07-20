@@ -1,11 +1,16 @@
 %base--table {
   width: 100%;
+  border-top: 1px solid color('gray', 20);
+  border-bottom: 1px solid color('gray', 20);
+  font-size: 0.85em;
+  font-weight: 300;
+  color: color('gray', 50);
 }
 
 %base--thead {
-  font-weight: bold;
-  color: get('white');
-  background-color: get('primary color');
+  font-weight: 500;
+  border-bottom: 2px solid color('gray', 10);
+  text-transform: uppercase;
 }
 
 %base--td {
@@ -13,7 +18,6 @@
 }
 
 %base--tr {
-  &:nth-of-type(even) {
-    background-color: color('gray', 10);
-  }
+  background-color: transparent;
+  border-top: 1px solid color('gray', 10);
 }

@@ -6,11 +6,11 @@
 <div class="_container">
   <h1 class="base--h1">Mentos</h1>
 
-  <div class="content--heading">Colors</div>
+  <div class="content--heading base--h3">Colors</div>
   <hr class="base--hr">
   {% include "core/colors.nunjucks" %}
 
-  <div class="content--heading">Typography</div>
+  <div class="content--heading base--h3">Typography</div>
   <hr class="base--hr">
   {% call codeblock() %}
 {% include "base/h1.nunjucks" %}
@@ -25,94 +25,131 @@
 {% include "base/strong.nunjucks" %}
   {% endcall %}
 
-  {% call codeblock() %}
+  {# {% call codeblock() %}
 {% include "base/blockquote.nunjucks" %}
-  {% endcall %}
+  {% endcall %} #}
 
-  {% call codeblock() %}
+  {# {% call codeblock() %}
 {% include "base/code.nunjucks" %}
-  {% endcall %}
+  {% endcall %} #}
 
-  <div class="content--heading">Button</div>
+  <div class="content--heading base--h3">Elements</div>
   <hr class="base--hr">
+
+  <h4 class="base--h4">Buttons</h4>
   {% call codeblock() %}
 {% include "base/button.nunjucks" %}
   {% endcall %}
 
-  <div class="content--heading">Checkbox and dropdown</div>
-  <hr class="base--hr">
+  <h4 class="base--h4">Checkboxes</h4>
   {% call codeblock() %}
 {% include "base/checkbox.nunjucks" %}
   {% endcall %}
+
+  <h4 class="base--h4">Radio Buttons</h4>
   {% call codeblock() %}
 {% include "base/radio.nunjucks" %}
   {% endcall %}
-  {% call codeblock() %}
-{% include "base/select.nunjucks" %}
-  {% endcall %}
 
-  <div class="content--heading">Input, Textarea & Table</div>
-  <hr class="base--hr">
-  {% call codeblock() %}
-{% include "base/input.nunjucks" %}
-  {% endcall %}
-
-  {% call codeblock() %}
-{% include "base/input--color.nunjucks" %}
-  {% endcall %}
-  {% call codeblock() %}
-{% include "base/input--date.nunjucks" %}
-  {% endcall %}
-  {% call codeblock() %}
-{% include "base/input--datetime-local.nunjucks" %}
-  {% endcall %}
-  {% call codeblock() %}
-{% include "base/input--file.nunjucks" %}
-  {% endcall %}
-  {% call codeblock() %}
-{% include "base/input--hidden.nunjucks" %}
-  {% endcall %}
-  {% call codeblock() %}
-{% include "base/input--month.nunjucks" %}
-  {% endcall %}
-  {% call codeblock() %}
-{% include "base/input--number.nunjucks" %}
-  {% endcall %}
-  {% call codeblock() %}
-{% include "base/input--password.nunjucks" %}
-  {% endcall %}
-  {% call codeblock() %}
-{% include "base/input--range.nunjucks" %}
-  {% endcall %}
-  {% call codeblock() %}
-{% include "base/input--search.nunjucks" %}
-  {% endcall %}
-  {% call codeblock() %}
-{% include "base/input--tel.nunjucks" %}
-  {% endcall %}
-  {% call codeblock() %}
-{% include "base/input--text.nunjucks" %}
-  {% endcall %}
-  {% call codeblock() %}
-{% include "base/input--time.nunjucks" %}
-  {% endcall %}
-  {% call codeblock() %}
-{% include "base/input--url.nunjucks" %}
-  {% endcall %}
-  {% call codeblock() %}
-{% include "base/input--week.nunjucks" %}
-  {% endcall %}
-  {% call codeblock() %}
-{% include "base/textarea.nunjucks" %}
-  {% endcall %}
+  <h4 class="base--h4">Table</h4>
   {% call codeblock() %}
 {% include "base/table.nunjucks" %}
   {% endcall %}
 
-  <div class="content--heading">SASS Utilities</div>
+  <h4 class="base--h4">TextArea</h4>
+  {% call codeblock() %}
+{% include "base/textarea.nunjucks" %}
+  {% endcall %}
+
+  <h4 class="base--h4">Dropdown</h4>
+  {% call codeblock() %}
+{% include "base/select.nunjucks" %}
+  {% endcall %}
+
+  <h4 class="base--h4">Basic Input</h4>
+  {% call codeblock() %}
+{% include "base/input.nunjucks" %}
+  {% endcall %}
+
+  <h4 class="base--h4">Color Input</h4>
+  {% call codeblock() %}
+{% include "base/input--color.nunjucks" %}
+  {% endcall %}
+
+  <h4 class="base--h4">Date Input</h4>
+  {% call codeblock() %}
+{% include "base/input--date.nunjucks" %}
+  {% endcall %}
+
+  <h4 class="base--h4">Date Time Local Input</h4>
+  {% call codeblock() %}
+{% include "base/input--datetime-local.nunjucks" %}
+  {% endcall %}
+
+  <h4 class="base--h4">File Input</h4>
+  {% call codeblock() %}
+{% include "base/input--file.nunjucks" %}
+  {% endcall %}
+
+  <h4 class="base--h4">Hidden Input</h4>
+  {% call codeblock() %}
+{% include "base/input--hidden.nunjucks" %}
+  {% endcall %}
+
+  <h4 class="base--h4">Month Input</h4>
+  {% call codeblock() %}
+{% include "base/input--month.nunjucks" %}
+  {% endcall %}
+
+  <h4 class="base--h4">Number Input</h4>
+  {% call codeblock() %}
+{% include "base/input--number.nunjucks" %}
+  {% endcall %}
+
+  <h4 class="base--h4">Password Input</h4>
+  {% call codeblock() %}
+{% include "base/input--password.nunjucks" %}
+  {% endcall %}
+
+  <h4 class="base--h4">Range Input</h4>
+  {% call codeblock() %}
+{% include "base/input--range.nunjucks" %}
+  {% endcall %}
+
+  <h4 class="base--h4">Search Input</h4>
+  {% call codeblock() %}
+{% include "base/input--search.nunjucks" %}
+  {% endcall %}
+
+  <h4 class="base--h4">Telephone Input</h4>
+  {% call codeblock() %}
+{% include "base/input--tel.nunjucks" %}
+  {% endcall %}
+
+  <h4 class="base--h4">Text Input</h4>
+  {% call codeblock() %}
+{% include "base/input--text.nunjucks" %}
+  {% endcall %}
+
+  <h4 class="base--h4">Time Input</h4>
+  {% call codeblock() %}
+{% include "base/input--time.nunjucks" %}
+  {% endcall %}
+
+  <h4 class="base--h4">Url Input</h4>
+  {% call codeblock() %}
+{% include "base/input--url.nunjucks" %}
+  {% endcall %}
+
+  <h4 class="base--h4">Week Input</h4>
+  {% call codeblock() %}
+{% include "base/input--week.nunjucks" %}
+  {% endcall %}
+
+  <div class="content--heading base--h3">SASS Utilities</div>
   <hr class="base--hr">
 
-  <h3>Grid Mixin</h3>
+  <h4 class="base--h4">Grid Mixin</h4>
   <div class="code-block">
     <div class="code-block--code">
       <pre class="base--pre">
@@ -130,8 +167,31 @@
       </pre>
     </div>
     <div class="code-block--ui">
-      <div class="left-column grid-example-1--col-1"></div>
-      <div class="right-column grid-example-1--col-2"></div>
+      <div class="left-column"></div>
+      <div class="right-column"></div>
+    </div>
+  </div>
+
+  <h4 class="base--h4">Divisions Mixin</h4>
+  <div class="code-block">
+    <div class="code-block--code">
+      <pre class="base--pre">
+.left-column {
+  @include grid(6);
+  background-color: color('purple', 30);
+  height: 3rem;
+}
+
+.right-column {
+  @include grid(6, $has-right-gutter: false);
+  background-color: color('teal', 30);
+  height: 3rem;
+}
+      </pre>
+    </div>
+    <div class="code-block--ui">
+      <div class="left-column"></div>
+      <div class="right-column"></div>
     </div>
   </div>
 

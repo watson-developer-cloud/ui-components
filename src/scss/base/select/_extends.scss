@@ -4,7 +4,7 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-image: url(triangle(get('input border color'), $size: 1.75));
+  background-image: url(triangle(get('input border color'), $size: 1.5));
   background-size: 1em 1em;
   background-repeat: no-repeat;
   background-position: calc(100% - .3em) 1em;

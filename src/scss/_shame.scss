@@ -37,6 +37,7 @@
 
         .base--p {
           color: set-text-color($color);
+          text-transform: capitalize;
         }
       }
 

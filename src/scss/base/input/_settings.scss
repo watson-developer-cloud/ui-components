@@ -1,8 +1,8 @@
 $InputSettings: (
   'input padding': .6em 1em,
   'input border color': get('primary color'),
-  'input border width': 1px,
-  'focus border width': 2px,
+  'input border width': 2px,
+  'focus border width': 3px,
 );
 
 $GlobalSettings: map-merge($GlobalSettings, $InputSettings);
