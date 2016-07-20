@@ -9,6 +9,7 @@
 
   &--ui {
     @include grid(6, $has-right-gutter: false);
+    margin-top: 0rem;
   }
 }
 
@@ -46,4 +47,18 @@
   &--details {
     margin-top: 0rem;
   }
+}
+
+.left-column {
+  @include grid(6);
+  background-color: color('purple', 30);
+  height: 3rem;
+  margin-top: 0rem;
+}
+
+.right-column {
+  @include grid(6, $has-right-gutter: false);
+  background-color: color('teal', 30);
+  height: 3rem;
+  margin-top: 0rem;
 }

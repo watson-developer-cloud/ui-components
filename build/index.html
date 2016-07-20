@@ -931,6 +931,32 @@ for (var i = 0; i < colorTiles.length; i++) {
 
 
 
+  <div class="content--heading">SASS Utilities</div>
+  <hr class="base--hr">
+
+  <h3>Grid Mixin</h3>
+  <div class="code-block">
+    <div class="code-block--code">
+      <pre class="base--pre">
+.left-column {
+  @include grid(6);
+  background-color: color('purple', 30);
+  height: 3rem;
+}
+
+.right-column {
+  @include grid(6, $has-right-gutter: false);
+  background-color: color('teal', 30);
+  height: 3rem;
+}
+      </pre>
+    </div>
+    <div class="code-block--ui">
+      <div class="left-column grid-example-1--col-1"></div>
+      <div class="right-column grid-example-1--col-2"></div>
+    </div>
+  </div>
+
   </div>
 </div>
 

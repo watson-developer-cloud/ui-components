@@ -559,6 +559,7 @@ body {
 .base--pre {
   margin: .5em 0;
   overflow: auto;
+  margin-top: 0rem;
   border: 1px solid rgba(199, 199, 199, 0.25); }
   .base--pre code, .base--pre .base--code {
     padding: 1em;
@@ -659,7 +660,8 @@ body {
   .code-block--ui {
     width: 48.93617%;
     float: left;
-    display: block; }
+    display: block;
+    margin-top: 0rem; }
 
 .color-tile {
   height: 8rem;
@@ -915,3 +917,20 @@ body {
       color: #121212; }
   .color-tile--details {
     margin-top: 0rem; }
+
+.left-column {
+  width: 48.93617%;
+  margin-right: 2.12766%;
+  float: left;
+  display: block;
+  background-color: #ba8ff7;
+  height: 3rem;
+  margin-top: 0rem; }
+
+.right-column {
+  width: 48.93617%;
+  float: left;
+  display: block;
+  background-color: #41d6c3;
+  height: 3rem;
+  margin-top: 0rem; }
