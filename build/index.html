@@ -774,6 +774,65 @@ for (var i = 0; i < colorTiles.length; i++) {
 
 
 
+  <div class="content--heading base--h3">Components</div>
+  <hr class="base--hr">
+
+  <h4 class="base--h4">Tab Panels</h4>
+  
+
+<div class="code-block">
+  <div class="code-block--code">
+    <pre class="base--pre">
+
+&lt;div class="tab-panels" role="tabpanel">
+  &lt;ul class="tab-panels--tab-list" role="tablist">
+    &lt;li class="tab-panels--tab-list-item base--li" role="presentation">
+      &lt;a class="tab-panels--tab base--a active" href="#panel1" aria-controls="panel1" role="tab">Tab 1&lt;/a>
+    &lt;/li>
+    &lt;li class="tab-panels--tab-list-item base--li" role="presentation">
+      &lt;a class="tab-panels--tab base--a" href="#panel2" aria-controls="panel2" role="tab">Tab 2&lt;/a>
+    &lt;/li>
+  &lt;/ul>
+  &lt;div class="tab-panels--tab-content">
+    &lt;div id="panel1" class="tab-panels--tab-pane active" role="tab-panel">
+      This is panel 1
+    &lt;/div>
+    &lt;div id="panel2" class="tab-panels--tab-pane" role="tab-panel">
+      This is panel 2
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+
+  
+    </pre>
+  </div>
+  <div class="code-block--ui">
+    
+<div class="tab-panels" role="tabpanel">
+  <ul class="tab-panels--tab-list" role="tablist">
+    <li class="tab-panels--tab-list-item base--li" role="presentation">
+      <a class="tab-panels--tab base--a active" href="#panel1" aria-controls="panel1" role="tab">Tab 1</a>
+    </li>
+    <li class="tab-panels--tab-list-item base--li" role="presentation">
+      <a class="tab-panels--tab base--a" href="#panel2" aria-controls="panel2" role="tab">Tab 2</a>
+    </li>
+  </ul>
+  <div class="tab-panels--tab-content">
+    <div id="panel1" class="tab-panels--tab-pane active" role="tab-panel">
+      This is panel 1
+    </div>
+    <div id="panel2" class="tab-panels--tab-pane" role="tab-panel">
+      This is panel 2
+    </div>
+  </div>
+</div>
+
+  
+  </div>
+</div>
+
+
+
   <div class="content--heading base--h3">SASS Utilities</div>
   <hr class="base--hr">
 
@@ -823,25 +882,6 @@ for (var i = 0; i < colorTiles.length; i++) {
     </div>
   </div>
 
-
-  <div class="tab-panels" role="tabpanel">
-    <ul class="tab-panels--tab-list" role="tablist">
-      <li class="tab-panels--tab-list-item base--li" role="presentation">
-        <a class="tab-panels--tab base--a active" href="#panel1" aria-controls="panel1" role="tab">Tab 1</a>
-      </li>
-      <li class="tab-panels--tab-list-item base--li" role="presentation">
-        <a class="tab-panels--tab base--a" href="#panel2" aria-controls="panel2" role="tab">Tab 2</a>
-      </li>
-    </ul>
-    <div class="tab-panels--tab-content">
-      <div id="panel1" class="tab-panels--tab-pane active" role="tab-panel">
-        This is panel 1
-      </div>
-      <div id="panel2" class="tab-panels--tab-pane" role="tab-panel">
-        This is panel 2
-      </div>
-    </div>
-  </div>
 </div>
 
   
