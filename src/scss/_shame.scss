@@ -11,6 +11,15 @@
     @include grid(6, $has-right-gutter: false);
     margin-top: 0rem;
   }
+
+  .base--pre {
+    transition: 0.2s;
+    width: 100%;
+    z-index: 1000;
+    &:hover {
+      width: 250%;
+    }
+  }
 }
 
 .color-tile {
