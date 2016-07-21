@@ -561,14 +561,16 @@ body {
   margin: .5em 0;
   overflow: auto;
   margin-top: 0rem;
-  white-space: pre-wrap;
+  white-space: normal;
   border-left: 4px solid #9855d4;
   padding: 1rem;
   background-color: #f9f9f9; }
   .base--pre code, .base--pre .base--code {
     padding: 1em;
     font-size: 1em;
-    outline: 0; }
+    outline: 0;
+    margin: 0rem;
+    padding: 0rem; }
 
 .base--ul, .base--ol {
   display: table;
@@ -698,7 +700,7 @@ body {
   .base--radio + .clickable-tab:before {
     display: none; }
 
-.tag {
+.metatag {
   padding: 0.25em 2em;
   color: #9855d4;
   font-weight: 500;
@@ -712,20 +714,20 @@ body {
   padding: 0.2em 1.75em;
   font-weight: 300;
   font-size: 0.9em; }
-  .tag:hover, .tag:focus {
+  .metatag:hover, .metatag:focus {
     background-color: #9966bf;
     border-color: #9966bf;
     color: #bd92e3; }
-  .tag:active {
+  .metatag:active {
     -webkit-transition: 0s;
     transition: 0s;
     -webkit-transform: translateY(2px);
             transform: translateY(2px); }
-  .tag:hover, .tag:focus {
+  .metatag:hover, .metatag:focus {
     background-color: #734098;
     border-color: #734098;
     color: #ffffff; }
-  .tag:active {
+  .metatag:active {
     -webkit-transition: 0s;
     transition: 0s;
     -webkit-transform: translateY(0px);
@@ -738,6 +740,114 @@ body {
   @media (min-width: 768px) {
     ._container {
       width: 768px; } }
+
+/* http://prismjs.com/download.html?themes=prism&languages=markup+clike+javascript+jsx */
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+  text-shadow: none;
+  background: #b3d4fc; }
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+  text-shadow: none;
+  background: #b3d4fc; }
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto; }
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em; }
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #959595; }
+
+.token.punctuation {
+  color: #999; }
+
+.namespace {
+  opacity: .7; }
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #905; }
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #690; }
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #a67f59;
+  background: rgba(255, 255, 255, 0.5); }
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #07a; }
+
+.token.function {
+  color: #DD4A68; }
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #e90; }
+
+.token.important,
+.token.bold {
+  font-weight: bold; }
+
+.token.italic {
+  font-style: italic; }
+
+.token.entity {
+  cursor: help; }
+
+/* Custom prism rules for the Relay docs */
+code[class*="language-"],
+pre[class*="language-"] {
+  margin-bottom: 10px; }
+
+.prism + .prism {
+  margin-top: -15px; }
+
+/* Line highlighting */
+.prism {
+  position: relative; }
+
+.line-highlight {
+  background: rgba(75, 145, 80, 0.15);
+  left: 0;
+  line-height: inherit;
+  margin-top: 5px;
+  pointer-events: none;
+  position: absolute;
+  right: 0; }
 
 .code-block {
   margin-bottom: 3rem; }

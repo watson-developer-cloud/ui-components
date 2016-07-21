@@ -18,7 +18,7 @@
   overflow: auto;
   margin-top: 0rem;
 
-  white-space: pre-wrap;
+  white-space: normal;
   border-left: 4px solid color('purple', 50);
   padding: get('rhythm') / 2;
   background-color: color('white', 30);
@@ -29,5 +29,7 @@
     padding: 1em;
     font-size: 1em;
     outline: 0;
+    margin: 0rem;
+    padding: 0rem;
   }
 }

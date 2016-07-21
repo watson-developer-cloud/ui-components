@@ -16,7 +16,7 @@
 
     <h3 class="content--heading base--h3">Typography</h3>
     <hr class="base--hr">
-    {% call codeblock() %}
+    {% call codeblock('markup') %}
 {% include "base/h1.nunjucks" %}
 {% include "base/h2.nunjucks" %}
 {% include "base/h3.nunjucks" %}
@@ -29,11 +29,11 @@
 {% include "base/strong.nunjucks" %}
     {% endcall %}
 
-    {# {% call codeblock() %}
+    {# {% call codeblock('markup') %}
   {% include "base/blockquote.nunjucks" %}
     {% endcall %} #}
 
-    {# {% call codeblock() %}
+    {# {% call codeblock('markup') %}
   {% include "base/code.nunjucks" %}
     {% endcall %} #}
 
@@ -41,112 +41,112 @@
     <hr class="base--hr">
 
     <h4 class="base--h4">Buttons</h4>
-    {% call codeblock() %}
+    {% call codeblock('markup') %}
 {% include "base/button.nunjucks" %}
     {% endcall %}
 
     <h4 class="base--h4">Checkboxes</h4>
-    {% call codeblock() %}
+    {% call codeblock('markup') %}
 {% include "base/checkbox.nunjucks" %}
     {% endcall %}
 
     <h4 class="base--h4">Radio Buttons</h4>
-    {% call codeblock() %}
+    {% call codeblock('markup') %}
 {% include "base/radio.nunjucks" %}
     {% endcall %}
 
     <h4 class="base--h4">Table</h4>
-    {% call codeblock() %}
+    {% call codeblock('markup') %}
 {% include "base/table.nunjucks" %}
     {% endcall %}
 
     <h4 class="base--h4">TextArea</h4>
-    {% call codeblock() %}
+    {% call codeblock('markup') %}
 {% include "base/textarea.nunjucks" %}
     {% endcall %}
 
     <h4 class="base--h4">Dropdown</h4>
-    {% call codeblock() %}
+    {% call codeblock('markup') %}
 {% include "base/select.nunjucks" %}
     {% endcall %}
 
     <h4 class="base--h4">Basic Input</h4>
-    {% call codeblock() %}
+    {% call codeblock('markup') %}
 {% include "base/input.nunjucks" %}
     {% endcall %}
 
     <h4 class="base--h4">Color Input</h4>
-    {% call codeblock() %}
+    {% call codeblock('markup') %}
 {% include "base/input--color.nunjucks" %}
     {% endcall %}
 
     <h4 class="base--h4">Date Input</h4>
-    {% call codeblock() %}
+    {% call codeblock('markup') %}
 {% include "base/input--date.nunjucks" %}
     {% endcall %}
 
     <h4 class="base--h4">Date Time Local Input</h4>
-    {% call codeblock() %}
+    {% call codeblock('markup') %}
 {% include "base/input--datetime-local.nunjucks" %}
     {% endcall %}
 
     <h4 class="base--h4">File Input</h4>
-    {% call codeblock() %}
+    {% call codeblock('markup') %}
 {% include "base/input--file.nunjucks" %}
     {% endcall %}
 
     <h4 class="base--h4">Hidden Input</h4>
-    {% call codeblock() %}
+    {% call codeblock('markup') %}
 {% include "base/input--hidden.nunjucks" %}
     {% endcall %}
 
     <h4 class="base--h4">Month Input</h4>
-    {% call codeblock() %}
+    {% call codeblock('markup') %}
 {% include "base/input--month.nunjucks" %}
     {% endcall %}
 
     <h4 class="base--h4">Number Input</h4>
-    {% call codeblock() %}
+    {% call codeblock('markup') %}
 {% include "base/input--number.nunjucks" %}
     {% endcall %}
 
     <h4 class="base--h4">Password Input</h4>
-    {% call codeblock() %}
+    {% call codeblock('markup') %}
 {% include "base/input--password.nunjucks" %}
     {% endcall %}
 
     <h4 class="base--h4">Range Input</h4>
-    {% call codeblock() %}
+    {% call codeblock('markup') %}
 {% include "base/input--range.nunjucks" %}
     {% endcall %}
 
     <h4 class="base--h4">Search Input</h4>
-    {% call codeblock() %}
+    {% call codeblock('markup') %}
 {% include "base/input--search.nunjucks" %}
     {% endcall %}
 
     <h4 class="base--h4">Telephone Input</h4>
-    {% call codeblock() %}
+    {% call codeblock('markup') %}
 {% include "base/input--tel.nunjucks" %}
     {% endcall %}
 
     <h4 class="base--h4">Text Input</h4>
-    {% call codeblock() %}
+    {% call codeblock('markup') %}
 {% include "base/input--text.nunjucks" %}
     {% endcall %}
 
     <h4 class="base--h4">Time Input</h4>
-    {% call codeblock() %}
+    {% call codeblock('markup') %}
 {% include "base/input--time.nunjucks" %}
     {% endcall %}
 
     <h4 class="base--h4">Url Input</h4>
-    {% call codeblock() %}
+    {% call codeblock('markup') %}
 {% include "base/input--url.nunjucks" %}
     {% endcall %}
 
     <h4 class="base--h4">Week Input</h4>
-    {% call codeblock() %}
+    {% call codeblock('markup') %}
 {% include "base/input--week.nunjucks" %}
     {% endcall %}
 
@@ -154,23 +154,23 @@
     <hr class="base--hr">
 
     <h4 class="base--h4">Tab Panels</h4>
-    {% call codeblock() %}
+    {% call codeblock('markup') %}
 {% include "components/tab-panels.nunjucks" %}
     {% endcall %}
 
     <h4 class="base--h4">Clickable Tabs</h4>
-    {% call codeblock() %}
+    {% call codeblock('markup') %}
 {% include "components/clickable-tab.nunjucks" %}
     {% endcall %}
 
     <h4 class="base--h4">Clickable Tabs as Radio Buttons</h4>
-    {% call codeblock() %}
+    {% call codeblock('markup') %}
 {% include "components/clickable-tab-with-radio.nunjucks" %}
     {% endcall %}
 
     <h4 class="base--h4">Rounded Tags</h4>
-    {% call codeblock() %}
-{% include "components/tag.nunjucks" %}
+    {% call codeblock('markup') %}
+{% include "components/metatag.nunjucks" %}
     {% endcall %}
 
     <h3 class="content--heading base--h3">SASS Utilities</h3>
