@@ -73,7 +73,6 @@
 
 .right-pane ._container {
   margin-left: get('rhythm') * 3 / 2;
-  // width: 100%;
 }
 
 /*
@@ -119,6 +118,9 @@
 /* Makes the font smaller for all subheader elements. */
 .tocify-subheader li {
   font-size: 1em;
+  transition: 0.2s;
+  padding-top: 0.25rem;
+  padding-bottom: 0.15rem;
 }
 
 /* Further indents second level subheader elements. */
@@ -149,6 +151,10 @@
 
 .tocify-subheader li.active {
   color: get('primary color');
+
+  & a {
+    border-bottom: 2px solid get('primary color');
+  }
 }
 
 .tocify ul {

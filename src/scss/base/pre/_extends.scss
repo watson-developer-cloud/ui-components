@@ -18,7 +18,10 @@
   overflow: auto;
   margin-top: 0rem;
 
-  border: 1px solid rgba(color('gray', 20), .25);
+  white-space: pre-wrap;
+  border-left: 4px solid color('purple', 50);
+  padding: get('rhythm') / 2;
+  background-color: color('white', 30);
 
   code,
   .base--code {

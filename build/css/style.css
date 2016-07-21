@@ -561,7 +561,10 @@ body {
   margin: .5em 0;
   overflow: auto;
   margin-top: 0rem;
-  border: 1px solid rgba(199, 199, 199, 0.25); }
+  white-space: pre-wrap;
+  border-left: 4px solid #9855d4;
+  padding: 1rem;
+  background-color: #f9f9f9; }
   .base--pre code, .base--pre .base--code {
     padding: 1em;
     font-size: 1em;
@@ -1102,7 +1105,11 @@ body {
 
 /* Makes the font smaller for all subheader elements. */
 .tocify-subheader li {
-  font-size: 1em; }
+  font-size: 1em;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  padding-top: 0.25rem;
+  padding-bottom: 0.15rem; }
 
 /* Further indents second level subheader elements. */
 .tocify-subheader .tocify-subheader {
@@ -1126,6 +1133,8 @@ body {
 
 .tocify-subheader li.active {
   color: #9855d4; }
+  .tocify-subheader li.active a {
+    border-bottom: 2px solid #9855d4; }
 
 .tocify ul {
   margin-top: 0.5rem;

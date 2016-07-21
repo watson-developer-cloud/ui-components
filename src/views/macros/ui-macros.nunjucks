@@ -3,7 +3,7 @@
 <div class="code-block">
   <div class="code-block--code">
     <pre class="base--pre">
-{{ caller() | replace('<', '&lt;') }}
+{{ caller() | replace('<', '&lt;') | trim() }}
     </pre>
   </div>
   <div class="code-block--ui">
