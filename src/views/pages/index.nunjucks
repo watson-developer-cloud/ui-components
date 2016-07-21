@@ -16,6 +16,8 @@
 
     <h3 class="content--heading base--h3">Typography</h3>
     <hr class="base--hr">
+
+    <h4 class="base--h4">Headers</h4>
     {% call codeblock('markup') %}
 {% include "base/h1.nunjucks" %}
 {% include "base/h2.nunjucks" %}
@@ -23,7 +25,15 @@
 {% include "base/h4.nunjucks" %}
 {% include "base/h5.nunjucks" %}
 {% include "base/h6.nunjucks" %}
+    {% endcall %}
+
+    <h4 class="base--h4">Paragraph</h4>
+    {% call codeblock('markup') %}
 {% include "base/p.nunjucks" %}
+    {% endcall %}
+
+    <h4 class="base--h4">Link, Emphasized, Strong</h4>
+    {% call codeblock('markup') %}
 {% include "base/a.nunjucks" %}
 {% include "base/em.nunjucks" %}
 {% include "base/strong.nunjucks" %}

@@ -757,12 +757,6 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
   text-shadow: none;
   background: #b3d4fc; }
 
-/* Code blocks */
-pre[class*="language-"] {
-  padding: 1em;
-  margin: .5em 0;
-  overflow: auto; }
-
 /* Inline code */
 :not(pre) > code[class*="language-"] {
   padding: .1em;
@@ -829,10 +823,6 @@ pre[class*="language-"] {
   cursor: help; }
 
 /* Custom prism rules for the Relay docs */
-code[class*="language-"],
-pre[class*="language-"] {
-  margin-bottom: 10px; }
-
 .prism + .prism {
   margin-top: -15px; }
 
