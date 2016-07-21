@@ -154,6 +154,21 @@
 {% include "components/tab-panels.nunjucks" %}
   {% endcall %}
 
+  <h4 class="base--h4">Clickable Tabs</h4>
+  {% call codeblock() %}
+{% include "components/clickable-tab.nunjucks" %}
+  {% endcall %}
+
+  <h4 class="base--h4">Clickable Tabs as Radio Buttons</h4>
+  {% call codeblock() %}
+{% include "components/clickable-tab-with-radio.nunjucks" %}
+  {% endcall %}
+
+  <h4 class="base--h4">Rounded Tags</h4>
+  {% call codeblock() %}
+{% include "components/tag.nunjucks" %}
+  {% endcall %}
+
   <div class="content--heading base--h3">SASS Utilities</div>
   <hr class="base--hr">
 
