@@ -856,8 +856,6 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
     transition: 0.2s;
     width: 100%;
     z-index: 1000; }
-    .code-block .base--pre:hover {
-      width: 250%; }
 
 .color-tile {
   height: 8rem;
