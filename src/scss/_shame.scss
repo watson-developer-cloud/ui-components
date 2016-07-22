@@ -55,18 +55,123 @@
   }
 }
 
-.left-column {
+.column-1 {
   @include grid(6);
-  background-color: color('purple', 30);
+  background-color: color('purple', 50);
+  height: 3rem;
+}
+
+.column-2 {
+  @include grid(3);
+  background-color: color('teal', 50);
   height: 3rem;
   margin-top: 0rem;
 }
 
-.right-column {
-  @include grid(6, $has-right-gutter: false);
-  background-color: color('teal', 30);
+.column-3 {
+  @include grid(3, $has-right-gutter: false);
+  background-color: color('gray', 50);
   height: 3rem;
   margin-top: 0rem;
+}
+
+.left-division {
+  @include divisions(2);
+  background-color: color('purple', 30);
+  height: 7rem;
+}
+
+.right-division {
+  @include divisions(2);
+  margin-top: 0rem;
+  background-color: color('teal', 30);
+  height: 7rem;
+}
+
+
+.grid-item {
+  @include divisions(5);
+  background-color: color('purple', 50);
+  height: 3rem;
+  margin-top: 0rem;
+
+  &:nth-of-type(2n) {
+    background-color: color('teal', 50);
+  }
+}
+
+
+.breakpoint-example-1 {
+  display: block;
+  background-color: color('purple', 50);
+  padding: get('rhythm') / 2;
+  color: get('white');
+
+  @include breakpoint(get('large')) {
+    @include grid(6);
+  }
+}
+
+.breakpoint-example-2 {
+  display: block;
+  background-color: color('teal', 50);
+  padding: get('rhythm') / 2;
+  color: get('white');
+  margin-top: 0rem;
+
+  @include breakpoint(get('large')) {
+    @include grid(6, $has-right-gutter: false);
+  }
+}
+
+
+.element-with-dark-text {
+  display: block;
+  padding: get('rhythm') / 2;
+  background-color: color('purple', 20);
+  color: set-text-color(color('purple', 20));
+}
+
+.element-with-light-text {
+  display: block;
+  padding: get('rhythm') / 2;
+  background-color: color('purple', 80);
+  color: set-text-color(color('purple', 80));
+}
+
+.lots-of-colors {
+  display: block;
+  padding: get('rhythm') / 2;
+  background-color: color('white', 40);
+
+  span:nth-of-type(1) {
+    color: color('green', 50);
+  }
+
+  span:nth-of-type(2) {
+    color: color('blue', 40);
+  }
+
+  span:nth-of-type(3) {
+    color: color('yellow', 30);
+  }
+}
+
+
+.get-example {
+  display: block;
+  padding: get('rhythm') / 2;
+  background-color: get('secondary color');
+  color: get('white');
+  margin-top: 0rem;
+
+  @include breakpoint(get('medium')) {
+    @include grid(6);
+
+    &:nth-of-type(2) {
+      margin-right: 0rem;
+    }
+  }
 }
 
 
