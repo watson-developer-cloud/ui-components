@@ -4,6 +4,7 @@ Welcome to the git repo for the Watson UI Component Library.
 This SASS library is a development resource to help developers quickly and consistently develop quality ui.
 
 The Main Website: https://pages.github.ibm.com/watson/ui-component-library/
+
 The Main Contact: [James Zhang](http://faces.tap.ibm.com/bluepages/)
 
 # Getting Started
