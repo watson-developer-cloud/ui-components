@@ -1,0 +1,22 @@
+.metatag {
+  $tag--color: color('purple', 60);
+  $tag--text-color: set-text-color($tag--color);
+
+  @include base--button($border: $tag--color, $background: $tag--color);
+  color: $tag--text-color;
+  padding: 0.2em 1.75em;
+  font-weight: 300;
+  font-size: 0.9em;
+
+  &:hover,
+  &:focus {
+    background-color: $tag--color;
+    border-color: $tag--color;
+    color: $tag--text-color;
+  }
+
+  &:active {
+    transition: 0s;
+    transform: translateY(0px);
+  }
+}

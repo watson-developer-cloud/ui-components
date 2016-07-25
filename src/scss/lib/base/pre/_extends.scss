@@ -1,0 +1,35 @@
+%base--pre-build {
+  @extend %font--mono;
+  display: block;
+  hyphens: none;
+  word-spacing: normal;
+  text-align: left;
+  word-break: normal;
+  white-space: pre;
+  word-wrap: normal;
+  direction: ltr;
+  tab-size: 2;
+  overflow-y: overlay;
+}
+
+%base--pre {
+  @extend %base--pre-build;
+  margin: .5em 0;
+  overflow: auto;
+  margin-top: 0rem;
+
+  white-space: normal;
+  border-left: 4px solid color('purple', 50);
+  padding: get('rhythm') / 2;
+  background-color: color('white', 30);
+
+  code,
+  .base--code {
+    @extend %base--pre-build;
+    padding: 1em;
+    font-size: 1em;
+    outline: 0;
+    margin: 0rem;
+    padding: 0rem;
+  }
+}

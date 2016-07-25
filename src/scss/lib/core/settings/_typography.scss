@@ -1,0 +1,10 @@
+$TypographySettings: (
+  'sans serif': ('Helvetica Neue', Helvetica, 'Open Sans', Arial, 'Lucida Grande', 'Roboto', sans-serif),
+  'monospace': (source-code-pro, Menlo, Consolas, monospace),
+  'weight bold': 700,
+  'weight normal': 400,
+  'weight light': 200,
+  'rhythm': 2rem
+);
+
+$GlobalSettings: map-merge($GlobalSettings, $TypographySettings);

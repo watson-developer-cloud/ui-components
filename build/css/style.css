@@ -21,13 +21,6 @@ article:before,
   display: table;
   clear: both; }
 
-/*! Reset/normalize hybrid with major contributions from normalize.css, html5doctor.com Reset Stylesheet, and http://html5reset.org/
-
-* Sam Richard - http://snugug.com/
-* Nicholas Gallagher, Jonathan Neal - http://necolas.github.io/normalize.css/
-* Richard Clark - http://richclarkdesign.com
-* Tim Murtaugh - http://monkeydo.biz/
-*/
 abbr,
 address,
 article,
@@ -1365,8 +1358,7 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
   font-size: 1.5625em;
   font-weight: 400;
   padding-top: 1.75rem;
-  padding-right: 1.5rem;
-  text-align: right; }
+  padding-right: 1.5rem; }
 
 /* The Table of Contents is composed of multiple nested unordered lists.  These styles remove the default styling of an unordered list because it is ugly. */
 .tocify ul, .tocify li {
@@ -1377,29 +1369,49 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
 
 /* Top level header elements */
 .tocify-header {
-  text-indent: 10px; }
+  text-indent: 1rem; }
+  .tocify-header > .tocify-item {
+    font-weight: bold;
+    margin-bottom: 2rem; }
+    .tocify-header > .tocify-item:hover a {
+      border-bottom: 3px solid #008571; }
 
 /* Top level subheader elements.  These are the first nested items underneath a header element. */
 .tocify-subheader {
-  text-indent: 20px;
+  text-indent: 3rem;
   display: none;
   font-size: 0.8em; }
 
 /* Makes the font smaller for all subheader elements. */
 .tocify-subheader li {
   font-size: 1em;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  padding-top: 0.25rem;
-  padding-bottom: 0.15rem; }
+  font-weight: 400;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem; }
+  .tocify-subheader li a {
+    border-bottom: 2px solid transparent; }
+  .tocify-subheader li:hover {
+    color: #008571; }
+    .tocify-subheader li:hover a {
+      border-bottom: 2px solid #008571; }
+  .tocify-subheader li:active {
+    color: #003c32; }
+    .tocify-subheader li:active a {
+      border-bottom: 2px solid #003c32; }
+  .tocify-subheader li.active a {
+    border-bottom: 2px solid #008571; }
+  .tocify-subheader li.active:active {
+    color: #003c32; }
+    .tocify-subheader li.active:active a {
+      border-bottom: 2px solid #003c32; }
 
 /* Further indents second level subheader elements. */
 .tocify-subheader .tocify-subheader {
-  text-indent: 30px; }
+  text-indent: 4rem; }
 
 /* Further indents third level subheader elements. You can continue this pattern if you have more nested elements. */
 .tocify-subheader .tocify-subheader .tocify-subheader {
-  text-indent: 40px; }
+  text-indent: 5rem; }
 
 /* Twitter Bootstrap Override Style */
 .nav-list > li > a, .nav-list .nav-header {
@@ -1413,10 +1425,11 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
 .tocify-subheader[data-tag="3"] {
   display: block; }
 
-.tocify-subheader li.active {
-  color: #9855d4; }
-  .tocify-subheader li.active a {
-    border-bottom: 2px solid #9855d4; }
+.tocify-subheader[data-tag="4"] li {
+  font-weight: 300;
+  font-size: 1em;
+  padding-top: 0.5rem;
+  padding-bottom: 0.25rem; }
 
 .tocify ul {
   margin-top: 0.5rem;

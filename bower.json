@@ -1,6 +1,6 @@
 {
-  "name": "pattern-library",
-  "description": "A bare bones template for creating a pattern library using Sass",
+  "name": "ui-component-library",
+  "description": "Watson UI Component Library",
   "main": "gulpfile.js",
   "authors": [
     "James Zhang <james.zhang75024@gmail.com>"
@@ -9,15 +9,16 @@
   "keywords": [
     "pattern",
     "library",
-    "sass"
+    "sass",
+    "components",
+    "ui",
+    "bootstrap"
   ],
   "homepage": "",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
-    "test",
-    "tests"
   ],
   "dependencies": {
     "breakpoint-sass": "^2.7.0",

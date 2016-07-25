@@ -1,0 +1,13 @@
+body {
+  margin: 0rem;
+  background: get('background color');
+  color: get('text color');
+  font-family: get('sans serif');
+  font-weight: get('weight normal');
+  line-height: 1.5;
+
+  & * + * {
+    margin-top: get('rhythm') / 2;
+  }
+
+}

@@ -1,0 +1,19 @@
+@mixin base--a($color: null, $background: null) {
+
+  color: color('gray', 90);
+  border-bottom: 2px solid color('gray', 90);
+  font-weight: 400;
+  text-decoration: none;
+  transition: 0.2s;
+
+  &:visited {
+    color: color('gray', 90);
+    border-bottom: 2px solid color('gray', 90);
+  }
+
+  &:hover,
+  &:focus {
+    color: color('purple', 50);
+    border-bottom: 2px solid color('purple', 50);
+  }
+}

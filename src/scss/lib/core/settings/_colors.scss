@@ -1,0 +1,10 @@
+$ColorScheme: (
+  'primary color': color('purple', 50),
+  'secondary color': color('teal', 50),
+  'background color': color('white', 10),
+  'text color': color('gray', 80),
+  'white': color('white', 10),
+  'black': color('gray', 100)
+);
+
+$GlobalSettings: map-merge($GlobalSettings, $ColorScheme);
