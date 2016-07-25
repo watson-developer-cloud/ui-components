@@ -7,6 +7,8 @@ The Main Website: https://pages.github.ibm.com/watson/ui-component-library/
 
 The Main Contact: [James Zhang](http://faces.tap.ibm.com/bluepages/)
 
+This project follows the new Watson Design Guide.  Please contact [Jennifer Sukis](http://faces.tap.ibm.com/bluepages/profile.html?email=jsukis@us.ibm.com) for any questions regarding that.
+
 # Getting Started
 
 ## Prerequisites
