@@ -38,3 +38,16 @@
   ```bash
   $ gulp
   ```
+
+## Publishing a Github Page
+
+To publish to the [main site](https://pages.github.ibm.com/watson/ui-component-library/), use the `git subtree push --prefix build origin gh-pages` and update the `gh-pages` branch.
+
+
+## Build the public Bower Component
+
+1. Use gulp command
+
+  ```bash
+  $ gulp bower
+  ```
