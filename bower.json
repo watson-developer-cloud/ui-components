@@ -18,7 +18,7 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components",
+    "bower_components"
   ],
   "dependencies": {
     "breakpoint-sass": "^2.7.0",
