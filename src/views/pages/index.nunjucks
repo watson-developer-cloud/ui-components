@@ -3,9 +3,7 @@
 {% extends "templates/template.nunjucks" %}
 
 {% block body %}
-<div id="toc">
-
-</div>
+<div id="toc"></div>
 <div class="right-pane">
   <div class="_container">
     <h1 class="base--h1">Watson UI Components</h1>
