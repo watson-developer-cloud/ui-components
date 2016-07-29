@@ -3,3 +3,7 @@
 <button class="base--button base--button_reset" type="reset">Reset Button</button>
 <button class="base--button base--button_black">Black Button</button>
 <button class="base--button base--button_teal">Teal Button</button>
+<button class="base--button base--button_icon-hyperlink">
+  <span class="icon icon-reset base--button_icon-hyperlink--icon"></span>
+  <span class="base--button_icon-hyperlink--link">Reset</span>
+</button>

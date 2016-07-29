@@ -18,4 +18,22 @@
   &_teal {
     @include base--button($color: color('teal', 50), $border: color('teal', 50));
   }
+
+  &_icon-hyperlink {
+    @include button--strip-styles();
+    text-decoration: none;
+
+    &--icon {
+      margin-right: 0.2em;
+
+      &.icon-reset {
+        font-size: 1.5em;
+      }
+    }
+
+    &--link {
+      @include base--a;
+      padding-bottom: 0.1em;
+    }
+  }
 }

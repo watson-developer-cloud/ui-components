@@ -23,6 +23,28 @@
 @import 'h6/h6';
 
 //////////////////////////////
+// Typography Tags
+//////////////////////////////
+
+// a
+@import 'a/a';
+// em
+@import 'em/em';
+// strong
+@import 'strong/strong';
+// p
+@import 'p/p';
+// code
+@import 'code/code';
+// pre
+@import 'pre/pre';
+// lists
+@import 'ul/ul';
+@import 'ol/ol';
+// blockquote
+@import 'blockquote/blockquote';
+
+//////////////////////////////
 // Form Elements
 //////////////////////////////
 
@@ -84,28 +106,6 @@
 @import 'header/header';
 // footer
 @import 'footer/footer';
-
-//////////////////////////////
-// Typography Tags
-//////////////////////////////
-
-// a
-@import 'a/a';
-// em
-@import 'em/em';
-// strong
-@import 'strong/strong';
-// p
-@import 'p/p';
-// code
-@import 'code/code';
-// pre
-@import 'pre/pre';
-// lists
-@import 'ul/ul';
-@import 'ol/ol';
-// blockquote
-@import 'blockquote/blockquote';
 
 //////////////////////////////
 // Tabular Tags
