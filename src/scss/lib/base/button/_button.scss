@@ -11,4 +11,11 @@
   &_reset {
     @include base--button();
   }
+
+  &_black {
+    @include base--button($color: color('gray', 90), $border: color('gray', 90));
+  }
+  &_teal {
+    @include base--button($color: color('teal', 50), $border: color('teal', 50));
+  }
 }

@@ -1,7 +1,8 @@
 {
   "name": "watson-components",
   "description": "Watson UI Component Library",
-  "main": "gulpfile.js",
+  "version": "0.0.3",
+  "main": "_watson-components.scss",
   "authors": [
     "James Zhang <james.zhang75024@gmail.com>"
   ],

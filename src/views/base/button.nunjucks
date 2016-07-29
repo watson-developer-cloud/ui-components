@@ -1,3 +1,5 @@
 <button class="base--button">Button</button>
 <button class="base--button base--button_submit" type="submit">Submit Button</button>
 <button class="base--button base--button_reset" type="reset">Reset Button</button>
+<button class="base--button base--button_black">Black Button</button>
+<button class="base--button base--button_teal">Teal Button</button>

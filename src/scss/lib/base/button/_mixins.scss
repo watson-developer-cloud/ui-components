@@ -32,4 +32,15 @@
   text-decoration: underline;
   padding: 0rem;
   margin: 0rem;
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    border-color: transparent;
+    color: color('gray', 90);
+  }
+  &:active {
+    transition: 0s;
+    transform: none;
+  }
 }

@@ -503,6 +503,46 @@ body {
     -webkit-transform: translateY(2px);
             transform: translateY(2px); }
 
+.base--button_black {
+  padding: 0.25em 2em;
+  color: #121212;
+  font-weight: 500;
+  background-color: transparent;
+  border: 2px solid #121212;
+  border-radius: 10rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  display: inline-block; }
+  .base--button_black:hover, .base--button_black:focus {
+    background-color: rgba(38, 38, 38, 0);
+    border-color: #383838;
+    color: #383838; }
+  .base--button_black:active {
+    -webkit-transition: 0s;
+    transition: 0s;
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px); }
+
+.base--button_teal {
+  padding: 0.25em 2em;
+  color: #008571;
+  font-weight: 500;
+  background-color: transparent;
+  border: 2px solid #008571;
+  border-radius: 10rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  display: inline-block; }
+  .base--button_teal:hover, .base--button_teal:focus {
+    background-color: rgba(38, 38, 38, 0);
+    border-color: #00d2b2;
+    color: #00d2b2; }
+  .base--button_teal:active {
+    -webkit-transition: 0s;
+    transition: 0s;
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px); }
+
 .base--a {
   color: #121212;
   border-bottom: 2px solid #121212;
