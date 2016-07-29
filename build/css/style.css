@@ -843,21 +843,20 @@ body {
           transform-origin: center center;
   -webkit-animation: b 4s ease-out infinite;
           animation: b 4s ease-out infinite; }
-
-.loader__path {
-  stroke-dasharray: 125px;
-  stroke-dashoffset: 9.7px;
-  r: 20px;
-  cx: 50px;
-  cy: 50px;
-  fill: transparent;
-  stroke: #9855d4;
-  stroke-width: 4.65116px;
-  stroke-linecap: butt;
-  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.5, 0.08, 0, 1);
-  transition: stroke-dashoffset 1s cubic-bezier(0.5, 0.08, 0, 1);
-  -webkit-animation: a 4s ease-out infinite;
-  animation: a 4s ease-out infinite; }
+  .loader--path {
+    stroke-dasharray: 125px;
+    stroke-dashoffset: 9.7px;
+    r: 20px;
+    cx: 50px;
+    cy: 50px;
+    fill: transparent;
+    stroke: #9855d4;
+    stroke-width: 4.65116px;
+    stroke-linecap: butt;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.5, 0.08, 0, 1);
+    transition: stroke-dashoffset 1s cubic-bezier(0.5, 0.08, 0, 1);
+    -webkit-animation: a 4s ease-out infinite;
+    animation: a 4s ease-out infinite; }
 
 @-webkit-keyframes a {
   0% {
