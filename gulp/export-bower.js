@@ -66,3 +66,9 @@ gulp.task('bower:bower-json', function() {
   return gulp.src([bowerSrcPath + '/bower.json'])
     .pipe(gulp.dest(destPath));
 });
+
+gulp.task('bower:watch', function() {
+  return gulp.watch(watchPath).on('change', function() {
+    runSequence('bower', 'browser-sync-reload');
+  });
+});

@@ -661,7 +661,8 @@ input[type="week"]::-webkit-inner-spin-button {
   text-decoration: underline;
   padding: 0rem;
   margin: 0rem;
-  text-decoration: none; }
+  text-decoration: none;
+  color: #121212; }
   .base--button_icon-hyperlink:hover, .base--button_icon-hyperlink:focus {
     background-color: transparent;
     border-color: transparent;
@@ -725,7 +726,7 @@ input[type="week"]::-webkit-inner-spin-button {
 @font-face {
   font-family: "icons";
   src: url("../../fonts/icon-fonts/icons.eot");
-  src: url("../../fonts/icon-fonts/icons.eot?#iefix") format("eot"), url("../../fonts/icon-fonts/icons.woff") format("woff"), url("../../fonts/icon-fonts/icons.ttf") format("truetype"), url("../../fonts/icon-fonts/icons.svg#icons") format("svg"); }
+  src: url("../../fonts/icon-fonts/icons.eot?#iefix") format("eot"), url("../../fonts/icon-fonts/icons.woff2") format("woff2"), url("../../fonts/icon-fonts/icons.woff") format("woff"), url("../../fonts/icon-fonts/icons.ttf") format("truetype"), url("../../fonts/icon-fonts/icons.svg#icons") format("svg"); }
 
 .icon:before {
   font-family: "icons";

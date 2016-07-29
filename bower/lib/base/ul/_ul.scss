@@ -3,4 +3,24 @@
 
 .base--ul {
   @extend %base--ul;
+
+  &_inline {
+    .base--li {
+      display: inline-block;
+      margin-top: 0rem;
+      margin-right: get('rhythm') / 2;
+
+      &:before {
+        display: inline-block;
+      }
+    }
+  }
+
+  &_no-bullets {
+    .base--li {
+      &:before {
+        display: none;
+      }
+    }
+  }
 }

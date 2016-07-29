@@ -10,11 +10,14 @@ module.exports = {
       root: src,
       styles: src + '/scss',
       views: src + '/views',
-      bower: src + '/bower'
+      bower: src + '/bower',
+      icons: src + '/icons'
     },
     build: {
       root: build,
-      styles: build + '/css'
+      styles: build + '/css',
+      iconFonts: build + '/fonts/icon-fonts',
+      icons: build + '/images/icons'
     },
     bower: {
       root: bower,

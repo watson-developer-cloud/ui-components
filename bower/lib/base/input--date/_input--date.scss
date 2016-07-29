@@ -3,3 +3,13 @@
 .base--date-input {
   @extend %base--date-input;
 }
+
+// Chrome spin button affects height
+input[type="date"]::-webkit-inner-spin-button,
+input[type="datetime"]::-webkit-inner-spin-button,
+input[type="datetime-local"]::-webkit-inner-spin-button,
+input[type="month"]::-webkit-inner-spin-button,
+input[type="time"]::-webkit-inner-spin-button,
+input[type="week"]::-webkit-inner-spin-button {
+  height: 0rem;
+}

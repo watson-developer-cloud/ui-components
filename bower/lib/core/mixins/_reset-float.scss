@@ -1,0 +1,5 @@
+@mixin reset-float {
+  float: none;
+  clear: both;
+  display: block;
+}

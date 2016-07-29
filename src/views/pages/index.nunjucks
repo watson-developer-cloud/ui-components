@@ -380,10 +380,10 @@ $BreakpointSettings: (
   'xx-small': 320px,
   'x-small': 360px,
   'small': 640px,
-  'heading nav inline breakpoint': 700px,
   'medium': 768px,
   'large': 1024px,
-  'x-large': 1200px
+  'x-large': 1200px,
+  'xx-large': 1280px
 );
         </code>
       </pre>

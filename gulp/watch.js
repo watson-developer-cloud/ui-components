@@ -13,7 +13,9 @@ var tasks,
 
 tasks = [
   'styles',
-  'views'
+  'views',
+  'icon-fonts',
+  'bower'
 ];
 
 watches = tasks.map(function(element) {

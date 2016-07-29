@@ -22,6 +22,7 @@
   &_icon-hyperlink {
     @include button--strip-styles();
     text-decoration: none;
+    color: color('gray', 90);
 
     &--icon {
       margin-right: 0.2em;
