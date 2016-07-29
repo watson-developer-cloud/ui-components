@@ -84,9 +84,14 @@
 {% include "base/textarea.nunjucks" %}
     {% endcall %}
 
-    <h4 class="base--h4">Dropdown</h4>
+    <h4 class="base--h4">Dropdown Select</h4>
     {% call codeblock('markup') %}
 {% include "base/select.nunjucks" %}
+    {% endcall %}
+
+    <h4 class="base--h4">Lists</h4>
+    {% call codeblock('markup') %}
+{% include "base/ul.nunjucks" %}
     {% endcall %}
 
     <h4 class="base--h4">Basic Input</h4>

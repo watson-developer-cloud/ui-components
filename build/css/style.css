@@ -396,6 +396,16 @@ body {
 .base--ul li:before, .base--ul .base--li:before {
   content: "•"; }
 
+.base--ul_inline .base--li {
+  display: inline-block;
+  margin-top: 0rem;
+  margin-right: 1rem; }
+  .base--ul_inline .base--li:before {
+    display: inline-block; }
+
+.base--ul_no-bullets .base--li:before {
+  display: none; }
+
 .base--ol li:before, .base--ol .base--li:before {
   content: counter(table-ol) "."; }
 
