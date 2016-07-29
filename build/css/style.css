@@ -692,6 +692,16 @@ body {
 .base--hr {
   border-top: 2px solid #c7c7c7; }
 
+.base--hr_small {
+  width: 23.40426%;
+  float: left;
+  display: block;
+  float: none;
+  clear: both;
+  display: block;
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+
 @font-face {
   font-family: "icons";
   src: url("../../fonts/icon-fonts/icons.eot");

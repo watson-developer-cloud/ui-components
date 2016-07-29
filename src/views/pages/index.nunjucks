@@ -67,6 +67,13 @@
 {% include "base/radio.nunjucks" %}
     {% endcall %}
 
+    <h4 class="base--h4">HR</h4>
+    {% call codeblock('markup') %}
+{% include "base/hr.nunjucks" %}
+    {% endcall %}
+
+
+
     <h4 class="base--h4">Table</h4>
     {% call codeblock('markup') %}
 {% include "base/table.nunjucks" %}
