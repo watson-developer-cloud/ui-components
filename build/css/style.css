@@ -912,7 +912,21 @@ input[type="week"]::-webkit-inner-spin-button {
   padding: 0rem 1rem; }
   @media (min-width: 768px) {
     ._container {
-      width: 768px; } }
+      max-width: 768px; } }
+  ._container_xx-small {
+    max-width: 320px; }
+  ._container_x-small {
+    max-width: 360px; }
+  ._container_small {
+    max-width: 640px; }
+  ._container_medium {
+    max-width: 768px; }
+  ._container_large {
+    max-width: 1024px; }
+  ._container_x-large {
+    max-width: 1200px; }
+  ._container_xx-large {
+    max-width: 1280px; }
 
 /* http://prismjs.com/download.html?themes=prism&languages=markup+clike+javascript+jsx */
 /**

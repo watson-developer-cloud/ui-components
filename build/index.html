@@ -1072,6 +1072,42 @@ for (var i = 0; i < colorTiles.length; i++) {
 
 
 
+    <h3 class="content--heading base--h3">Layouts</h3>
+    <hr class="base--hr">
+
+    <h4 class="base--h4">Container</h4>
+    <p class="base--p">
+      Containers define main body layouts and contain responsive grid elements.
+    </p>
+    <div class="code-block">
+      <pre class="base--pre language-scss">
+        <code class="language-html">
+&lt;div class="_container"&gt;
+  &lt;div class="row"&gt;
+    &lt;!-- responsive grid elements --&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+    <p class="base--p">
+      In this library, there are containers of different widths.
+    </p>
+    <div class="code-block">
+      <pre class="base--pre language-scss">
+        <code class="language-html">
+&lt;!-- max-width of 768px --&gt;
+&lt;div class="_container"&gt;&lt;/div&gt;
+&lt;!-- max-width of 1024px --&gt;
+&lt;div class="_container _container_large"&gt;&lt;/div&gt;
+&lt;!-- max-width of 1200px --&gt;
+&lt;div class="_container _container_x-large"&gt;&lt;/div&gt;
+&lt;!-- max-width of 1280px --&gt;
+&lt;div class="_container _container_xx-large"&gt;&lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
     <h3 class="content--heading base--h3">SASS Utilities</h3>
     <hr class="base--hr">
 

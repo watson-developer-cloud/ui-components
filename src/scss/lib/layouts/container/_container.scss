@@ -4,6 +4,12 @@
   padding: 0rem get('rhythm') / 2;
 
   @include breakpoint(get('medium')) {
-    width: get('medium');
+    max-width: get('medium');
+  }
+
+  @each $key, $breakpoint in $BreakpointSettings {
+    &_#{$key} {
+      max-width: #{$breakpoint};
+    }
   }
 }
