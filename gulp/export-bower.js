@@ -14,14 +14,23 @@ var watchPath = config.paths.src.styles + '/**/*.scss',
     destPath = config.paths.bower.root,
     bowerSrcPath = config.paths.src.bower;
 
-gulp.task('bower', ['bower:scss', 'bower:css', 'bower:bower-configs']);
+// gulp.task('bower', ['bower:scss', 'bower:css', 'bower:bower-configs', 'bower:icons', 'bower:icon-fonts']);
+
+gulp.task('bower', function() {
+  return runSequence('bower:clean', ['bower:scss', 'bower:css', 'bower:bower-configs', 'bower:icons', 'bower:icon-fonts']);
+});
+
+gulp.task('bower:clean', function() {
+  return gulp.src([destPath]).pipe(clean());
+});
 
 gulp.task('bower:scss', function() {
   return runSequence(
     'bower:scss-export',
     'bower:scss-change-name',
     'bower:scss-clean',
-    'bower:clean-style');
+    'bower:clean-style'
+  );
 });
 
 gulp.task('bower:scss-export', function() {
@@ -60,11 +69,20 @@ gulp.task('bower:clean-style', function() {
     .pipe(clean());
 });
 
-gulp.task('bower:bower-configs', ['bower:bower-json']);
+gulp.task('bower:bower-configs', ['bower:bower-src']);
 
-gulp.task('bower:bower-json', function() {
-  return gulp.src([bowerSrcPath + '/bower.json'])
+gulp.task('bower:bower-src', function() {
+  return gulp.src([bowerSrcPath + '/**/**.*'])
     .pipe(gulp.dest(destPath));
+});
+
+gulp.task('bower:icons', function() {
+  return gulp.src(config.paths.src.icons + '/**.*')
+    .pipe(gulp.dest(destPath + '/icons'));
+});
+gulp.task('bower:icon-fonts', function() {
+  return gulp.src(config.paths.build.iconFonts + '/**.*')
+    .pipe(gulp.dest(destPath + '/icons-fonts'));
 });
 
 gulp.task('bower:watch', function() {
