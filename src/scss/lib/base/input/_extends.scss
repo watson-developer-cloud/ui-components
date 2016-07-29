@@ -6,6 +6,8 @@
   font-weight: 300;
   border: get('input border width') solid get('input border color');
   background-color: get('background color');
+  line-height: normal;
+  display: block;
 
   &:focus {
     outline: get('focus border width') solid get('primary color');
