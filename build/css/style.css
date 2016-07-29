@@ -566,7 +566,10 @@ body {
 .base--p {
   font-size: 1em;
   font-weight: 400;
-  color: #5a5a5a; }
+  color: #121212; }
+
+.base--p_light {
+  color: #777677; }
 
 .base--code {
   padding: .2em .5em;
