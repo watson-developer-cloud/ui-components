@@ -61,7 +61,19 @@ To publish to the [main site](https://pages.github.ibm.com/watson/ui-component-l
   ```bash
   $ gulp bower
   ```
-  
+
+## Versioning Bower Component
+
+To bump the version of the bower component, update the version property in the bower component's `bower.json`, and then
+match the version with git tags.
+
+Example of git tags:
+
+```bash
+$ git tag -a v0.0.5 -m "Release version 0.0.5"
+$ git push origin master --tags
+```
+
 ## Credits
 
 This project could not have been made possible without the hard work from the team that worked on the previous [Watson Design Guide](https://github.com/IBM-Watson/design-guide).  Many concepts and Sass techniques were borrowed from their project, while others were modified.
