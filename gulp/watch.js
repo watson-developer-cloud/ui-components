@@ -13,6 +13,7 @@ var tasks,
 
 tasks = [
   'styles',
+  'scripts',
   'views',
   'icon-fonts'
 ];

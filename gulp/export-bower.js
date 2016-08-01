@@ -4,6 +4,8 @@ var config = require('../config.js'),
     rename = require('gulp-rename'),
     clean = require('gulp-clean'),
     cleanCSS = require('gulp-clean-css'),
+    uglify = require('gulp-uglify'),
+    concat = require('gulp-concat'),
     browserSync = require('browser-sync'),
     runSequence = require('run-sequence'),
     plumber = require('gulp-plumber'),
@@ -17,7 +19,7 @@ var watchPath = config.paths.src.styles + '/**/*.scss',
 // gulp.task('bower', ['bower:scss', 'bower:css', 'bower:bower-configs', 'bower:icons', 'bower:icon-fonts']);
 
 gulp.task('bower', function() {
-  return runSequence('bower:clean', ['bower:scss', 'bower:css', 'bower:bower-configs', 'bower:icons', 'bower:icon-fonts']);
+  return runSequence('bower:clean', ['bower:scss', 'bower:css', 'bower:bower-configs', 'bower:icons', 'bower:icon-fonts', 'bower:scripts']);
 });
 
 gulp.task('bower:clean', function() {
@@ -67,6 +69,32 @@ gulp.task('bower:css-min', function() {
 gulp.task('bower:clean-style', function() {
   return gulp.src([destPath + '/style.scss', destPath + '/style.css'])
     .pipe(clean());
+});
+
+gulp.task('bower:scripts', ['bower:scripts-lib', 'bower:scripts-unminify', 'bower:scripts-minify']);
+
+gulp.task('bower:scripts-lib', function() {
+  return gulp.src([config.paths.src.scripts + '/lib/**/*.js'])
+    .pipe(gulp.dest(config.paths.bower.scripts));
+});
+
+gulp.task('bower:scripts-unminify', function() {
+  return gulp.src([config.paths.src.scripts + '/lib/vendors/*.js', config.paths.src.scripts + '/lib/components/*.js', config.paths.src.scripts + '/lib/script.js'])
+    .pipe(plumber({
+      errorHandler: onError
+    }))
+    .pipe(concat('watson-components.js'))
+    .pipe(gulp.dest(config.paths.bower.root));
+});
+
+gulp.task('bower:scripts-minify', function() {
+  return gulp.src([config.paths.src.scripts + '/lib/vendors/*.js', config.paths.src.scripts + '/lib/components/*.js', config.paths.src.scripts + '/lib/script.js'])
+    .pipe(plumber({
+      errorHandler: onError
+    }))
+    .pipe(concat('watson-components.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest(config.paths.bower.root));
 });
 
 gulp.task('bower:bower-configs', ['bower:bower-src']);
