@@ -1,3 +1,5 @@
 @mixin base--hr {
   border-top: 2px solid color('gray', 20);
+  margin: auto;
+  margin-left: 0rem;
 }

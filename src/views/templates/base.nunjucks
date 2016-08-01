@@ -17,6 +17,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="js/vendors/prism.min.js"></script>
     <script type="text/javascript" src="js/page.js"></script>
+    <script type="text/javascript" src="js/vendors/browser-detect.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
   {% endblock %}
 </body>

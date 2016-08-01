@@ -555,6 +555,14 @@ input[type="week"]::-webkit-inner-spin-button {
   background-repeat: no-repeat;
   background-position: calc(100% - .3em) 1em; }
 
+.firefox .base--select {
+  background-image: none;
+  background-size: 0rem; }
+
+.ie .base--select {
+  background-image: none;
+  background-size: 0rem; }
+
 .base--button {
   padding: 0.25em 2em;
   color: #9855d4;
@@ -711,7 +719,9 @@ input[type="week"]::-webkit-inner-spin-button {
   border-top: 1px solid #e0e0e0; }
 
 .base--hr {
-  border-top: 2px solid #c7c7c7; }
+  border-top: 2px solid #c7c7c7;
+  margin: auto;
+  margin-left: 0rem; }
 
 .base--hr_small {
   width: 23.40426%;
