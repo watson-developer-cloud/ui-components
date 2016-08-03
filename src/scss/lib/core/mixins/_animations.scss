@@ -28,8 +28,7 @@
   @if feature-exists(at-error) {
     @error $name + ' is not an animation option. ' +
           'These are your options: ' + '#{map-keys($animations)}';
-  }
-  @else {
+  } @else {
     @warn $name + ' is not an animation option. ' +
           'These are your options: ' + '#{map-keys($animations)}';
   }
@@ -53,6 +52,7 @@
     @at-root {
       @include keyframe-gen($name);
     }
+    
     $included-animations: append($included-animations, '#{$name}') !global;
   }
 
@@ -63,8 +63,7 @@
   @if feature-exists(at-error) {
     @error $timing + ' is not a timing function option. ' +
           'These are your options: ' + '#{map-keys($timing-functions)}';
-  }
-  @else {
+  } @else {
     @warn $timing + ' is not a timing function option. ' +
           'These are your options: ' + '#{map-keys($timing-functions)}';
   }

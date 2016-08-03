@@ -1,7 +1,7 @@
 @mixin base--list($counter) {
   li,
   .base--li {
-    &:before {
+    &::before {
       content: $counter;
     }
   }

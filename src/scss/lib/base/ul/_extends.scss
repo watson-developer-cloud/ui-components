@@ -14,9 +14,9 @@
     display: table-row;
     counter-increment: table-ol;
 
-    &:before {
+    &::before {
       display: table-cell;
-      padding-right: .4em;
+      padding-right: 0.4em;
       text-align: right;
     }
   }

@@ -36,8 +36,11 @@ gulp.task('styles:lint', function() {
 });
 
 gulp.task('styles:lint-base', function() {
-  return gulp.src(watchPath)
-    .pipe(scsslint({
+  return gulp.src([
+    watchPath,
+    '!' + config.paths.src.styles + '/lib/components/icon/_icon-fonts.scss',
+    '!' + config.paths.src.styles + '/lib/vendors/reset/_reset.scss'
+  ]).pipe(scsslint({
       'maxBuffer': 1000000,
       'reporterOutput': 'scss-report.json'
     }));

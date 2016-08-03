@@ -4,7 +4,7 @@
   + label {
     position: relative;
 
-    &:before {
+    &::before {
       display: inline-block;
       width: 1em;
       height: 1em;
@@ -17,7 +17,7 @@
     }
   }
 
-  &:checked + label:before {
+  &:checked + label::before {
     background: radial-gradient(color('gray', 80) 40%, transparent 40%);
   }
 }
