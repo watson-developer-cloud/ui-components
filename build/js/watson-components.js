@@ -126,3 +126,5 @@ Tabbed Panels js
 })();
 
 // main lib js file
+
+//# sourceMappingURL=watson-components.js.map

@@ -4,7 +4,8 @@
   "description": "Demonstrating Sass Library",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "gulp"
+    "test": "gulp",
+    "deploy": "git subtree push --prefix build origin gh-pages"
   },
   "author": "",
   "license": "ISC",
@@ -12,6 +13,7 @@
     "browser-sync": "^2.11.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
+    "gulp-beautify": "^2.0.0",
     "gulp-clean": "^0.3.2",
     "gulp-clean-css": "^2.0.11",
     "gulp-concat": "^2.6.0",
@@ -21,6 +23,8 @@
     "gulp-plumber": "^1.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.2.0",
+    "gulp-scss-lint": "^0.4.0",
+    "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.4",
     "run-sequence": "^1.1.5"
   },

@@ -7,6 +7,8 @@
 var config = require('../config.js'),
     sass = require('./_styles.js'),
     gulp = require('gulp'),
+    scsslint = require('gulp-scss-lint'),
+    beautify = require('gulp-beautify'),
     clean = require('gulp-clean'),
     browserSync = require('browser-sync'),
     runSequence = require('run-sequence'),
@@ -17,7 +19,7 @@ var watchPath = config.paths.src.styles + '/**/*.scss',
     destPath = config.paths.build.styles;
 
 gulp.task('styles', function() {
-  return runSequence('styles:compile', 'styles:clean');
+  return runSequence('styles:lint', 'styles:compile', 'styles:clean');
 });
 
 gulp.task('styles:compile', function() {
@@ -27,6 +29,24 @@ gulp.task('styles:compile', function() {
 gulp.task('styles:clean', function() {
   return gulp.src(destPath + '/watson-components.css')
     .pipe(clean());
+});
+
+gulp.task('styles:lint', function() {
+  return runSequence('styles:lint-base', 'styles:lint-with-report');
+});
+
+gulp.task('styles:lint-base', function() {
+  return gulp.src(watchPath)
+    .pipe(scsslint({
+      'maxBuffer': 1000000,
+      'reporterOutput': 'scss-report.json'
+    }));
+});
+
+gulp.task('styles:lint-with-report', function() {
+  return gulp.src('scss-report.json')
+    .pipe(beautify())
+    .pipe(gulp.dest('.'));
 });
 
 gulp.task('styles:watch', function() {

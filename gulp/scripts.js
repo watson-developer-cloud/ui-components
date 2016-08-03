@@ -7,6 +7,7 @@
 var config = require('../config.js');
 var gulp = require('gulp');
 var concat = require('gulp-concat');
+var sourcemaps = require("gulp-sourcemaps");
 var runSequence = require('run-sequence');
 var plumber = require('gulp-plumber');
 var onError = require('./on-error.js');
@@ -20,7 +21,9 @@ gulp.task('scripts', function() {
     .pipe(plumber({
       errorHandler: onError
     }))
+    .pipe(sourcemaps.init())
     .pipe(concat('watson-components.js'))
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(destPath));
 });
 
