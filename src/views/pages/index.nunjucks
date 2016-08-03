@@ -6,10 +6,64 @@
 <div id="toc"></div>
 <div class="right-pane">
   <div class="_container">
-    <h1 class="base--h1">UI Component Library</h1>
+
+    <h1 class="base--h1">UI Components</h1>
 
     <p class="base--p">
       A development ui toolkit using styles from the new Watson brand styles.
+    </p>
+
+    <h3 class="base--h3">Getting Started</h3>
+    <hr class="base--hr">
+
+    <h4 class="base--h4">Installation</h4>
+
+    <p class="base--p">
+      You can install through the following:
+    </p>
+
+    <ul class="base--ul">
+      <li class="base--li">
+        <p class="base--p">
+          Install as a Bower Component (Recommended)
+        </p>
+        <pre class="base--pre prism language-bash" style="margin: 1rem 0rem;">
+          <code class="base--code language-bash">$ bower install watson-developer-cloud-components</code>
+        </pre>
+      </li>
+      <li class="base--li">
+        <p class="base--p">
+          Install the git repo by cloning or downloading the zip file at <a href="#" class="base--a">https://github.com/watson-developer-cloud/ui-components</a>.
+        </p>
+      </li>
+    </ul>
+
+    <h4 class="base--h4">Integration to the app</h4>
+
+    <p class="base--p">
+      To get the Watson Components library set up properly in the web application, you need get these three sections working properly: the <code class="base--code">styles</code>, the <code class="base--code">javascript</code>, and the <code class="base--code">icon fonts</code>.
+    </p>
+
+    <h4 class="base--h4">Styles</h4>
+
+    <p class="base--p">
+      It is preferred that you use SASS/SCSS in your project, but a compiled <code class="base--code">watson-developer-cloud-components.css</code> and <code class="base--code">watson-developer-cloud-components.min.css</code> are also provided for applications that do not use Sass.
+    </p>
+
+    <p class="base--p">
+      To use the SCSS, you can write a scss file that has the line <code class="base--code">@import 'path/to/_watson-developer-cloud-components.scss'</code> where the path is pointing to <code class="base--code">bower_components/watson-developer-cloud-components/_watson-developer-cloud-components.scss</code>.
+    </p>
+
+    <h4 class="base--h4">Icon Fonts</h4>
+
+    <p class="base--p">
+      Make sure that the <code class="base--code">icon-fonts</code> are correctly referenced from wherever <code class="base--code">watson-developer-cloud-components.css</code> or <code class="base--code">watson-developer-cloud-comopnents.min.css</code> is located in your project.
+    </p>
+
+    <h4 class="base--h4">Javascript</h4>
+
+    <p class="base--p">
+      This project depends on JQuery so make sure that you are using <code class="base--code">JQuery 2.*.*</code> and <code class="base--code">watson-developer-cloud.js</code> or <code class="base--code">watson-developer-cloud.min.js</code>.
     </p>
 
     <h3 class="content--heading base--h3">Colors</h3>
