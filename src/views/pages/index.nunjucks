@@ -66,10 +66,6 @@
       This project depends on JQuery so make sure that you are using <code class="base--code">JQuery 2.*.*</code> and <code class="base--code">watson-developer-cloud.js</code> or <code class="base--code">watson-developer-cloud.min.js</code>.
     </p>
 
-    <h3 class="content--heading base--h3">Colors</h3>
-    <hr class="base--hr">
-    {% include "core/colors.nunjucks" %}
-
     <h3 class="content--heading base--h3">Typography</h3>
     <hr class="base--hr">
 
@@ -580,6 +576,10 @@ $ColorScheme: (
         </div>
       </div>
     </div>
+
+    <h3 class="content--heading base--h3">Colors</h3>
+    <hr class="base--hr">
+    {% include "core/colors.nunjucks" %}
 
   </div>
 </div>
