@@ -1,0 +1,16 @@
+language: node_js
+sudo: true
+node_js: 4
+# script:
+# - npm test
+before_deploy: gulp compile
+deploy:
+  provider: script
+  script:
+    - npm run deploy
+  on:
+    branch: master
+    repo: jzhang300/ui-components
+  skip_cleanup: true
+notifications:
+  email: false
