@@ -3,11 +3,11 @@ sudo: true
 node_js: 4
 # script:
 # - npm test
-before_deploy: npm run install && gulp compile
+before_deploy: npm install -g bower && bower install
 deploy:
   provider: script
   script:
-    - npm run deploy
+    -  gulp compile && npm run deploy
   on:
     branch: master
     repo: jzhang300/ui-components
