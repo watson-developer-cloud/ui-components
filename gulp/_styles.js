@@ -10,7 +10,8 @@ module.exports = function(watchPath, destPath, gulpInstance) {
       errorHandler: onError
     }))
     .pipe(sass({
-      errLogToConsole: true
+      errLogToConsole: true,
+      includePaths: ['./bower_components']
     }))
     .pipe(autoprefixer())
     .pipe(gulpInstance.dest(destPath));
