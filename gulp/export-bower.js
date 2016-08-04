@@ -19,7 +19,15 @@ var watchPath = config.paths.src.styles + '/**/*.scss',
 // gulp.task('bower', ['bower:scss', 'bower:css', 'bower:bower-configs', 'bower:icons', 'bower:icon-fonts']);
 
 gulp.task('bower', function() {
-  return runSequence('bower:clean', ['bower:scss', 'bower:css', 'bower:bower-configs', 'bower:icons', 'bower:icon-fonts', 'bower:scripts']);
+  return runSequence('bower:clean', [
+    'bower:scss',
+    'bower:css',
+    'bower:bower-configs',
+    'bower:icons',
+    'bower:icon-fonts',
+    'bower:scripts',
+    'bower:docs'
+  ]);
 });
 
 gulp.task('bower:clean', function() {
@@ -108,9 +116,15 @@ gulp.task('bower:icons', function() {
   return gulp.src(config.paths.src.icons + '/**.*')
     .pipe(gulp.dest(destPath + '/icons'));
 });
+
 gulp.task('bower:icon-fonts', function() {
   return gulp.src(config.paths.build.iconFonts + '/**.*')
     .pipe(gulp.dest(destPath + '/icons-fonts'));
+});
+
+gulp.task('bower:docs', function() {
+  return gulp.src(config.paths.build.root + '/**/**.*')
+    .pipe(gulp.dest(destPath + '/docs'));
 });
 
 gulp.task('bower:watch', function() {
