@@ -3,7 +3,7 @@ sudo: true
 node_js: 4
 # script:
 # - npm test
-before_deploy: gulp compile
+before_deploy: npm run install && gulp compile
 deploy:
   provider: script
   script:
