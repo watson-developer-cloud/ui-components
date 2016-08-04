@@ -1,5 +1,5 @@
 {
-  "name": "ui-component-library",
+  "name": "watson-developer-cloud-components",
   "description": "Watson UI Component Library",
   "main": "gulpfile.js",
   "authors": [
