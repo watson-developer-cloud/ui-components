@@ -11,10 +11,12 @@
   .base--radio + & {
     border-left-color: transparent;
   }
+
   .base--radio:checked + & {
     border-left-color: color('purple', 60);
   }
-  .base--radio + &:before {
+
+  .base--radio + &::before {
     display: none;
   }
 }

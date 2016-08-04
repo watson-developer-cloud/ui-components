@@ -3,14 +3,16 @@
   // min-height: 20rem;
   background-color: color('white', 40);
   border: 1px solid color('gray', 50);
+
   &--tab-list {
     border-bottom: 1px solid color('gray', 10);
   }
+
   &--tab-list-item {
     display: inline-block;
-    margin-top: get('rhythm') / 2;
     margin-top: 0rem;
   }
+
   &--tab {
     display: block;
     text-decoration: none;
@@ -21,23 +23,28 @@
       border-bottom: 6px solid transparent;
       color: color('gray', 90);
     }
+
     &:focus,
     &:hover {
       border-bottom: 6px solid color('gray', 50);
     }
+
     &.active {
       font-weight: get('bold weight font');
       border-bottom: 6px solid color('gray', 50);
     }
   }
+
   &--tab-content {
     margin-top: 0rem;
     padding: get('rhythm');
     background-color: color('white', 10);
   }
+
   &--tab-pane {
     display: none;
     margin-top: 0;
+
     &.active {
       display: block;
     }

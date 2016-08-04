@@ -9,8 +9,7 @@
 
   @if $block {
     display: block;
-  }
-  @else {
+  } @else {
     display: inline-block;
   }
 
@@ -20,6 +19,7 @@
     border-color: lighten($border, 15%);
     color: lighten($color, 15%);
   }
+
   &:active {
     transition: 0s;
     transform: translateY(2px);
@@ -39,6 +39,7 @@
     border-color: transparent;
     color: color('gray', 90);
   }
+  
   &:active {
     transition: 0s;
     transform: none;

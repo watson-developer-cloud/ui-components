@@ -35,14 +35,11 @@
 
   @if $direction == 'up' {
     $triangle: $triangle + ' points="#{8 * $size},#{8 * $size} #{4.1 * $size},0 0,#{8 * $size} "';
-  }
-  @else if $direction == 'left' {
+  } @else if $direction == 'left' {
     $triangle: $triangle + ' points="#{8 * $size},0 0,#{3.9 * $size} #{8 * $size},#{8 * $size} "';
-  }
-  @else if $direction == 'right' {
+  } @else if $direction == 'right' {
     $triangle: $triangle + ' points="0,#{8 * $size} #{8 * $size},#{4.1 * $size} 0,0 "';
-  }
-  @else {
+  } @else {
     $triangle: $triangle + ' points="0,0 #{3.9 * $size},#{8 * $size} #{8 * $size},0 "';
   }
 

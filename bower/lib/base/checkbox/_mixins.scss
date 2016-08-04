@@ -4,7 +4,7 @@
   + label {
     position: relative;
 
-    &:before {
+    &::before {
       display: inline-block;
       width: 1em;
       height: 1em;
@@ -16,8 +16,8 @@
     }
   }
 
-  &:checked + label:before {
+  &:checked + label::before {
     background: color('gray', 80);
-    box-shadow: inset 0 0 0 get('input border width')/1.5 get('white');
+    box-shadow: inset 0 0 0 get('input border width') / 1.5 get('white');
   }
 }
