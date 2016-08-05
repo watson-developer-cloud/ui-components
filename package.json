@@ -4,7 +4,7 @@
   "description": "Demonstrating Sass Library",
   "main": "gulpfile.js",
   "scripts": {
-    "deploy": "sh scripts/travis-deploy.sh",
+    "deploy": "sh scripts/deploy.sh",
     "deploy-from-local": "git subtree push --prefix docs origin gh-pages"
   },
   "author": "",
