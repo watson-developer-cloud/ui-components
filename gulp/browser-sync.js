@@ -10,7 +10,7 @@ var config = require('../config.js'),
     reload = browserSync.reload;
 
 // Paths
-var baseDir = config.paths.build.root;
+var baseDir = config.paths.docs.root;
 
 gulp.task('browser-sync', function () {
   browserSync.init({

@@ -16,7 +16,9 @@ var config = require('../config.js'),
 
 // Paths
 var watchPath = config.paths.src.styles + '/**/*.scss',
-    destPath = config.paths.build.styles;
+    destPath = config.paths.docs.styles;
+
+var projectName = config.projectName;
 
 gulp.task('styles', function() {
   return runSequence('styles:lint', 'styles:compile', 'styles:clean');
@@ -27,7 +29,7 @@ gulp.task('styles:compile', function() {
 });
 
 gulp.task('styles:clean', function() {
-  return gulp.src(destPath + '/watson-components.css')
+  return gulp.src(destPath + '/' + projectName + '.css')
     .pipe(clean());
 });
 

@@ -16,8 +16,8 @@ var onError = require('./on-error.js');
 var watchPath = paths.src.icons + '/**/*.svg';
 var targetPath = '../../../src/scss/lib/components/icon/_icon-fonts.scss';
 var fontPath = '../fonts/icon-fonts/';
-var destPath = paths.build.iconFonts;
-var imagesDestPath = paths.build.icons;
+var destPath = paths.docs.iconFonts;
+var imagesDestPath = paths.docs.icons;
 
 gulp.task('icon-fonts', ['icon-fonts:copy-to-images'], function() {
   return gulp.src([watchPath])

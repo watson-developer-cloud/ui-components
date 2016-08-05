@@ -1,10 +1,11 @@
 'use strict';
 
 var src = './src',
-    build = './docs',
+    docs = './docs',
     dist = './dist';
 
 module.exports = {
+  projectName: 'watson-developer-cloud-components',
   paths: {
     src: {
       root: src,
@@ -14,12 +15,12 @@ module.exports = {
       dist: src + '/dist',
       icons: src + '/icons'
     },
-    build: {
-      root: build,
-      styles: build + '/css',
-      scripts: build + '/js',
-      iconFonts: build + '/fonts/icon-fonts',
-      icons: build + '/images/icons'
+    docs: {
+      root: docs,
+      styles: docs + '/css',
+      scripts: docs + '/js',
+      iconFonts: docs + '/fonts/icon-fonts',
+      icons: docs + '/images/icons'
     },
     dist: {
       root: dist,

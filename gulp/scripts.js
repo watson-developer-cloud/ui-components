@@ -14,7 +14,7 @@ var onError = require('./on-error.js');
 
 // Paths
 var watchPath = config.paths.src.scripts + '/**/*.js',
-    destPath = config.paths.build.scripts;
+    destPath = config.paths.docs.scripts;
 
 gulp.task('scripts', function() {
   return gulp.src([config.paths.src.scripts + '/lib/vendors/*.js', config.paths.src.scripts + '/lib/components/*.js', config.paths.src.scripts + '/lib/script.js'])

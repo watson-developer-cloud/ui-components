@@ -77,3 +77,13 @@ $ git push origin master --tags
 ## Credits
 
 This project could not have been made possible without the hard work from the team that worked on the previous [Watson Design Guide](https://github.com/IBM-Watson/design-guide).  Many concepts and Sass techniques were borrowed from their project, while others were modified.
+
+## Installation and Dependencies
+
+You will need to make sure the icon-fonts are referenced properly.
+The path of the icon-fonts must be relative to the path of the compiled css file.
+
+You will also need to make sure to load the paths of your `bower_components` directory into your Sass configurations, so that the library can reference its bower_components dependencies properly.
+
+The javascript of this library relies on `JQuery 1.12.4` and above.  Make sure it is
+included before this library.

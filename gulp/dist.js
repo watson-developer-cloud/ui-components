@@ -16,13 +16,14 @@ var watchPath = config.paths.src.styles + '/**/*.scss',
     destPath = config.paths.dist.root,
     distSrcPath = config.paths.src.dist;
 
+var projectName = config.projectName;
+
 // gulp.task('dist', ['bower:scss', 'bower:css', 'bower:bower-configs', 'bower:icons', 'bower:icon-fonts']);
 
 gulp.task('dist', function() {
   return runSequence('dist:clean', [
     'dist:scss',
     'dist:css',
-    'dist:dist-configs',
     'dist:icons',
     'dist:icon-fonts',
     'dist:scripts'
@@ -48,13 +49,13 @@ gulp.task('dist:scss-export', function() {
 });
 
 gulp.task('dist:scss-change-name', function() {
-  return gulp.src([destPath + '/watson-components.scss'])
-    .pipe(rename('_watson-components.scss'))
+  return gulp.src([destPath + '/' + projectName + '.scss'])
+    .pipe(rename('_' + projectName + '.scss'))
     .pipe(gulp.dest(destPath));
 });
 
 gulp.task('dist:scss-clean', function() {
-  return gulp.src([destPath + '/watson-components.scss'])
+  return gulp.src([destPath + '/' + projectName + '.scss'])
     .pipe(clean());
 });
 
@@ -67,8 +68,8 @@ gulp.task('dist:css-normal', function() {
 });
 
 gulp.task('dist:css-min', function() {
-  return gulp.src([destPath + '/watson-components.css'])
-    .pipe(rename('watson-components.min.css'))
+  return gulp.src([destPath + '/' + projectName + '.css'])
+    .pipe(rename(projectName + '.min.css'))
     .pipe(cleanCSS())
     .pipe(gulp.dest(destPath));
 });
@@ -90,7 +91,7 @@ gulp.task('dist:scripts-unminify', function() {
     .pipe(plumber({
       errorHandler: onError
     }))
-    .pipe(concat('watson-components.js'))
+    .pipe(concat(projectName + '.js'))
     .pipe(gulp.dest(config.paths.dist.root));
 });
 
@@ -99,16 +100,9 @@ gulp.task('dist:scripts-minify', function() {
     .pipe(plumber({
       errorHandler: onError
     }))
-    .pipe(concat('watson-components.min.js'))
+    .pipe(concat(projectName + '.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest(config.paths.dist.root));
-});
-
-gulp.task('dist:dist-configs', ['dist:dist-src']);
-
-gulp.task('dist:dist-src', function() {
-  return gulp.src([distSrcPath + '/**/**.*'])
-    .pipe(gulp.dest(destPath));
 });
 
 gulp.task('dist:icons', function() {
@@ -117,7 +111,7 @@ gulp.task('dist:icons', function() {
 });
 
 gulp.task('dist:icon-fonts', function() {
-  return gulp.src(config.paths.build.iconFonts + '/**.*')
+  return gulp.src(config.paths.docs.iconFonts + '/**.*')
     .pipe(gulp.dest(destPath + '/icons-fonts'));
 });
 

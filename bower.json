@@ -5,7 +5,7 @@
   "authors": [
     "James Zhang <james.zhang75024@gmail.com>"
   ],
-  "main": "src/watson-components.scss",
+  "main": "dist/watson-components.scss",
   "license": "MIT",
   "keywords": [
     "pattern",

@@ -16,7 +16,7 @@ var config = require('../config.js'),
 var viewsPath = config.paths.src.views,
     srcPath = config.paths.src.views + '/pages/**/*.nunjucks',
     watchPath = viewsPath + '/**/*.nunjucks',
-    destPath = config.paths.build.root;
+    destPath = config.paths.docs.root;
 
 gulp.task('views', function() {
   return gulp.src([srcPath])
