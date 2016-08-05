@@ -1,8 +1,8 @@
 'use strict';
 
 var src = './src',
-    build = './build',
-    bower = './bower';
+    build = './docs',
+    dist = './dist';
 
 module.exports = {
   paths: {
@@ -11,7 +11,7 @@ module.exports = {
       styles: src + '/scss',
       scripts: src + '/js',
       views: src + '/views',
-      bower: src + '/bower',
+      dist: src + '/dist',
       icons: src + '/icons'
     },
     build: {
@@ -21,10 +21,10 @@ module.exports = {
       iconFonts: build + '/fonts/icon-fonts',
       icons: build + '/images/icons'
     },
-    bower: {
-      root: bower,
-      stylesheets: bower + '/stylesheets',
-      scripts: bower + '/js'
+    dist: {
+      root: dist,
+      stylesheets: dist + '/stylesheets',
+      scripts: dist + '/js'
     }
   }
 };

@@ -210,11 +210,11 @@
 
 /* Top level header elements */
 .tocify-header {
-  text-indent: 1rem;
 
   & > .tocify-item {
     font-weight: bold;
     margin-bottom: 2rem;
+    padding-left: 1.5rem;
 
     &:hover {
       a {
@@ -291,7 +291,7 @@
 
 /* Twitter Bootstrap Override Style */
 .nav-list > li > a {
-  padding: 5px;
+  padding: 0rem;
 }
 
 /* Updated styles */
