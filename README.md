@@ -1,13 +1,9 @@
-# Watson UI Component Library
+# Watson Developer Cloud Component Library
 
-Welcome to the git repo for the Watson UI Component Library.
+Welcome to the git repo for the Watson Developer Cloud Component Library.
 This SASS library is a development resource to help developers quickly and consistently develop quality ui.
 
-The Main Website: https://pages.github.ibm.com/watson/ui-component-library/
-
-The Main Contact: [James Zhang](http://faces.tap.ibm.com/bluepages/)
-
-This project follows the new Watson Design Guide.  Please contact [Jennifer Sukis](http://faces.tap.ibm.com/bluepages/profile.html?email=jsukis@us.ibm.com) for any questions regarding that.
+The Main Website: watson-developer-cloud.github.io/ui-components
 
 # Getting Started
 
@@ -51,7 +47,7 @@ This project follows the new Watson Design Guide.  Please contact [Jennifer Suki
 
 ## Publishing a Github Page
 
-To publish to the [main site](https://pages.github.ibm.com/watson/ui-component-library/), use the `git subtree push --prefix build origin gh-pages` and update the `gh-pages` branch.
+To publish to the [main site](https://pages.github.ibm.com/watson/ui-component-library/), use the `npm deploy` top update to `gh-pages` branch.
 
 
 ## Build the public Bower Component
@@ -64,8 +60,7 @@ To publish to the [main site](https://pages.github.ibm.com/watson/ui-component-l
 
 ## Versioning Bower Component
 
-To bump the version of the bower component, update the version property in the bower component's `bower.json`, and then
-match the version with git tags.
+To bump the version of the bower component, update the version property in `bower.json`, and then match the version with git tags.
 
 Example of git tags:
 
@@ -74,10 +69,6 @@ $ git tag -a v0.0.5 -m "Release version 0.0.5"
 $ git push origin master --tags
 ```
 
-## Credits
-
-This project could not have been made possible without the hard work from the team that worked on the previous [Watson Design Guide](https://github.com/IBM-Watson/design-guide).  Many concepts and Sass techniques were borrowed from their project, while others were modified.
-
 ## Installation and Dependencies
 
 You will need to make sure the icon-fonts are referenced properly.
@@ -85,5 +76,9 @@ The path of the icon-fonts must be relative to the path of the compiled css file
 
 You will also need to make sure to load the paths of your `bower_components` directory into your Sass configurations, so that the library can reference its bower_components dependencies properly.
 
-The javascript of this library relies on `JQuery 1.12.4` and above.  Make sure it is
+The javascript of this library relies on `JQuery 2.*.*` and above.  Make sure it is
 included before this library.
+
+## Credits
+
+This project could not have been made possible without the hard work from the team that worked on the previous [Watson Design Guide](https://github.com/IBM-Watson/design-guide).  Many concepts and Sass techniques were borrowed from their project, while others were modified.
