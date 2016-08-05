@@ -4,7 +4,7 @@
   "description": "Demonstrating Sass Library",
   "main": "gulpfile.js",
   "scripts": {
-    "deploy": "git subtree push --prefix docs origin gh-pages"
+    "deploy": "sh scripts/deploy.sh"
   },
   "author": "",
   "license": "ISC",

@@ -1,11 +1,11 @@
 {
   "name": "watson-developer-cloud-components",
   "description": "Watson UI Component Library",
-  "version": "0.0.3",
+  "version": "0.0.6",
   "authors": [
     "James Zhang <james.zhang75024@gmail.com>"
   ],
-  "main": "dist/watson-components.scss",
+  "main": "dist/_watson-developer-cloud-components.scss",
   "license": "MIT",
   "keywords": [
     "pattern",
