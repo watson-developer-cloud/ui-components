@@ -1,4 +1,4 @@
-# Watson Developer Cloud Component Library
+# Watson Developer Cloud Component Library [![Build Status](https://travis-ci.org/jzhang300/ui-components.svg?branch=master)](https://travis-ci.org/jzhang300/ui-components)
 
 Welcome to the git repo for the Watson Developer Cloud Component Library.
 This SASS library is a development resource to help developers quickly and consistently develop quality ui.
