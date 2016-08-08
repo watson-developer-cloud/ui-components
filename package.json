@@ -1,6 +1,6 @@
 {
   "name": "watson-developer-cloud-components",
-  "version": "1.0.0",
+  "version": "0.0.6",
   "description": "Demonstrating Sass Library",
   "main": "gulpfile.js",
   "scripts": {
@@ -31,5 +31,9 @@
   "engine": "node >= 5.5.0",
   "dependencies": {
     "wrench": "^1.5.8"
-  }
+  },
+  "pre-commit": [
+    "validate",
+    "gulp dist"
+  ]
 }

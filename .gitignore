@@ -149,3 +149,5 @@ ehthumbs.db
 bower_components
 node_modules
 scss-report.json
+docs/
+.jshint*
