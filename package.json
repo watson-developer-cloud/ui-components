@@ -1,14 +1,16 @@
 {
   "name": "watson-developer-cloud-components",
   "version": "0.0.6",
-  "description": "Demonstrating Sass Library",
+  "description": "UI component to build sample application",
   "main": "gulpfile.js",
   "scripts": {
     "deploy": "sh scripts/deploy.sh",
-    "deploy-from-local": "git subtree push --prefix docs origin gh-pages"
+    "deploy-from-local": "git subtree push --prefix docs origin gh-pages",
+    "lint": "jshint .",
+    "validate": "npm ls"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "IBM Corp.",
+  "license": "Apache-2.0",
   "devDependencies": {
     "browser-sync": "^2.11.1",
     "gulp": "^3.9.1",
@@ -26,11 +28,12 @@
     "gulp-scss-lint": "^0.4.0",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.4",
-    "run-sequence": "^1.1.5"
+    "run-sequence": "^1.1.5",
+    "precommit-hook": "^3.0.0",
+    "wrench": "^1.5.8"
   },
   "engine": "node >= 5.5.0",
   "dependencies": {
-    "wrench": "^1.5.8"
   },
   "pre-commit": [
     "validate",
