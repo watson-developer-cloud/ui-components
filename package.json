@@ -5,8 +5,9 @@
   "main": "gulpfile.js",
   "scripts": {
     "deploy": "sh scripts/deploy.sh",
-    "deploy-from-local": "git subtree push --prefix docs origin gh-pages",
-    "lint": "jshint .",
+    "deploy-from-local": "npm run compile && git subtree push --prefix docs origin gh-pages",
+    "dist": "gulp dist",
+    "compile": "gulp compile",
     "validate": "npm ls"
   },
   "author": "IBM Corp.",
@@ -37,6 +38,6 @@
   },
   "pre-commit": [
     "validate",
-    "gulp dist"
+    "dist"
   ]
 }
