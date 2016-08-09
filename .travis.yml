@@ -1,6 +1,8 @@
 language: node_js
 sudo: true
 node_js: 4
+before_install:
+- gem update --system 1.9.3
 before_deploy:
 - npm install -g bower
 - bower install
