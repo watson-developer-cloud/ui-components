@@ -11,7 +11,7 @@ deploy:
   - npm run deploy
   on:
     branch: master
-    repo: jzhang300/ui-components
+    repo: watson-developer-cloud/ui-components
   skip_cleanup: true
 notifications:
   email: false
