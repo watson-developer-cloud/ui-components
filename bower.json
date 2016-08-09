@@ -1,7 +1,7 @@
 {
   "name": "watson-developer-cloud-components",
   "description": "Watson UI Component Library",
-  "version": "0.0.10",
+  "version": "0.1.0",
   "authors": [
     "James Zhang <james.zhang75024@gmail.com>"
   ],
