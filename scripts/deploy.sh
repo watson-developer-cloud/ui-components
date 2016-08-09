@@ -7,7 +7,7 @@ gulp compile
 cd docs
 git init
 git config user.name "Travis Ci"
-git config user.email "wps@us.ibm.com"
+git config user.email "james.zhang75024@gmail.com"
 
 git add .
 git commit -m "deployed to github pages"
