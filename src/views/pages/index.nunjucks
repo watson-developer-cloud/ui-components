@@ -3,279 +3,277 @@
 {% extends "templates/template.nunjucks" %}
 
 {% block body %}
-<div id="toc"></div>
-<div class="right-pane">
-  <div class="_container">
+<div class="_container _container_xx-large">
 
-    <h1 class="base--h1">Watson Developer Cloud Components</h1>
+  <h1 class="base--h1">Watson Developer Cloud Components</h1>
 
-    <p class="base--p">
-      A development ui toolkit using styles from the new Watson brand styles.
-    </p>
+  <p class="base--p">
+    A development ui toolkit using styles from the new Watson brand styles.
+  </p>
 
-    <h3 class="base--h3">Getting Started</h3>
-    <hr class="base--hr">
+  <h3 class="base--h3">Getting Started</h3>
+  <hr class="base--hr">
 
-    <h4 class="base--h4">Installation</h4>
+  <h4 class="base--h4">Installation</h4>
 
-    <p class="base--p">
-      You can install through the following:
-    </p>
+  <p class="base--p">
+    You can install through the following:
+  </p>
 
-    <ul class="base--ul">
-      <li class="base--li">
-        <p class="base--p">
-          Install as a Bower Component (Recommended)
-        </p>
-        <pre class="base--pre prism language-bash" style="margin: 1rem 0rem;">
-          <code class="base--code language-bash">$ bower install watson-developer-cloud-components</code>
-        </pre>
-      </li>
-      <li class="base--li">
-        <p class="base--p">
-          Install the git repo by cloning or downloading the zip file at <a href="#" class="base--a">https://github.com/watson-developer-cloud/ui-components</a>.
-        </p>
-      </li>
-    </ul>
+  <ul class="base--ul">
+    <li class="base--li">
+      <p class="base--p">
+        Install as a Bower Component (Recommended)
+      </p>
+      <pre class="base--pre prism language-bash" style="margin: 1rem 0rem;">
+        <code class="base--code language-bash">$ bower install watson-developer-cloud-components</code>
+      </pre>
+    </li>
+    <li class="base--li">
+      <p class="base--p">
+        Install the git repo by cloning or downloading the zip file at <a href="#" class="base--a">https://github.com/watson-developer-cloud/ui-components</a>.
+      </p>
+    </li>
+  </ul>
 
-    <h4 class="base--h4">Integration to the app</h4>
+  <h4 class="base--h4">Integration to the app</h4>
 
-    <p class="base--p">
-      To get the Watson Components library set up properly in the web application, you need get these three sections working properly: the <code class="base--code">styles</code>, the <code class="base--code">javascript</code>, and the <code class="base--code">icon fonts</code>.
-    </p>
+  <p class="base--p">
+    To get the Watson Components library set up properly in the web application, you need get these three sections working properly: the <code class="base--code">styles</code>, the <code class="base--code">javascript</code>, and the <code class="base--code">icon fonts</code>.
+  </p>
 
-    <h4 class="base--h4">Styles</h4>
+  <h4 class="base--h4">Styles</h4>
 
-    <p class="base--p">
-      It is preferred that you use SASS/SCSS in your project, but a compiled <code class="base--code">watson-developer-cloud-components.css</code> and <code class="base--code">watson-developer-cloud-components.min.css</code> are also provided for applications that do not use Sass.
-    </p>
+  <p class="base--p">
+    It is preferred that you use SASS/SCSS in your project, but a compiled <code class="base--code">watson-developer-cloud-components.css</code> and <code class="base--code">watson-developer-cloud-components.min.css</code> are also provided for applications that do not use Sass.
+  </p>
 
-    <p class="base--p">
-      To use the SCSS, you can write a scss file that has the line <code class="base--code">@import 'path/to/_watson-developer-cloud-components.scss'</code> where the path is pointing to <code class="base--code">bower_components/watson-developer-cloud-components/_watson-developer-cloud-components.scss</code>.
-    </p>
+  <p class="base--p">
+    To use the SCSS, you can write a scss file that has the line <code class="base--code">@import 'path/to/_watson-developer-cloud-components.scss'</code> where the path is pointing to <code class="base--code">bower_components/watson-developer-cloud-components/_watson-developer-cloud-components.scss</code>.
+  </p>
 
-    <h4 class="base--h4">Icon Fonts</h4>
+  <h4 class="base--h4">Icon Fonts</h4>
 
-    <p class="base--p">
-      Make sure that the <code class="base--code">icon-fonts</code> are correctly referenced from wherever <code class="base--code">watson-developer-cloud-components.css</code> or <code class="base--code">watson-developer-cloud-comopnents.min.css</code> is located in your project.
-    </p>
+  <p class="base--p">
+    Make sure that the <code class="base--code">icon-fonts</code> are correctly referenced from wherever <code class="base--code">watson-developer-cloud-components.css</code> or <code class="base--code">watson-developer-cloud-comopnents.min.css</code> is located in your project.
+  </p>
 
-    <h4 class="base--h4">Javascript</h4>
+  <h4 class="base--h4">Javascript</h4>
 
-    <p class="base--p">
-      This project depends on JQuery so make sure that you are using <code class="base--code">JQuery 2.*.*</code> and <code class="base--code">watson-developer-cloud.js</code> or <code class="base--code">watson-developer-cloud.min.js</code>.
-    </p>
+  <p class="base--p">
+    This project depends on JQuery so make sure that you are using <code class="base--code">JQuery 2.*.*</code> and <code class="base--code">watson-developer-cloud.js</code> or <code class="base--code">watson-developer-cloud.min.js</code>.
+  </p>
 
-    <h3 class="content--heading base--h3">Typography</h3>
-    <hr class="base--hr">
+  <h3 class="content--heading base--h3">Typography</h3>
+  <hr class="base--hr">
 
-    <h4 class="base--h4">Headers</h4>
-    {% call codeblock('markup') %}
+  <h4 class="base--h4">Headers</h4>
+  {% call codeblock('markup') %}
 {% include "base/h1.nunjucks" %}
 {% include "base/h2.nunjucks" %}
 {% include "base/h3.nunjucks" %}
 {% include "base/h4.nunjucks" %}
 {% include "base/h5.nunjucks" %}
 {% include "base/h6.nunjucks" %}
-    {% endcall %}
+  {% endcall %}
 
-    <h4 class="base--h4">Paragraph</h4>
-    {% call codeblock('markup') %}
+  <h4 class="base--h4">Paragraph</h4>
+  {% call codeblock('markup') %}
 {% include "base/p.nunjucks" %}
-    {% endcall %}
+  {% endcall %}
 
-    <h4 class="base--h4">Link, Emphasized, Strong</h4>
-    {% call codeblock('markup') %}
+  <h4 class="base--h4">Link, Emphasized, Strong</h4>
+  {% call codeblock('markup') %}
 {% include "base/a.nunjucks" %}
 {% include "base/em.nunjucks" %}
 {% include "base/strong.nunjucks" %}
-    {% endcall %}
+  {% endcall %}
 
-    {# {% call codeblock('markup') %}
-  {% include "base/blockquote.nunjucks" %}
-    {% endcall %} #}
+  {# {% call codeblock('markup') %}
+{% include "base/blockquote.nunjucks" %}
+  {% endcall %} #}
 
-    {# {% call codeblock('markup') %}
-  {% include "base/code.nunjucks" %}
-    {% endcall %} #}
+  {# {% call codeblock('markup') %}
+{% include "base/code.nunjucks" %}
+  {% endcall %} #}
 
-    <h3 class="content--heading base--h3">Elements</h3>
-    <hr class="base--hr">
+  <h3 class="content--heading base--h3">Elements</h3>
+  <hr class="base--hr">
 
-    <h4 class="base--h4">Buttons</h4>
-    {% call codeblock('markup') %}
+  <h4 class="base--h4">Buttons</h4>
+  {% call codeblock('markup') %}
 {% include "base/button.nunjucks" %}
-    {% endcall %}
+  {% endcall %}
 
-    <h4 class="base--h4">Checkboxes</h4>
-    {% call codeblock('markup') %}
+  <h4 class="base--h4">Checkboxes</h4>
+  {% call codeblock('markup') %}
 {% include "base/checkbox.nunjucks" %}
-    {% endcall %}
+  {% endcall %}
 
-    <h4 class="base--h4">Radio Buttons</h4>
-    {% call codeblock('markup') %}
+  <h4 class="base--h4">Radio Buttons</h4>
+  {% call codeblock('markup') %}
 {% include "base/radio.nunjucks" %}
-    {% endcall %}
+  {% endcall %}
 
-    <h4 class="base--h4">HR</h4>
-    {% call codeblock('markup') %}
+  <h4 class="base--h4">HR</h4>
+  {% call codeblock('markup') %}
 {% include "base/hr.nunjucks" %}
-    {% endcall %}
+  {% endcall %}
 
 
 
-    <h4 class="base--h4">Table</h4>
-    {% call codeblock('markup') %}
+  <h4 class="base--h4">Table</h4>
+  {% call codeblock('markup') %}
 {% include "base/table.nunjucks" %}
-    {% endcall %}
+  {% endcall %}
 
-    <h4 class="base--h4">Lists</h4>
-    {% call codeblock('markup') %}
+  <h4 class="base--h4">Lists</h4>
+  {% call codeblock('markup') %}
 {% include "base/ul.nunjucks" %}
-    {% endcall %}
+  {% endcall %}
 
-    <h4 class="base--h4">TextArea</h4>
-    {% call codeblock('markup') %}
+  <h4 class="base--h4">TextArea</h4>
+  {% call codeblock('markup') %}
 {% include "base/textarea.nunjucks" %}
-    {% endcall %}
+  {% endcall %}
 
-    <h4 class="base--h4">Dropdown Select</h4>
-    {% call codeblock('markup') %}
+  <h4 class="base--h4">Dropdown Select</h4>
+  {% call codeblock('markup') %}
 {% include "base/select.nunjucks" %}
-    {% endcall %}
+  {% endcall %}
 
-    <h4 class="base--h4">Basic Input</h4>
-    {% call codeblock('markup') %}
+  <h4 class="base--h4">Basic Input</h4>
+  {% call codeblock('markup') %}
 {% include "base/input.nunjucks" %}
-    {% endcall %}
+  {% endcall %}
 
-    <h4 class="base--h4">Color Input</h4>
-    {% call codeblock('markup') %}
+  <h4 class="base--h4">Color Input</h4>
+  {% call codeblock('markup') %}
 {% include "base/input--color.nunjucks" %}
-    {% endcall %}
+  {% endcall %}
 
-    <h4 class="base--h4">Date Input</h4>
-    {% call codeblock('markup') %}
+  <h4 class="base--h4">Date Input</h4>
+  {% call codeblock('markup') %}
 {% include "base/input--date.nunjucks" %}
-    {% endcall %}
+  {% endcall %}
 
-    <h4 class="base--h4">Date Time Local Input</h4>
-    {% call codeblock('markup') %}
+  <h4 class="base--h4">Date Time Local Input</h4>
+  {% call codeblock('markup') %}
 {% include "base/input--datetime-local.nunjucks" %}
-    {% endcall %}
+  {% endcall %}
 
-    <h4 class="base--h4">File Input</h4>
-    {% call codeblock('markup') %}
+  <h4 class="base--h4">File Input</h4>
+  {% call codeblock('markup') %}
 {% include "base/input--file.nunjucks" %}
-    {% endcall %}
+  {% endcall %}
 
-    <h4 class="base--h4">Hidden Input</h4>
-    {% call codeblock('markup') %}
+  <h4 class="base--h4">Hidden Input</h4>
+  {% call codeblock('markup') %}
 {% include "base/input--hidden.nunjucks" %}
-    {% endcall %}
+  {% endcall %}
 
-    <h4 class="base--h4">Month Input</h4>
-    {% call codeblock('markup') %}
+  <h4 class="base--h4">Month Input</h4>
+  {% call codeblock('markup') %}
 {% include "base/input--month.nunjucks" %}
-    {% endcall %}
+  {% endcall %}
 
-    <h4 class="base--h4">Number Input</h4>
-    {% call codeblock('markup') %}
+  <h4 class="base--h4">Number Input</h4>
+  {% call codeblock('markup') %}
 {% include "base/input--number.nunjucks" %}
-    {% endcall %}
+  {% endcall %}
 
-    <h4 class="base--h4">Password Input</h4>
-    {% call codeblock('markup') %}
+  <h4 class="base--h4">Password Input</h4>
+  {% call codeblock('markup') %}
 {% include "base/input--password.nunjucks" %}
-    {% endcall %}
+  {% endcall %}
 
-    <h4 class="base--h4">Range Input</h4>
-    {% call codeblock('markup') %}
+  <h4 class="base--h4">Range Input</h4>
+  {% call codeblock('markup') %}
 {% include "base/input--range.nunjucks" %}
-    {% endcall %}
+  {% endcall %}
 
-    <h4 class="base--h4">Search Input</h4>
-    {% call codeblock('markup') %}
+  <h4 class="base--h4">Search Input</h4>
+  {% call codeblock('markup') %}
 {% include "base/input--search.nunjucks" %}
-    {% endcall %}
+  {% endcall %}
 
-    <h4 class="base--h4">Telephone Input</h4>
-    {% call codeblock('markup') %}
+  <h4 class="base--h4">Telephone Input</h4>
+  {% call codeblock('markup') %}
 {% include "base/input--tel.nunjucks" %}
-    {% endcall %}
+  {% endcall %}
 
-    <h4 class="base--h4">Text Input</h4>
-    {% call codeblock('markup') %}
+  <h4 class="base--h4">Text Input</h4>
+  {% call codeblock('markup') %}
 {% include "base/input--text.nunjucks" %}
-    {% endcall %}
+  {% endcall %}
 
-    <h4 class="base--h4">Time Input</h4>
-    {% call codeblock('markup') %}
+  <h4 class="base--h4">Time Input</h4>
+  {% call codeblock('markup') %}
 {% include "base/input--time.nunjucks" %}
-    {% endcall %}
+  {% endcall %}
 
-    <h4 class="base--h4">Url Input</h4>
-    {% call codeblock('markup') %}
+  <h4 class="base--h4">Url Input</h4>
+  {% call codeblock('markup') %}
 {% include "base/input--url.nunjucks" %}
-    {% endcall %}
+  {% endcall %}
 
-    <h4 class="base--h4">Week Input</h4>
-    {% call codeblock('markup') %}
+  <h4 class="base--h4">Week Input</h4>
+  {% call codeblock('markup') %}
 {% include "base/input--week.nunjucks" %}
-    {% endcall %}
+  {% endcall %}
 
-    <h3 class="content--heading base--h3">Components</h3>
-    <hr class="base--hr">
+  <h3 class="content--heading base--h3">Components</h3>
+  <hr class="base--hr">
 
-    <h4 class="base--h4">Tab Panels</h4>
-    {% call codeblock('markup') %}
+  <h4 class="base--h4">Tab Panels</h4>
+  {% call codeblock('markup') %}
 {% include "components/tab-panels.nunjucks" %}
-    {% endcall %}
+  {% endcall %}
 
-    <h4 class="base--h4">Clickable Tabs</h4>
-    {% call codeblock('markup') %}
+  <h4 class="base--h4">Clickable Tabs</h4>
+  {% call codeblock('markup') %}
 {% include "components/clickable-tab.nunjucks" %}
-    {% endcall %}
+  {% endcall %}
 
-    <h4 class="base--h4">Clickable Tabs as Radio Buttons</h4>
-    {% call codeblock('markup') %}
+  <h4 class="base--h4">Clickable Tabs as Radio Buttons</h4>
+  {% call codeblock('markup') %}
 {% include "components/clickable-tab-with-radio.nunjucks" %}
-    {% endcall %}
+  {% endcall %}
 
-    <h4 class="base--h4">Rounded Tags</h4>
-    {% call codeblock('markup') %}
+  <h4 class="base--h4">Rounded Tags</h4>
+  {% call codeblock('markup') %}
 {% include "components/metatag.nunjucks" %}
-    {% endcall %}
+  {% endcall %}
 
-    <h4 class="base--h4">Loader</h4>
-    {% call codeblock('markup') %}
+  <h4 class="base--h4">Loader</h4>
+  {% call codeblock('markup') %}
 {% include "components/loader.nunjucks" %}
-    {% endcall %}
+  {% endcall %}
 
-    <h3 class="content--heading base--h3">Layouts</h3>
-    <hr class="base--hr">
+  <h3 class="content--heading base--h3">Layouts</h3>
+  <hr class="base--hr">
 
-    <h4 class="base--h4">Container</h4>
-    <p class="base--p">
-      Containers define main body layouts and contain responsive grid elements.
-    </p>
-    <div class="code-block">
-      <pre class="base--pre language-scss">
-        <code class="language-html">
+  <h4 class="base--h4">Container</h4>
+  <p class="base--p">
+    Containers define main body layouts and contain responsive grid elements.
+  </p>
+  <div class="code-block">
+    <pre class="base--pre language-scss">
+      <code class="language-html">
 &lt;div class="_container"&gt;
   &lt;div class="row"&gt;
     &lt;!-- responsive grid elements --&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-        </code>
-      </pre>
-    </div>
-    <p class="base--p">
-      In this library, there are containers of different widths.
-    </p>
-    <div class="code-block">
-      <pre class="base--pre language-scss">
-        <code class="language-html">
+      </code>
+    </pre>
+  </div>
+  <p class="base--p">
+    In this library, there are containers of different widths.
+  </p>
+  <div class="code-block">
+    <pre class="base--pre language-scss">
+      <code class="language-html">
 &lt;!-- max-width of 768px --&gt;
 &lt;div class="_container"&gt;&lt;/div&gt;
 &lt;!-- max-width of 1024px --&gt;
@@ -284,21 +282,21 @@
 &lt;div class="_container _container_x-large"&gt;&lt;/div&gt;
 &lt;!-- max-width of 1280px --&gt;
 &lt;div class="_container _container_xx-large"&gt;&lt;/div&gt;
-        </code>
-      </pre>
-    </div>
+      </code>
+    </pre>
+  </div>
 
-    <h3 class="content--heading base--h3">SASS Utilities</h3>
-    <hr class="base--hr">
+  <h3 class="content--heading base--h3">SASS Utilities</h3>
+  <hr class="base--hr">
 
-    <h4 class="base--h4">Grid Mixin</h4>
+  <h4 class="base--h4">Grid Mixin</h4>
 
-    <p class="base--p">For layouts designed with responsive grids, you can use the <code class="base--code">grid</code> mixin.</p>
+  <p class="base--p">For layouts designed with responsive grids, you can use the <code class="base--code">grid</code> mixin.</p>
 
-    <div class="code-block">
-      <div class="code-block--code">
-        <pre class="base--pre language-scss">
-          <code class="language-scss">
+  <div class="code-block">
+    <div class="code-block--code">
+      <pre class="base--pre language-scss">
+        <code class="language-scss">
 .column-1 {
   @include grid(6);
   background-color: color('purple', 50);
@@ -318,24 +316,24 @@
   height: 3rem;
   margin-top: 0rem;
 }
-          </code>
-        </pre>
-      </div>
-      <div class="code-block--ui">
-        <div class="column-1"></div>
-        <div class="column-2"></div>
-        <div class="column-3"></div>
-      </div>
+        </code>
+      </pre>
     </div>
+    <div class="code-block--ui">
+      <div class="column-1"></div>
+      <div class="column-2"></div>
+      <div class="column-3"></div>
+    </div>
+  </div>
 
-    <h4 class="base--h4">Divisions Mixin</h4>
+  <h4 class="base--h4">Divisions Mixin</h4>
 
-    <p class="base--p">For layouts made with basic divisions, you can use the <code class="base--code">divisions</code> mixin.</p>
+  <p class="base--p">For layouts made with basic divisions, you can use the <code class="base--code">divisions</code> mixin.</p>
 
-    <div class="code-block">
-      <div class="code-block--code">
-        <pre class="base--pre language-scss">
-          <code class="language-scss">
+  <div class="code-block">
+    <div class="code-block--code">
+      <pre class="base--pre language-scss">
+        <code class="language-scss">
 .left-division {
   @include divisions(2);
   background-color: color('purple', 30);
@@ -348,21 +346,21 @@
   background-color: color('teal', 30);
   height: 7rem;
 }
-          </code>
-        </pre>
-      </div>
-      <div class="code-block--ui">
-        <div class="left-division"></div>
-        <div class="right-division"></div>
-      </div>
+        </code>
+      </pre>
     </div>
+    <div class="code-block--ui">
+      <div class="left-division"></div>
+      <div class="right-division"></div>
+    </div>
+  </div>
 
-    <p class="base--p"><code class="base--code">Divisions</code> is also useful for ui like grid-view list items that don't align with a responsive grid layout.</p>
+  <p class="base--p"><code class="base--code">Divisions</code> is also useful for ui like grid-view list items that don't align with a responsive grid layout.</p>
 
-    <div class="code-block">
-      <div class="code-block--code">
-        <pre class="base--pre language-scss">
-          <code class="language-scss">
+  <div class="code-block">
+    <div class="code-block--code">
+      <pre class="base--pre language-scss">
+        <code class="language-scss">
 .grid-item {
   @include divisions(5);
   background-color: color('purple', 50);
@@ -373,25 +371,25 @@
     background-color: color('teal', 50);
   }
 }
-          </code>
-        </pre>
-      </div>
-      <div class="code-block--ui">
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-      </div>
+        </code>
+      </pre>
     </div>
+    <div class="code-block--ui">
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+    </div>
+  </div>
 
-    <h4 class="base--h4">Breakpoints</h4>
+  <h4 class="base--h4">Breakpoints</h4>
 
-    <p class="base--p">Below is a basic usage of defining responsive breakpoints using the <a href="http://breakpoint-sass.com/" class="base--a">Breakpoints-Sass</a> mixin.</p>
-    <div class="code-block">
-      <div class="code-block--code">
-        <pre class="base--pre language-scss">
-          <code class="language-scss">
+  <p class="base--p">Below is a basic usage of defining responsive breakpoints using the <a href="http://breakpoint-sass.com/" class="base--a">Breakpoints-Sass</a> mixin.</p>
+  <div class="code-block">
+    <div class="code-block--code">
+      <pre class="base--pre language-scss">
+        <code class="language-scss">
 .breakpoint-example-1 {
   display: block;
   background-color: color('purple', 50);
@@ -399,9 +397,9 @@
   @include breakpoint(get('large')) {
     @include grid(6);
   }
-}
+  }
 
-.breakpoint-example-2 {
+  .breakpoint-example-2 {
   display: block;
   background-color: color('teal', 50);
 
@@ -409,23 +407,23 @@
     @include grid(6);
   }
 }
-          </code>
-        </pre>
+        </code>
+      </pre>
+    </div>
+    <div class="code-block--ui">
+      <div class="breakpoint-example-1">
+        first item
       </div>
-      <div class="code-block--ui">
-        <div class="breakpoint-example-1">
-          first item
-        </div>
-        <div class="breakpoint-example-2">
-          second item
-        </div>
+      <div class="breakpoint-example-2">
+        second item
       </div>
     </div>
+  </div>
 
-    <h4 class="base--h4">Breakpoint Settings</h4>
-    <div class="code-block">
-      <pre class="base--pre language-scss">
-        <code class="language-scss">
+  <h4 class="base--h4">Breakpoint Settings</h4>
+  <div class="code-block">
+    <pre class="base--pre language-scss">
+      <code class="language-scss">
 $BreakpointSettings: (
   'xx-small': 320px,
   'x-small': 360px,
@@ -435,14 +433,14 @@ $BreakpointSettings: (
   'x-large': 1200px,
   'xx-large': 1280px
 );
-        </code>
-      </pre>
-    </div>
+      </code>
+    </pre>
+  </div>
 
-    <h4 class="base--h4">Typography Settings</h4>
-    <div class="code-block">
-      <pre class="base--pre language-scss">
-        <code class="language-scss">
+  <h4 class="base--h4">Typography Settings</h4>
+  <div class="code-block">
+    <pre class="base--pre language-scss">
+      <code class="language-scss">
 $TypographySettings: (
   'sans serif': ('Helvetica Neue', Helvetica, 'Open Sans', Arial, 'Lucida Grande', 'Roboto', sans-serif),
   'monospace': (source-code-pro, Menlo, Consolas, monospace),
@@ -451,14 +449,14 @@ $TypographySettings: (
   'weight light': 200,
   'rhythm': 2rem
 );
-        </code>
-      </pre>
-    </div>
+      </code>
+    </pre>
+  </div>
 
-    <h4 class="base--h4">Colors Settings</h4>
-    <div class="code-block">
-      <pre class="base--pre language-scss">
-        <code class="language-scss">
+  <h4 class="base--h4">Colors Settings</h4>
+  <div class="code-block">
+    <pre class="base--pre language-scss">
+      <code class="language-scss">
 $ColorScheme: (
   'primary color': color('purple', 50),
   'secondary color': color('teal', 50),
@@ -467,52 +465,52 @@ $ColorScheme: (
   'white': color('white', 10),
   'black': color('gray', 100)
 );
-        </code>
-      </pre>
-    </div>
+      </code>
+    </pre>
+  </div>
 
-    <h4 class="base--h4">set-text-color Function</h4>
+  <h4 class="base--h4">set-text-color Function</h4>
 
-    <p class="base--p">The <code class="base--code">set-text-color</code> function can find a contrasting text color given a background color.</p>
+  <p class="base--p">The <code class="base--code">set-text-color</code> function can find a contrasting text color given a background color.</p>
 
-    <div class="code-block">
-      <div class="code-block--code">
-        <pre class="base--pre language-scss">
-          <code class="language-scss">
+  <div class="code-block">
+    <div class="code-block--code">
+      <pre class="base--pre language-scss">
+        <code class="language-scss">
 .element-with-dark-text {
   display: block;
   padding: get('rhythm') / 2;
   background-color: color('purple', 20);
   color: set-text-color(color('purple', 20));
-}
+  }
 
-.element-with-light-text {
+  .element-with-light-text {
   display: block;
   padding: get('rhythm') / 2;
   background-color: color('purple', 80);
   color: set-text-color(color('purple', 80));
 }
-          </code>
-        </pre>
+        </code>
+      </pre>
+    </div>
+    <div class="code-block--ui">
+      <div class="element-with-dark-text">
+        Dark text, light background
       </div>
-      <div class="code-block--ui">
-        <div class="element-with-dark-text">
-          Dark text, light background
-        </div>
-        <div class="element-with-light-text">
-          Light text, dark background
-        </div>
+      <div class="element-with-light-text">
+        Light text, dark background
       </div>
     </div>
+  </div>
 
-    <h4 class="base--h4">color Function</h4>
+  <h4 class="base--h4">color Function</h4>
 
-    <p class="base--p">The <code class="base--code">color</code> function can pull a color from the IBM Design Color palette given a color name and tone.</p>
+  <p class="base--p">The <code class="base--code">color</code> function can pull a color from the IBM Design Color palette given a color name and tone.</p>
 
-    <div class="code-block">
-      <div class="code-block--code">
-        <pre class="base--pre language-scss">
-          <code class="language-scss">
+  <div class="code-block">
+    <div class="code-block--code">
+      <pre class="base--pre language-scss">
+        <code class="language-scss">
 .lots-of-colors {
   display: block;
   padding: get('rhythm') / 2;
@@ -530,26 +528,26 @@ $ColorScheme: (
     color: color('yellow', 30);
   }
 }
-          </code>
-        </pre>
-      </div>
-      <div class="code-block--ui">
-        <div class="lots-of-colors">
-          <span>green 50</span>
-          <span>blue 40</span>
-          <span>yellow 30</span>
-        </div>
+        </code>
+      </pre>
+    </div>
+    <div class="code-block--ui">
+      <div class="lots-of-colors">
+        <span>green 50</span>
+        <span>blue 40</span>
+        <span>yellow 30</span>
       </div>
     </div>
+  </div>
 
-    <h4 class="base--h4">get Function</h4>
+  <h4 class="base--h4">get Function</h4>
 
-    <p class="base--p">The <code class="base--code">get</code> function can look up a key in any global setting (Breakpoints, Typography, etc.) defined in the Sass library.</p>
+  <p class="base--p">The <code class="base--code">get</code> function can look up a key in any global setting (Breakpoints, Typography, etc.) defined in the Sass library.</p>
 
-    <div class="code-block">
-      <div class="code-block--code">
-        <pre class="base--pre language-scss">
-          <code class="language-scss">
+  <div class="code-block">
+    <div class="code-block--code">
+      <pre class="base--pre language-scss">
+        <code class="language-scss">
 .get-example {
   display: block;
   padding: get('rhythm') / 2;
@@ -564,24 +562,23 @@ $ColorScheme: (
     }
   }
 }
-          </code>
-        </pre>
+        </code>
+      </pre>
+    </div>
+    <div class="code-block--ui">
+      <div class="get-example">
+        Get
       </div>
-      <div class="code-block--ui">
-        <div class="get-example">
-          Get
-        </div>
-        <div class="get-example">
-          Get
-        </div>
+      <div class="get-example">
+        Get
       </div>
     </div>
-
-    <h3 class="content--heading base--h3">Colors</h3>
-    <hr class="base--hr">
-    {% include "core/colors.nunjucks" %}
-
   </div>
+
+  <h3 class="content--heading base--h3">Colors</h3>
+  <hr class="base--hr">
+  {% include "core/colors.nunjucks" %}
+
 </div>
 {% endblock %}
 
