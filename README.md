@@ -1,9 +1,9 @@
-# Watson Developer Cloud Component Library [![Build Status](https://travis-ci.org/jzhang300/ui-components.svg?branch=master)](https://travis-ci.org/jzhang300/ui-components)
+# Watson Developer Cloud Component Library [![Build Status](https://travis-ci.org/watson-developer-cloud/ui-components.svg?branch=master)](https://travis-ci.org/watson-developer-cloud/ui-components)
 
 Welcome to the git repo for the Watson Developer Cloud Component Library.
 This SASS library is a development resource to help developers quickly and consistently develop quality ui.
 
-The Main Website: watson-developer-cloud.github.io/ui-components
+The Main Website: https://watson-developer-cloud.github.io/ui-components/
 
 # Getting Started
 
@@ -47,7 +47,7 @@ The Main Website: watson-developer-cloud.github.io/ui-components
 
 ## Publishing a Github Page
 
-To publish to the [main site](https://pages.github.ibm.com/watson/ui-component-library/), use the `npm deploy` top update to `gh-pages` branch.
+To publish to the [main site](https://watson-developer-cloud.github.io/ui-components/), use the `npm deploy` top update to `gh-pages` branch.
 
 
 ## Build the public Bower Component
