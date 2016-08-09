@@ -22,7 +22,7 @@
 
   <ul class="base--ul">
     <li class="base--li">
-      <p class="base--p">
+      <p class="base--p base--p_inline">
         Install as a Bower Component (Recommended)
       </p>
       <pre class="base--pre prism language-bash" style="margin: 1rem 0rem;">
@@ -30,7 +30,7 @@
       </pre>
     </li>
     <li class="base--li">
-      <p class="base--p">
+      <p class="base--p base--p_inline">
         Install the git repo by cloning or downloading the zip file at <a href="#" class="base--a">https://github.com/watson-developer-cloud/ui-components</a>.
       </p>
     </li>
