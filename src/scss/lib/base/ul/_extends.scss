@@ -2,20 +2,16 @@
 // Remove once Libsass 3.2 is released
 //////////////////////////////
 %base--list {
-  display: table;
   padding-left: 0;
   margin-left: 0;
   list-style: none;
+  width: 100%;
 
   li,
   .base--li {
-    // @extend %clearfix;
-    // @extend %border-box;
-    display: table-row;
-    counter-increment: table-ol;
+    margin-top: 0rem;
 
     &::before {
-      display: table-cell;
       padding-right: 0.4em;
       text-align: right;
     }
