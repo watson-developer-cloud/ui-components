@@ -5,7 +5,7 @@ This SASS library is a development resource to help developers quickly and consi
 
 The Main Website: watson-developer-cloud.github.io/ui-components
 
-# Getting Started 
+# Getting Started
 
 ## Prerequisites
 
