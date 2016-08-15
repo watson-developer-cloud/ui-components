@@ -12,7 +12,7 @@
     </div>
     <div class="top-nav--spacer"></div>
     <nav role="menubar" class="top-nav--nav">
-      <a href="/index.html" role="menuitem" class="base--a top-nav--nav-li-link selected">
+      <a href="/index.html" role="menuitem" class="base--a top-nav--nav-li-link">
         <li role="presentation" class="base--li top-nav--nav-li">
           ABOUT
         </li>
@@ -22,7 +22,7 @@
           GETTING STARTED
         </li>
       </a>
-      <a href="/components.html" role="menuitem" class="base--a top-nav--nav-li-link">
+      <a href="/components.html" role="menuitem" class="base--a top-nav--nav-li-link selected">
         <li role="presentation" class="base--li top-nav--nav-li">
           COMPONENTS
         </li>
