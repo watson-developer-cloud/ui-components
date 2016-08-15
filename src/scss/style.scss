@@ -1,5 +1,149 @@
 @import 'lib/style';
 
+.top-nav {
+  $top-nav--border-width: 4px;
+
+  background-color: #404041;
+  margin-top: 0;
+  position: relative;
+  z-index: 1000;
+
+  ._container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3rem;
+  }
+
+  &--wordmark {
+    display: none;
+
+    @include breakpoint(get('medium')) {
+      display: inline-block;
+    }
+  }
+
+  &--wordmark-link {
+    color: #fff;
+    text-decoration: none;
+
+    &:visited {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  &--spacer {
+    flex-grow: 1;
+    display: none;
+
+    @include breakpoint(get('medium')) {
+      display: inline-block;
+    }
+  }
+
+  &--nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-top: 0rem;
+    height: 100%;
+
+    @include breakpoint(get('medium')) {
+      width: auto;
+      justify-content: flex-start;
+    }
+  }
+
+  &--nav-li-link {
+    border: none;
+    margin-top: 0rem;
+    height: 100%;
+
+    @include breakpoint(get('medium')) {
+      margin-left: get('rhythm') / 2;
+    }
+
+    &:focus,
+    &:hover {
+      border: none;
+    }
+
+    &:visited {
+      color: color('gray', 20);
+      border: none;
+    }
+  }
+
+  &--nav-li {
+    margin-top: 0rem;
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: ms(-1);
+    color: color('gray', 20);
+    border-bottom: $top-nav--border-width solid transparent;
+    border-top: $top-nav--border-width solid transparent;
+    transition: 0.2s;
+
+    .top-nav--nav-li-link.selected &,
+    .top-nav--nav-li-link:hover & {
+      color: #fff;
+      border-bottom: $top-nav--border-width solid color('purple', 10);
+    }
+  }
+
+  @include breakpoint(get('medium')) {
+    padding-bottom: 0;
+  }
+}
+
+.home {
+  &--left {
+    margin-top: 0;
+
+    @include breakpoint(get('medium')) {
+      @include grid(4);
+    }
+  }
+
+  &--right {
+    margin-top: get('rhythm') / 3;
+
+    @include breakpoint(get('medium')) {
+      @include grid(8, $has-right-gutter: false);
+      margin-top: 0;
+    }
+  }
+
+  &--header {
+    font-size: ms(-1);
+    font-weight: 900;
+    color: color('gray', 50);
+  }
+
+  &--description {
+    font-size: ms(-1);
+    color: color('gray', 80);
+  }
+
+  &--link {
+    color: color('purple', 70);
+
+    &:visited {
+      color: color('purple', 70);
+    }
+
+    &:hover,
+    &:focus {
+      color: color('purple', 50);
+    }
+  }
+}
+
 .code-block {
   margin-bottom: get('rhythm') * 1.5;
 
@@ -28,7 +172,6 @@
   margin: 0;
   $index: 1;
   $colors: ('purple', 'teal', 'gray', 'white');
-
   @each $key in $colors {
     @each $tone,
     $color in map-get($ColorPalette, $key) {
@@ -180,7 +323,6 @@
 .right-pane ._container {
   margin-left: get('rhythm') * 3 / 2;
 }
-
 /*
  * jquery.tocify.css 1.9.0
  * Author: @gregfranko
@@ -198,7 +340,6 @@
   padding-top: get('rhythm') * 7 / 8;
   padding-right: get('rhythm') * 3 / 4;
 }
-
 /* The Table of Contents is composed of multiple nested unordered lists.  These styles remove the default styling of an unordered list because it is ugly. */
 .tocify ul,
 .tocify li {
@@ -207,10 +348,8 @@
   padding: 0;
   border: none;
 }
-
 /* Top level header elements */
 .tocify-header {
-
   & > .tocify-item {
     font-weight: bold;
     margin-bottom: 2rem;
@@ -223,14 +362,12 @@
     }
   }
 }
-
 /* Top level subheader elements.  These are the first nested items underneath a header element. */
 .tocify-subheader {
   text-indent: 3rem;
   display: none;
   font-size: ms(-1);
 }
-
 /* Makes the font smaller for all subheader elements. */
 .tocify-subheader li {
   font-size: 1em;
@@ -272,28 +409,23 @@
     }
   }
 }
-
 /* Further indents second level subheader elements. */
 .tocify-subheader .tocify-subheader {
   text-indent: 4rem;
 }
-
 /* Further indents third level subheader elements. You can continue this pattern if you have more nested elements. */
 .tocify-subheader .tocify-subheader .tocify-subheader {
   text-indent: 5rem;
 }
-
 /* Twitter Bootstrap Override Style */
 .nav-list > li > a,
 .nav-list .nav-header {
   margin: 0;
 }
-
 /* Twitter Bootstrap Override Style */
 .nav-list > li > a {
-  padding: 0rem;
+  padding: 0;
 }
-
 /* Updated styles */
 .tocify-subheader[data-tag="3"] {
   display: block;
