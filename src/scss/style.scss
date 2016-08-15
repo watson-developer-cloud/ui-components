@@ -144,6 +144,49 @@
   }
 }
 
+.navigation{
+  &--block{
+    padding: get('rhythm') * 4;
+    cursor: pointer;
+    color: color('purple', 70);
+
+    &_COOL{
+      background-color: #ECF0F2;
+    }
+
+    &_WARM{
+      background-color: #F2EEEE;
+    }
+  }
+
+  &--text{
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.content{
+  &--description{
+    margin: get('rhythm') * 2 0;
+  }
+
+}
+
+.bottom-nav-bar{
+  &--container{
+    position: absolute;
+    bottom: get('rhythm') / 2;
+    width: 100%;
+  }
+
+  &--nav{
+    text-align: center;
+    margin: 0 auto;
+    font-size: ms(-1);
+    color: color('gray', 60);
+  }
+}
+
 .code-block {
   margin-bottom: get('rhythm') * 1.5;
 
