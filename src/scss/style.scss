@@ -252,14 +252,11 @@ html, body {
 .code-block {
   margin-bottom: get('rhythm') * 1.5;
 
-  &--code {
-    @include grid(6);
+  &--ui {
+    margin-top: 0rem;
   }
 
-  &--ui {
-    @include grid(6, $has-right-gutter: false);
-    margin-top: 0;
-  }
+  // &--code {}
 
   .base--pre {
     transition: 0.2s;
