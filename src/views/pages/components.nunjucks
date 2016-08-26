@@ -40,15 +40,21 @@
   <div class="content--content-container">
     <h4 class="content--content-title">Content</h4>
     <div class="content--content-item-container">
-      <div class="content--content-item">
-        BUTTONS
-      </div>
-      <div class="content--content-item">
-        TAB PANELS
-      </div>
-      <div class="content--content-item">
-        CLICKABLE TABS
-      </div>
+      <a href="#buttons">
+        <div class="content--content-item">
+          BUTTONS
+        </div>
+      </a>
+      <a href="#tab-panels">
+        <div class="content--content-item">
+          TAB PANELS
+        </div>
+      </a>
+      <a href="#clickable-tabs">
+        <div class="content--content-item">
+          CLICKABLE TABS
+        </div>
+      </a>
       <div class="content--content-item">
         ROUNDED TAGS
       </div>
@@ -59,24 +65,24 @@
         HR
       </div>
       <div class="content--content-item">
-        OTHER
+        OTHERS
       </div>
 
     </div>
 
   </div>
 
-  <h4 class="base--h4">Buttons</h4>
+  <h4 id="buttons" class="base--h4">Buttons</h4>
   {% call codeblock('markup') %}
 {% include "base/button.nunjucks" %}
   {% endcall %}
 
-  <h4 class="base--h4">Tab Panels</h4>
+  <h4 id="tab-panels" class="base--h4">Tab Panels</h4>
   {% call codeblock('markup') %}
 {% include "components/tab-panels.nunjucks" %}
   {% endcall %}
 
-  <h4 class="base--h4">Clickable Tabs</h4>
+  <h4 id="clickable-tabs" class="base--h4">Clickable Tabs</h4>
   {% call codeblock('markup') %}
 {% include "components/clickable-tab.nunjucks" %}
   {% endcall %}
@@ -86,22 +92,22 @@
 {% include "components/clickable-tab-with-radio.nunjucks" %}
   {% endcall %}
 
-  <h4 class="base--h4">Rounded Tags</h4>
+  <h4 id="rounded-tags" class="base--h4">Rounded Tags</h4>
   {% call codeblock('markup') %}
 {% include "components/metatag.nunjucks" %}
   {% endcall %}
 
-  <h4 class="base--h4">Loader</h4>
+  <h4 id="loader" class="base--h4">Loader</h4>
   {% call codeblock('markup') %}
 {% include "components/loader.nunjucks" %}
   {% endcall %}
 
-  <h4 class="base--h4">HR</h4>
+  <h4 id="hr" class="base--h4">HR</h4>
   {% call codeblock('markup') %}
 {% include "base/hr.nunjucks" %}
   {% endcall %}
 
-  <h4 class="base--h4">Checkboxes</h4>
+  <h4 id="others" class="base--h4">Checkboxes</h4>
   {% call codeblock('markup') %}
 {% include "base/checkbox.nunjucks" %}
   {% endcall %}
