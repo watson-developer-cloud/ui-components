@@ -71,6 +71,36 @@
 {% include "base/button.nunjucks" %}
   {% endcall %}
 
+  <h4 class="base--h4">Tab Panels</h4>
+  {% call codeblock('markup') %}
+{% include "components/tab-panels.nunjucks" %}
+  {% endcall %}
+
+  <h4 class="base--h4">Clickable Tabs</h4>
+  {% call codeblock('markup') %}
+{% include "components/clickable-tab.nunjucks" %}
+  {% endcall %}
+
+  <h4 class="base--h4">Clickable Tabs as Radio Buttons</h4>
+  {% call codeblock('markup') %}
+{% include "components/clickable-tab-with-radio.nunjucks" %}
+  {% endcall %}
+
+  <h4 class="base--h4">Rounded Tags</h4>
+  {% call codeblock('markup') %}
+{% include "components/metatag.nunjucks" %}
+  {% endcall %}
+
+  <h4 class="base--h4">Loader</h4>
+  {% call codeblock('markup') %}
+{% include "components/loader.nunjucks" %}
+  {% endcall %}
+
+  <h4 class="base--h4">HR</h4>
+  {% call codeblock('markup') %}
+{% include "base/hr.nunjucks" %}
+  {% endcall %}
+
   <h4 class="base--h4">Checkboxes</h4>
   {% call codeblock('markup') %}
 {% include "base/checkbox.nunjucks" %}
@@ -79,11 +109,6 @@
   <h4 class="base--h4">Radio Buttons</h4>
   {% call codeblock('markup') %}
 {% include "base/radio.nunjucks" %}
-  {% endcall %}
-
-  <h4 class="base--h4">HR</h4>
-  {% call codeblock('markup') %}
-{% include "base/hr.nunjucks" %}
   {% endcall %}
 
   <h4 class="base--h4">Table</h4>
@@ -186,33 +211,9 @@
 {% include "base/input--week.nunjucks" %}
   {% endcall %}
 
-  <h3 class="content--heading base--h3">Components</h3>
-  <hr class="base--hr">
 
-  <h4 class="base--h4">Tab Panels</h4>
-  {% call codeblock('markup') %}
-{% include "components/tab-panels.nunjucks" %}
-  {% endcall %}
 
-  <h4 class="base--h4">Clickable Tabs</h4>
-  {% call codeblock('markup') %}
-{% include "components/clickable-tab.nunjucks" %}
-  {% endcall %}
 
-  <h4 class="base--h4">Clickable Tabs as Radio Buttons</h4>
-  {% call codeblock('markup') %}
-{% include "components/clickable-tab-with-radio.nunjucks" %}
-  {% endcall %}
-
-  <h4 class="base--h4">Rounded Tags</h4>
-  {% call codeblock('markup') %}
-{% include "components/metatag.nunjucks" %}
-  {% endcall %}
-
-  <h4 class="base--h4">Loader</h4>
-  {% call codeblock('markup') %}
-{% include "components/loader.nunjucks" %}
-  {% endcall %}
 
 </div>
 <div class="bottom-nav-bar--container">
