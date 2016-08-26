@@ -219,14 +219,17 @@ html, body {
 
   &--session-title{
     color: color('gray', 50);
+    font-size: 0.875rem;
   }
 
   &--session-text{
     color: color('gray', 80);
+    font-size: 0.875rem;
   }
 
   &--session-pre{
     background-color: #F7f5f5;
+    font-size: 0.875rem;
   }
 
   &--content-title {
