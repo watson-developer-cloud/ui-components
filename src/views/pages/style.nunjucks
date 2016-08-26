@@ -36,7 +36,7 @@
   </div>
 </header>
 
-<div class="_container _container_large">
+<div class="_container _container_large style">
   <div class="content--content-container">
     <h4 class="content--content-title">Content</h4>
     <div class="content--content-item-container">
