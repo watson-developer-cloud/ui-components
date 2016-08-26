@@ -55,18 +55,26 @@
           CLICKABLE TABS
         </div>
       </a>
-      <div class="content--content-item">
-        ROUNDED TAGS
-      </div>
-      <div class="content--content-item">
-        LOADER
-      </div>
-      <div class="content--content-item">
-        HR
-      </div>
-      <div class="content--content-item">
-        OTHERS
-      </div>
+      <a href="#rounded-tags">
+        <div class="content--content-item">
+          ROUNDED TAGS
+        </div>
+      </a>
+      <a href="#loader">
+        <div class="content--content-item">
+          LOADER
+        </div>
+      </a>
+      <a href="#hr">
+        <div class="content--content-item">
+          HR
+        </div>
+      </a>
+      <a href="#others">
+        <div class="content--content-item">
+          OTHERS
+        </div>
+      </a>
 
     </div>
 

@@ -213,21 +213,21 @@ html, body {
     margin: get('rhythm') * 2 auto;
   }
 
-  &--session-container{
+  &--session-container {
     margin-top: get('rhythm') * 2;
   }
 
-  &--session-title{
+  &--session-title {
     color: color('gray', 50);
     font-size: 0.875rem;
   }
 
-  &--session-text{
+  &--session-text {
     color: color('gray', 80);
     font-size: 0.875rem;
   }
 
-  &--session-pre{
+  &--session-pre {
     background-color: #F7f5f5;
     font-size: 0.875rem;
   }
@@ -240,16 +240,21 @@ html, body {
   &--content-item-container {
     border-left: 4px solid color('purple', 30);
     padding-left: get('rhythm') * 7 / 8;
-    color: color('purple', 60);
+  }
+
+  &--content-item-container a {
+    text-decoration: none;
+
+    &:nth-of-type(1) .content--content-item {
+      margin-top: 0rem;
+    }
   }
 
   &--content-item {
-    margin-top: get('rhythm') / 4;
     font-size: 0.875em;
-
-    &:first-child {
-      margin-top: 0rem;
-    }
+    margin-top: get('rhythm') / 4;
+    color: color('purple', 60);
+    text-decoration: none;
   }
 
   &--content-container {
