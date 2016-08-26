@@ -229,6 +229,11 @@ html, body {
     background-color: #F7f5f5;
   }
 
+  &--content-title{
+    color: color('gray', 50);
+    font-size: 0.875em;
+  }
+
 }
 
 .bottom-nav-bar {
