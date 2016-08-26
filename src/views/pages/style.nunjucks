@@ -37,10 +37,22 @@
 </header>
 
 <div class="_container _container_large">
+  <div class="content--content-container">
+    <h4 class="content--content-title">Content</h4>
+    <div class="content--content-item-container">
+      <div class="content--content-item">
+        TYPOGRAPHY
+      </div>
+      <div class="content--content-item">
+        COLORS
+      </div>
+      <div class="content--content-item">
+        RESPONSIVE
+      </div>
+    </div>
 
+  </div>
 
-  <h3 class="content--heading base--h3">Typography</h3>
-  <hr class="base--hr">
 
   <h4 class="base--h4">Headers</h4>
   {% call codeblock('markup') %}
@@ -73,10 +85,6 @@
   {% endcall %} #}
 
 
-
-
-  <h3 class="content--heading base--h3">Layouts</h3>
-  <hr class="base--hr">
 
   <h4 class="base--h4">Container</h4>
   <p class="base--p">
@@ -111,8 +119,6 @@
     </pre>
   </div>
 
-  <h3 class="content--heading base--h3">SASS Utilities</h3>
-  <hr class="base--hr">
 
   <h4 class="base--h4">Grid Mixin</h4>
 
