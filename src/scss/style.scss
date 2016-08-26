@@ -229,6 +229,31 @@ html, body {
     background-color: #F7f5f5;
   }
 
+  &--content-title {
+    color: color('gray', 50);
+    font-size: 0.875em;
+  }
+
+  &--content-item-container {
+    border-left: 4px solid color('purple', 30);
+    padding-left: get('rhythm');
+    color: color('purple', 60);
+  }
+
+  &--content-item {
+    margin-top: get('rhythm') / 4;
+    font-size: 0.875em;
+
+    &:first-child {
+      margin-top: 0rem;
+    }
+  }
+
+  &--content-container {
+    margin-top: get('rhythm') * 2.5;
+    margin-bottom: get('rhythm') * 2.5;
+  }
+
 }
 
 .bottom-nav-bar {
@@ -250,8 +275,16 @@ html, body {
   }
 }
 
+.base--h4 {
+  color: color('purple', 60);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: ms(0);
+}
+
 .code-block {
-  margin-bottom: get('rhythm') * 1.5;
+  margin-top: get('rhythm') * 1.5;
+  margin-bottom: get('rhythm') * 2;
 
   &--ui {
     margin-top: 0rem;
