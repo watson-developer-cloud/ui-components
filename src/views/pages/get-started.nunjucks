@@ -38,28 +38,21 @@
 
 <div class="_container _container_large">
 
-
   <div class="content--session-container">
-
     <h4 class="content--session-title">Installation</h4>
-
     <p class="content--session-text">
       It is recommended that you install through Bower in your project:
     </p>
-
-    <pre class="base--pre prism language-bash" style="margin: 1rem 0rem;">
+    <pre class="content--session-pre base--pre prism language-bash" style="margin: 1rem 0rem;">
       <code class="base--code language-bash">$ bower install watson-developer-cloud-components</code>
     </pre>
-
     <p class="content--session-text base--p_inline">
       Or you can download a <a href="https://github.com/watson-developer-cloud/ui-components/releases" target="_blank" class="base--a">release version</a> from github.
     </p>
-
   </div>
 
   <div class="content--session-container">
     <h4 class="content--session-title">How to use</h4>
-
     <p class="content--session-text">
       In the <code class="base--code">dist/</code> directory, you'll find the CSS code, the SCSS code, the JS code, icons, and icon-fonts.
       If you're using SCSS, make sure you have the path to the <code class="base--code">bower_components</code> directory included in the SASS compiling configurations so that bower dependencies are referenced correctly in the code.
@@ -68,6 +61,16 @@
     </p>
   </div>
 
+</div>
+<div class="bottom-nav-bar--container">
+  <nav class="bottom-nav-bar--nav">
+    <ul class="bottom-nav-bar--nav-ul base--ul base--ul_inline base--ul_no-bullets">
+      <li class="bottom-nav-bar--nav-li base--li"><a href="#" class="base--a bottom-nav-bar--nav-link" target="_blank">ibm.com</a></li>
+      <li class="bottom-nav-bar--nav-li base--li"><a href="#" class="base--a bottom-nav-bar--nav-link" target="_blank">Terms of Use</a></li>
+      <li class="bottom-nav-bar--nav-li base--li"><a href="#" class="base--a bottom-nav-bar--nav-link" target="_blank">Privacy Policy</a></li>
+      <li class="bottom-nav-bar--nav-li base--li">© 2016 IBM</li>
+    </ul>
+  </nav>
 </div>
 {% endblock %}
 
