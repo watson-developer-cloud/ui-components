@@ -170,6 +170,18 @@
     margin: get('rhythm') * 2 0;
   }
 
+  &--session-container{
+    margin-top: get('rhythm') * 2;
+  }
+
+  &--session-title{
+    color: color('gray', 50);
+  }
+
+  &--session-text{
+    color: color('gray', 80);
+  }
+
 }
 
 .bottom-nav-bar{
