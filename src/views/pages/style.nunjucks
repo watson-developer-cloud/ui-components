@@ -40,21 +40,27 @@
   <div class="content--content-container">
     <h4 class="content--content-title">Content</h4>
     <div class="content--content-item-container">
-      <div class="content--content-item">
-        TYPOGRAPHY
-      </div>
-      <div class="content--content-item">
-        COLORS
-      </div>
-      <div class="content--content-item">
-        LAYOUT
-      </div>
+      <a href="#typography">
+        <div class="content--content-item">
+          TYPOGRAPHY
+        </div>
+      </a>
+      <a href="#colors">
+        <div class="content--content-item">
+          COLORS
+        </div>
+      </a>
+      <a href="#layout">
+        <div class="content--content-item">
+          LAYOUT
+        </div>
+      </a>
     </div>
 
   </div>
 
 
-  <h4 class="base--h4">Headers</h4>
+  <h4 id="typography" class="base--h4">Headers</h4>
   {% call codeblock('markup') %}
 {% include "base/h1.nunjucks" %}
 {% include "base/h2.nunjucks" %}
@@ -100,7 +106,7 @@ $TypographySettings: (
     </pre>
   </div>
 
-  <h4 class="base--h4">Colors</h4>
+  <h4 id="colors" class="base--h4">Colors</h4>
   <div class="code-block">
     {% include "core/colors.nunjucks" %}
   </div>
@@ -228,7 +234,7 @@ $ColorScheme: (
   </div>
 
 
-  <h4 class="base--h4">Container</h4>
+  <h4 id="layout" class="base--h4">Container</h4>
   <p class="base--p">
     Containers define main body layouts and contain responsive grid elements.
   </p>
