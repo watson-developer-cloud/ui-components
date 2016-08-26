@@ -1,0 +1,81 @@
+{% from "macros/ui-macros.nunjucks" import codeblock as codeblock %}
+
+{% extends "templates/template.nunjucks" %}
+
+{% block body %}
+<header class="top-nav">
+  <div class="_container _container_large">
+    <div class="top-nav--wordmark">
+      <a href="/" class="top-nav--wordmark-link">
+        Watson Platform Component Library
+      </a>
+    </div>
+    <div class="top-nav--spacer"></div>
+    <nav role="menubar" class="top-nav--nav">
+      <a href="/index.html" role="menuitem" class="base--a top-nav--nav-li-link">
+        <li role="presentation" class="base--li top-nav--nav-li">
+          ABOUT
+        </li>
+      </a>
+      <a href="/get-started.html" role="menuitem" class="base--a top-nav--nav-li-link selected">
+        <li role="presentation" class="base--li top-nav--nav-li">
+          GETTING STARTED
+        </li>
+      </a>
+      <a href="/components.html" role="menuitem" class="base--a top-nav--nav-li-link">
+        <li role="presentation" class="base--li top-nav--nav-li">
+          COMPONENTS
+        </li>
+      </a>
+      <a href="/style.html" role="menuitem" class="base--a top-nav--nav-li-link">
+        <li role="presentation" class="base--li top-nav--nav-li">
+          STYLE
+        </li>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<div class="_container _container_large">
+
+  <div class="content--session-container">
+    <h4 class="content--session-title">Installation</h4>
+    <p class="content--session-text">
+      It is recommended that you install through Bower in your project:
+    </p>
+    <pre class="content--session-pre base--pre prism language-bash" style="margin: 1rem 0rem;">
+      <code class="base--code language-bash">$ bower install watson-developer-cloud-components</code>
+    </pre>
+    <p class="content--session-text base--p_inline">
+      Or you can download a <a href="https://github.com/watson-developer-cloud/ui-components/releases" target="_blank" class="base--a">release version</a> from github.
+    </p>
+  </div>
+
+  <div class="content--session-container">
+    <h4 class="content--session-title">How to use</h4>
+    <p class="content--session-text">
+      In the <code class="base--code">dist/</code> directory, you'll find the CSS code, the SCSS code, the JS code, icons, and icon-fonts.
+      If you're using SCSS, make sure you have the path to the <code class="base--code">bower_components</code> directory included in the SASS compiling configurations so that bower dependencies are referenced correctly in the code.
+      For the Javascript, make sure that you're using <code class="base--code">JQuery 2.*.*</code> or above.
+      To use components that use icon fonts, make sure that the icon-fonts files are correctly referenced in your project relative to the CSS output file.
+    </p>
+  </div>
+
+</div>
+<div class="bottom-nav-bar--container bottom-nav-bar--container_standalone">
+  <nav class="bottom-nav-bar--nav">
+    <ul class="bottom-nav-bar--nav-ul base--ul base--ul_inline base--ul_no-bullets">
+      <li class="bottom-nav-bar--nav-li base--li"><a href="#" class="base--a bottom-nav-bar--nav-link" target="_blank">ibm.com</a></li>
+      <li class="bottom-nav-bar--nav-li base--li"><a href="#" class="base--a bottom-nav-bar--nav-link" target="_blank">Terms of Use</a></li>
+      <li class="bottom-nav-bar--nav-li base--li"><a href="#" class="base--a bottom-nav-bar--nav-link" target="_blank">Privacy Policy</a></li>
+      <li class="bottom-nav-bar--nav-li base--li">© 2016 IBM</li>
+    </ul>
+  </nav>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+<script src="js/vendors/jquery-ui-1.9.1.custom.min.js"></script>
+<script src="js/vendors/jquery.tocify.min.js"></script>
+{% endblock %}

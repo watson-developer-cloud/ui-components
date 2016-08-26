@@ -1,15 +1,308 @@
 @import 'lib/style';
 
-.code-block {
-  margin-bottom: get('rhythm') * 1.5;
+.top-nav {
+  $top-nav--border-width: 4px;
 
-  &--code {
-    @include grid(6);
+  background-color: #404041;
+  margin-top: 0;
+  position: relative;
+  z-index: 1000;
+
+  ._container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3rem;
   }
 
-  &--ui {
-    @include grid(6, $has-right-gutter: false);
+  &--wordmark {
+    display: none;
+
+    @include breakpoint(get('medium')) {
+      display: inline-block;
+    }
+  }
+
+  &--wordmark-link {
+    color: #fff;
+    text-decoration: none;
+
+    &:visited {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  &--spacer {
+    flex-grow: 1;
+    display: none;
+
+    @include breakpoint(get('medium')) {
+      display: inline-block;
+    }
+  }
+
+  &--nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-top: 0rem;
+    height: 100%;
+
+    @include breakpoint(get('medium')) {
+      width: auto;
+      justify-content: flex-start;
+    }
+  }
+
+  &--nav-li-link {
+    border: none;
+    margin-top: 0rem;
+    height: 100%;
+
+    @include breakpoint(get('medium')) {
+      margin-left: get('rhythm') / 2;
+    }
+
+    &:focus,
+    &:hover {
+      border: none;
+    }
+
+    &:visited {
+      color: color('gray', 20);
+      border: none;
+    }
+  }
+
+  &--nav-li {
+    margin-top: 0rem;
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: ms(-1);
+    color: color('gray', 20);
+    border-bottom: $top-nav--border-width solid transparent;
+    border-top: $top-nav--border-width solid transparent;
+    transition: 0.2s;
+
+    .top-nav--nav-li-link.selected &,
+    .top-nav--nav-li-link:hover & {
+      color: #fff;
+      border-bottom: $top-nav--border-width solid color('purple', 10);
+    }
+  }
+
+  @include breakpoint(get('medium')) {
+    padding-bottom: 0;
+  }
+}
+
+html, body {
+  height: 100%;
+}
+
+.flex-layout {
+  display: block;
+  position: static;
+  height: auto;
+  width: auto;
+
+  &--box-1 {
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+  }
+
+  @include breakpoint(get('medium')) {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 0rem;
+    position: absolute;
+    top: 0rem;
+    padding-top: 3rem;
+  }
+}
+
+.home {
+
+  &--left {
     margin-top: 0;
+
+    @include breakpoint(get('medium')) {
+      @include grid(5);
+    }
+  }
+
+  &--right {
+    margin-top: get('rhythm') / 3;
+
+    @include breakpoint(get('medium')) {
+      @include grid(7, $has-right-gutter: false);
+      margin-top: 0;
+    }
+  }
+
+  &--header {
+    font-size: 0.875em;
+    font-weight: 900;
+    color: color('gray', 50);
+  }
+
+  &--description {
+    font-size: 0.875em;
+    color: color('gray', 80);
+  }
+
+  &--link {
+    color: color('purple', 70);
+
+    &:visited {
+      color: color('purple', 70);
+    }
+
+    &:hover,
+    &:focus {
+      color: color('purple', 50);
+    }
+  }
+}
+
+.navigation{
+  &--block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: get('rhythm') * 4;
+    cursor: pointer;
+    color: color('purple', 70);
+
+    &_COOL{
+      background-color: #ECF0F2;
+
+      @include breakpoint(get('medium')) {
+        @include grid(6);
+        margin-top: 0rem;
+      }
+    }
+
+    &_WARM{
+      background-color: #F2EEEE;
+
+      @include breakpoint(get('medium')) {
+        @include grid(6, $has-right-gutter: false);
+        margin-top: 0rem;
+      }
+    }
+  }
+
+  &--text{
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.content {
+  &--description {
+    margin: get('rhythm') * 2 auto;
+  }
+
+  &--session-container {
+    margin-top: get('rhythm') * 2;
+  }
+
+  &--session-title {
+    color: color('gray', 50);
+    font-size: 0.875rem;
+  }
+
+  &--session-text {
+    color: color('gray', 80);
+    font-size: 0.875rem;
+  }
+
+  &--session-pre {
+    background-color: #F7f5f5;
+    font-size: 0.875rem;
+  }
+
+  &--content-title {
+    color: color('gray', 50);
+    font-size: 0.875em;
+  }
+
+  &--content-item-container {
+    border-left: 4px solid color('purple', 30);
+    padding-left: get('rhythm') * 7 / 8;
+  }
+
+  &--content-item-container a {
+    text-decoration: none;
+
+    &:nth-of-type(1) .content--content-item {
+      margin-top: 0rem;
+    }
+  }
+
+  &--content-item {
+    font-size: 0.875em;
+    margin-top: get('rhythm') / 4;
+    color: color('purple', 60);
+    text-decoration: none;
+  }
+
+  &--content-container {
+    margin-top: get('rhythm') * 2.5;
+    margin-bottom: get('rhythm') * 2.5;
+  }
+}
+
+.bottom-nav-bar {
+
+  &--container {
+    width: 100%;
+    padding: 1rem;
+
+    &_standalone {
+      @include breakpoint(get('medium')) {
+        position: absolute;
+        bottom: get('rhythm') / 2;
+      }
+    }
+  }
+
+  &--nav {
+    text-align: center;
+    margin: 0 auto;
+    font-size: ms(-1);
+    color: color('gray', 60);
+  }
+}
+
+.basic-header {
+  color: color('purple', 60);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: ms(0);
+}
+
+.code-block {
+  margin-top: get('rhythm') * 1.5;
+  margin-bottom: get('rhythm') * 2;
+
+  &--ui {
+    margin-top: 0rem;
+    text-align: center;
+  }
+
+  &--code {
+    margin-top: get('rhythm');
   }
 
   .base--pre {
@@ -28,7 +321,6 @@
   margin: 0;
   $index: 1;
   $colors: ('purple', 'teal', 'gray', 'white');
-
   @each $key in $colors {
     @each $tone,
     $color in map-get($ColorPalette, $key) {
@@ -181,134 +473,11 @@
   margin-left: get('rhythm') * 3 / 2;
 }
 
-/*
- * jquery.tocify.css 1.9.0
- * Author: @gregfranko
- */
-/* The Table of Contents container element */
-.tocify {
-  width: 25%;
-  height: 100%;
-  overflow: auto;
-  margin: 0;
-  position: fixed;
-  background-color: color('white', 40);
-  font-size: ms(3);
-  font-weight: 400;
-  padding-top: get('rhythm') * 7 / 8;
-  padding-right: get('rhythm') * 3 / 4;
-}
-
-/* The Table of Contents is composed of multiple nested unordered lists.  These styles remove the default styling of an unordered list because it is ugly. */
-.tocify ul,
-.tocify li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  border: none;
-}
-
-/* Top level header elements */
-.tocify-header {
-
-  & > .tocify-item {
-    font-weight: bold;
-    margin-bottom: 2rem;
-    padding-left: 1.5rem;
-
-    &:hover {
-      a {
-        border-bottom: 3px solid color('teal', 50);
-      }
-    }
+.base--pre {
+  .components & {
+    background-color: color('cool white', 30);
   }
-}
-
-/* Top level subheader elements.  These are the first nested items underneath a header element. */
-.tocify-subheader {
-  text-indent: 3rem;
-  display: none;
-  font-size: ms(-1);
-}
-
-/* Makes the font smaller for all subheader elements. */
-.tocify-subheader li {
-  font-size: 1em;
-  font-weight: 400;
-  padding-top: 1rem;
-  padding-bottom: 0.5rem;
-
-  & a {
-    border-bottom: 2px solid transparent;
+  .style & {
+    background-color: color('warm white', 30);
   }
-
-  &:hover {
-    color: color('teal', 50);
-
-    & a {
-      border-bottom: 2px solid color('teal', 50);
-    }
-  }
-
-  &:active {
-    color: color('teal', 80);
-
-    & a {
-      border-bottom: 2px solid color('teal', 80);
-    }
-  }
-
-  &.active {
-    & a {
-      border-bottom: 2px solid color('teal', 50);
-    }
-
-    &:active {
-      color: color('teal', 80);
-
-      & a {
-        border-bottom: 2px solid color('teal', 80);
-      }
-    }
-  }
-}
-
-/* Further indents second level subheader elements. */
-.tocify-subheader .tocify-subheader {
-  text-indent: 4rem;
-}
-
-/* Further indents third level subheader elements. You can continue this pattern if you have more nested elements. */
-.tocify-subheader .tocify-subheader .tocify-subheader {
-  text-indent: 5rem;
-}
-
-/* Twitter Bootstrap Override Style */
-.nav-list > li > a,
-.nav-list .nav-header {
-  margin: 0;
-}
-
-/* Twitter Bootstrap Override Style */
-.nav-list > li > a {
-  padding: 0rem;
-}
-
-/* Updated styles */
-.tocify-subheader[data-tag="3"] {
-  display: block;
-}
-
-.tocify-subheader[data-tag="4"] {
-  li {
-    font-weight: 300;
-    font-size: ms(0);
-    padding-top: 0.5rem;
-    padding-bottom: 0.25rem;
-  }
-}
-
-.tocify ul {
-  margin-top: get('rhythm') / 4;
-  margin-bottom: get('rhythm') / 4;
 }
