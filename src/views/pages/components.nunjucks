@@ -38,7 +38,34 @@
 
 <div class="_container _container_large">
 
+  <div class="content--content-container">
+    <h4 class="content--content-title">Content</h4>
+    <div class="content--content-item-container">
+      <div class="content--content-item">
+        BUTTONS
+      </div>
+      <div class="content--content-item">
+        TAB PANELS
+      </div>
+      <div class="content--content-item">
+        CLICKABLE TABS
+      </div>
+      <div class="content--content-item">
+        ROUNDED TAGS
+      </div>
+      <div class="content--content-item">
+        LOADER
+      </div>
+      <div class="content--content-item">
+        HR
+      </div>
+      <div class="content--content-item">
+        OTHER
+      </div>
+      
+    </div>
 
+  </div>
 
   <h4 class="base--h4">Buttons</h4>
   {% call codeblock('markup') %}
@@ -59,8 +86,6 @@
   {% call codeblock('markup') %}
 {% include "base/hr.nunjucks" %}
   {% endcall %}
-
-
 
   <h4 class="base--h4">Table</h4>
   {% call codeblock('markup') %}
