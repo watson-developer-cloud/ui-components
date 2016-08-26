@@ -239,7 +239,7 @@ html, body {
 
   &--content-item-container {
     border-left: 4px solid color('purple', 30);
-    padding-left: get('rhythm');
+    padding-left: get('rhythm') * 7 / 8;
     color: color('purple', 60);
   }
 
