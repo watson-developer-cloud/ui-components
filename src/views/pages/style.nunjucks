@@ -47,7 +47,7 @@
         COLORS
       </div>
       <div class="content--content-item">
-        RESPONSIVE
+        LAYOUT
       </div>
     </div>
 
@@ -84,6 +84,148 @@
 {% include "base/code.nunjucks" %}
   {% endcall %} #}
 
+  <h4 class="base--h4">Typography Settings</h4>
+  <div class="code-block">
+    <pre class="base--pre language-scss">
+      <code class="language-scss">
+$TypographySettings: (
+  'sans serif': ('Helvetica Neue', Helvetica, 'Open Sans', Arial, 'Lucida Grande', 'Roboto', sans-serif),
+  'monospace': (source-code-pro, Menlo, Consolas, monospace),
+  'weight bold': 700,
+  'weight normal': 400,
+  'weight light': 200,
+  'rhythm': 2rem
+);
+      </code>
+    </pre>
+  </div>
+
+  <h4 class="base--h4">Colors</h4>
+  <div class="code-block">
+    {% include "core/colors.nunjucks" %}
+  </div>
+
+  <h4 class="base--h4">Colors Settings</h4>
+  <div class="code-block">
+    <pre class="base--pre language-scss">
+      <code class="language-scss">
+$ColorScheme: (
+  'primary color': color('purple', 50),
+  'secondary color': color('teal', 50),
+  'background color': color('white', 10),
+  'text color': color('gray', 80),
+  'white': color('white', 10),
+  'black': color('gray', 100)
+);
+      </code>
+    </pre>
+  </div>
+
+  <h4 class="base--h4">set-text-color Function</h4>
+
+  <p class="base--p">The <code class="base--code">set-text-color</code> function can find a contrasting text color given a background color.</p>
+
+  <div class="code-block">
+    <div class="code-block--code">
+      <pre class="base--pre language-scss">
+        <code class="language-scss">
+.element-with-dark-text {
+  display: block;
+  padding: get('rhythm') / 2;
+  background-color: color('purple', 20);
+  color: set-text-color(color('purple', 20));
+  }
+
+  .element-with-light-text {
+  display: block;
+  padding: get('rhythm') / 2;
+  background-color: color('purple', 80);
+  color: set-text-color(color('purple', 80));
+}
+        </code>
+      </pre>
+    </div>
+    <div class="code-block--ui">
+      <div class="element-with-dark-text">
+        Dark text, light background
+      </div>
+      <div class="element-with-light-text">
+        Light text, dark background
+      </div>
+    </div>
+  </div>
+
+  <h4 class="base--h4">color Function</h4>
+
+  <p class="base--p">The <code class="base--code">color</code> function can pull a color from the IBM Design Color palette given a color name and tone.</p>
+
+  <div class="code-block">
+    <div class="code-block--code">
+      <pre class="base--pre language-scss">
+        <code class="language-scss">
+.lots-of-colors {
+  display: block;
+  padding: get('rhythm') / 2;
+  background-color: color('white', 40);
+
+  span:nth-of-type(1) {
+    color: color('green', 50);
+  }
+
+  span:nth-of-type(2) {
+    color: color('blue', 40);
+  }
+
+  span:nth-of-type(3) {
+    color: color('yellow', 30);
+  }
+}
+        </code>
+      </pre>
+    </div>
+    <div class="code-block--ui">
+      <div class="lots-of-colors">
+        <span>green 50</span>
+        <span>blue 40</span>
+        <span>yellow 30</span>
+      </div>
+    </div>
+  </div>
+
+  <h4 class="base--h4">get Function</h4>
+
+  <p class="base--p">The <code class="base--code">get</code> function can look up a key in any global setting (Breakpoints, Typography, etc.) defined in the Sass library.</p>
+
+  <div class="code-block">
+    <div class="code-block--code">
+      <pre class="base--pre language-scss">
+        <code class="language-scss">
+.get-example {
+  display: block;
+  padding: get('rhythm') / 2;
+  background-color: get('background color');
+  color: get('primary color');
+
+  @include breakpoint(get('medium')) {
+    @include grid(6);
+
+    &:nth-of-type(2) {
+      margin-right: 0rem;
+    }
+  }
+}
+        </code>
+      </pre>
+    </div>
+    <div class="code-block--ui">
+      <div class="get-example">
+        Get
+      </div>
+      <div class="get-example">
+        Get
+      </div>
+    </div>
+  </div>
 
 
   <h4 class="base--h4">Container</h4>
@@ -268,147 +410,7 @@ $BreakpointSettings: (
     </pre>
   </div>
 
-  <h4 class="base--h4">Typography Settings</h4>
-  <div class="code-block">
-    <pre class="base--pre language-scss">
-      <code class="language-scss">
-$TypographySettings: (
-  'sans serif': ('Helvetica Neue', Helvetica, 'Open Sans', Arial, 'Lucida Grande', 'Roboto', sans-serif),
-  'monospace': (source-code-pro, Menlo, Consolas, monospace),
-  'weight bold': 700,
-  'weight normal': 400,
-  'weight light': 200,
-  'rhythm': 2rem
-);
-      </code>
-    </pre>
-  </div>
 
-  <h4 class="base--h4">Colors Settings</h4>
-  <div class="code-block">
-    <pre class="base--pre language-scss">
-      <code class="language-scss">
-$ColorScheme: (
-  'primary color': color('purple', 50),
-  'secondary color': color('teal', 50),
-  'background color': color('white', 10),
-  'text color': color('gray', 80),
-  'white': color('white', 10),
-  'black': color('gray', 100)
-);
-      </code>
-    </pre>
-  </div>
-
-  <h4 class="base--h4">set-text-color Function</h4>
-
-  <p class="base--p">The <code class="base--code">set-text-color</code> function can find a contrasting text color given a background color.</p>
-
-  <div class="code-block">
-    <div class="code-block--code">
-      <pre class="base--pre language-scss">
-        <code class="language-scss">
-.element-with-dark-text {
-  display: block;
-  padding: get('rhythm') / 2;
-  background-color: color('purple', 20);
-  color: set-text-color(color('purple', 20));
-  }
-
-  .element-with-light-text {
-  display: block;
-  padding: get('rhythm') / 2;
-  background-color: color('purple', 80);
-  color: set-text-color(color('purple', 80));
-}
-        </code>
-      </pre>
-    </div>
-    <div class="code-block--ui">
-      <div class="element-with-dark-text">
-        Dark text, light background
-      </div>
-      <div class="element-with-light-text">
-        Light text, dark background
-      </div>
-    </div>
-  </div>
-
-  <h4 class="base--h4">color Function</h4>
-
-  <p class="base--p">The <code class="base--code">color</code> function can pull a color from the IBM Design Color palette given a color name and tone.</p>
-
-  <div class="code-block">
-    <div class="code-block--code">
-      <pre class="base--pre language-scss">
-        <code class="language-scss">
-.lots-of-colors {
-  display: block;
-  padding: get('rhythm') / 2;
-  background-color: color('white', 40);
-
-  span:nth-of-type(1) {
-    color: color('green', 50);
-  }
-
-  span:nth-of-type(2) {
-    color: color('blue', 40);
-  }
-
-  span:nth-of-type(3) {
-    color: color('yellow', 30);
-  }
-}
-        </code>
-      </pre>
-    </div>
-    <div class="code-block--ui">
-      <div class="lots-of-colors">
-        <span>green 50</span>
-        <span>blue 40</span>
-        <span>yellow 30</span>
-      </div>
-    </div>
-  </div>
-
-  <h4 class="base--h4">get Function</h4>
-
-  <p class="base--p">The <code class="base--code">get</code> function can look up a key in any global setting (Breakpoints, Typography, etc.) defined in the Sass library.</p>
-
-  <div class="code-block">
-    <div class="code-block--code">
-      <pre class="base--pre language-scss">
-        <code class="language-scss">
-.get-example {
-  display: block;
-  padding: get('rhythm') / 2;
-  background-color: get('background color');
-  color: get('primary color');
-
-  @include breakpoint(get('medium')) {
-    @include grid(6);
-
-    &:nth-of-type(2) {
-      margin-right: 0rem;
-    }
-  }
-}
-        </code>
-      </pre>
-    </div>
-    <div class="code-block--ui">
-      <div class="get-example">
-        Get
-      </div>
-      <div class="get-example">
-        Get
-      </div>
-    </div>
-  </div>
-
-  <h3 class="content--heading base--h3">Colors</h3>
-  <hr class="base--hr">
-  {% include "core/colors.nunjucks" %}
 
 </div>
 
