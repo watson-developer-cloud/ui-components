@@ -256,13 +256,16 @@ html, body {
 }
 
 .bottom-nav-bar {
+
   &--container {
     width: 100%;
-    padding: 1rem 0rem;
+    padding: 1rem;
 
-    @include breakpoint(get('medium')) {
-      // position: absolute;
-      // bottom: get('rhythm') / 2;
+    &_standalone {
+      @include breakpoint(get('medium')) {
+        position: absolute;
+        bottom: get('rhythm') / 2;
+      }
     }
   }
 
