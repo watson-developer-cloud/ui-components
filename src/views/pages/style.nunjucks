@@ -60,7 +60,7 @@
   </div>
 
 
-  <h4 id="typography" class="base--h4">Headers</h4>
+  <h4 id="typography" class="base--h4 basic-header">Headers</h4>
   {% call codeblock('markup') %}
 {% include "base/h1.nunjucks" %}
 {% include "base/h2.nunjucks" %}
@@ -70,12 +70,12 @@
 {% include "base/h6.nunjucks" %}
   {% endcall %}
 
-  <h4 class="base--h4">Paragraph</h4>
+  <h4 class="base--h4 basic-header">Paragraph</h4>
   {% call codeblock('markup') %}
 {% include "base/p.nunjucks" %}
   {% endcall %}
 
-  <h4 class="base--h4">Link, Emphasized, Strong</h4>
+  <h4 class="base--h4 basic-header">Link, Emphasized, Strong</h4>
   {% call codeblock('markup') %}
 {% include "base/a.nunjucks" %}
 {% include "base/em.nunjucks" %}
@@ -90,7 +90,7 @@
 {% include "base/code.nunjucks" %}
   {% endcall %} #}
 
-  <h4 class="base--h4">Typography Settings</h4>
+  <h4 class="base--h4 basic-header">Typography Settings</h4>
   <div class="code-block">
     <pre class="base--pre language-scss">
       <code class="language-scss">
@@ -106,12 +106,12 @@ $TypographySettings: (
     </pre>
   </div>
 
-  <h4 id="colors" class="base--h4">Colors</h4>
+  <h4 id="colors" class="base--h4 basic-header">Colors</h4>
   <div class="code-block">
     {% include "core/colors.nunjucks" %}
   </div>
 
-  <h4 class="base--h4">Colors Settings</h4>
+  <h4 class="base--h4 basic-header">Colors Settings</h4>
   <div class="code-block">
     <pre class="base--pre language-scss">
       <code class="language-scss">
@@ -127,7 +127,7 @@ $ColorScheme: (
     </pre>
   </div>
 
-  <h4 class="base--h4">set-text-color Function</h4>
+  <h4 class="base--h4 basic-header">set-text-color Function</h4>
 
   <p class="base--p">The <code class="base--code">set-text-color</code> function can find a contrasting text color given a background color.</p>
 
@@ -161,7 +161,7 @@ $ColorScheme: (
     </div>
   </div>
 
-  <h4 class="base--h4">color Function</h4>
+  <h4 class="base--h4 basic-header">color Function</h4>
 
   <p class="base--p">The <code class="base--code">color</code> function can pull a color from the IBM Design Color palette given a color name and tone.</p>
 
@@ -198,7 +198,7 @@ $ColorScheme: (
     </div>
   </div>
 
-  <h4 class="base--h4">get Function</h4>
+  <h4 class="base--h4 basic-header">get Function</h4>
 
   <p class="base--p">The <code class="base--code">get</code> function can look up a key in any global setting (Breakpoints, Typography, etc.) defined in the Sass library.</p>
 
@@ -234,7 +234,7 @@ $ColorScheme: (
   </div>
 
 
-  <h4 id="layout" class="base--h4">Container</h4>
+  <h4 id="layout" class="base--h4 basic-header">Container</h4>
   <p class="base--p">
     Containers define main body layouts and contain responsive grid elements.
   </p>
@@ -268,7 +268,7 @@ $ColorScheme: (
   </div>
 
 
-  <h4 class="base--h4">Grid Mixin</h4>
+  <h4 class="base--h4 basic-header">Grid Mixin</h4>
 
   <p class="base--p">For layouts designed with responsive grids, you can use the <code class="base--code">grid</code> mixin.</p>
 
@@ -305,7 +305,7 @@ $ColorScheme: (
     </div>
   </div>
 
-  <h4 class="base--h4">Divisions Mixin</h4>
+  <h4 class="base--h4 basic-header">Divisions Mixin</h4>
 
   <p class="base--p">For layouts made with basic divisions, you can use the <code class="base--code">divisions</code> mixin.</p>
 
@@ -362,7 +362,7 @@ $ColorScheme: (
     </div>
   </div>
 
-  <h4 class="base--h4">Breakpoints</h4>
+  <h4 class="base--h4 basic-header">Breakpoints</h4>
 
   <p class="base--p">Below is a basic usage of defining responsive breakpoints using the <a href="http://breakpoint-sass.com/" class="base--a">Breakpoints-Sass</a> mixin.</p>
   <div class="code-block">
@@ -399,7 +399,7 @@ $ColorScheme: (
     </div>
   </div>
 
-  <h4 class="base--h4">Breakpoint Settings</h4>
+  <h4 class="base--h4 basic-header">Breakpoint Settings</h4>
   <div class="code-block">
     <pre class="base--pre language-scss">
       <code class="language-scss">
@@ -416,7 +416,7 @@ $BreakpointSettings: (
     </pre>
   </div>
 
-  <h4 class="base--h4">Typography Settings</h4>
+  <h4 class="base--h4 basic-header">Typography Settings</h4>
   <div class="code-block">
     <pre class="base--pre language-scss">
       <code class="language-scss">
@@ -432,7 +432,7 @@ $TypographySettings: (
     </pre>
   </div>
 
-  <h4 class="base--h4">Colors Settings</h4>
+  <h4 class="base--h4 basic-header">Colors Settings</h4>
   <div class="code-block">
     <pre class="base--pre language-scss">
       <code class="language-scss">
@@ -448,7 +448,7 @@ $ColorScheme: (
     </pre>
   </div>
 
-  <h4 class="base--h4">set-text-color Function</h4>
+  <h4 class="base--h4 basic-header">set-text-color Function</h4>
 
   <p class="base--p">The <code class="base--code">set-text-color</code> function can find a contrasting text color given a background color.</p>
 
@@ -482,7 +482,7 @@ $ColorScheme: (
     </div>
   </div>
 
-  <h4 class="base--h4">color Function</h4>
+  <h4 class="base--h4 basic-header">color Function</h4>
 
   <p class="base--p">The <code class="base--code">color</code> function can pull a color from the IBM Design Color palette given a color name and tone.</p>
 
@@ -519,7 +519,7 @@ $ColorScheme: (
     </div>
   </div>
 
-  <h4 class="base--h4">get Function</h4>
+  <h4 class="base--h4 basic-header">get Function</h4>
 
   <p class="base--p">The <code class="base--code">get</code> function can look up a key in any global setting (Breakpoints, Typography, etc.) defined in the Sass library.</p>
 
