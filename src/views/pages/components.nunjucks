@@ -40,10 +40,6 @@
 
 
 
-
-  <h3 class="content--heading base--h3">Elements</h3>
-  <hr class="base--hr">
-
   <h4 class="base--h4">Buttons</h4>
   {% call codeblock('markup') %}
 {% include "base/button.nunjucks" %}
