@@ -131,11 +131,12 @@ html, body {
 }
 
 .home {
+
   &--left {
     margin-top: 0;
 
     @include breakpoint(get('medium')) {
-      @include grid(4);
+      @include grid(5);
     }
   }
 
@@ -143,19 +144,19 @@ html, body {
     margin-top: get('rhythm') / 3;
 
     @include breakpoint(get('medium')) {
-      @include grid(8, $has-right-gutter: false);
+      @include grid(7, $has-right-gutter: false);
       margin-top: 0;
     }
   }
 
   &--header {
-    font-size: ms(-1);
+    font-size: 0.875em;
     font-weight: 900;
     color: color('gray', 50);
   }
 
   &--description {
-    font-size: ms(-1);
+    font-size: 0.875em;
     color: color('gray', 80);
   }
 
@@ -254,9 +255,12 @@ html, body {
 
   &--ui {
     margin-top: 0rem;
+    text-align: center;
   }
 
-  // &--code {}
+  &--code {
+    margin-top: get('rhythm');
+  }
 
   .base--pre {
     transition: 0.2s;
@@ -425,124 +429,12 @@ html, body {
 .right-pane ._container {
   margin-left: get('rhythm') * 3 / 2;
 }
-/*
- * jquery.tocify.css 1.9.0
- * Author: @gregfranko
- */
-/* The Table of Contents container element */
-.tocify {
-  width: 25%;
-  height: 100%;
-  overflow: auto;
-  margin: 0;
-  position: fixed;
-  background-color: color('white', 40);
-  font-size: ms(3);
-  font-weight: 400;
-  padding-top: get('rhythm') * 7 / 8;
-  padding-right: get('rhythm') * 3 / 4;
-}
-/* The Table of Contents is composed of multiple nested unordered lists.  These styles remove the default styling of an unordered list because it is ugly. */
-.tocify ul,
-.tocify li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  border: none;
-}
-/* Top level header elements */
-.tocify-header {
-  & > .tocify-item {
-    font-weight: bold;
-    margin-bottom: 2rem;
-    padding-left: 1.5rem;
 
-    &:hover {
-      a {
-        border-bottom: 3px solid color('teal', 50);
-      }
-    }
+.base--pre {
+  .components & {
+    background-color: color('cool white', 30);
   }
-}
-/* Top level subheader elements.  These are the first nested items underneath a header element. */
-.tocify-subheader {
-  text-indent: 3rem;
-  display: none;
-  font-size: ms(-1);
-}
-/* Makes the font smaller for all subheader elements. */
-.tocify-subheader li {
-  font-size: 1em;
-  font-weight: 400;
-  padding-top: 1rem;
-  padding-bottom: 0.5rem;
-
-  & a {
-    border-bottom: 2px solid transparent;
+  .style & {
+    background-color: color('cool white', 30);
   }
-
-  &:hover {
-    color: color('teal', 50);
-
-    & a {
-      border-bottom: 2px solid color('teal', 50);
-    }
-  }
-
-  &:active {
-    color: color('teal', 80);
-
-    & a {
-      border-bottom: 2px solid color('teal', 80);
-    }
-  }
-
-  &.active {
-    & a {
-      border-bottom: 2px solid color('teal', 50);
-    }
-
-    &:active {
-      color: color('teal', 80);
-
-      & a {
-        border-bottom: 2px solid color('teal', 80);
-      }
-    }
-  }
-}
-/* Further indents second level subheader elements. */
-.tocify-subheader .tocify-subheader {
-  text-indent: 4rem;
-}
-/* Further indents third level subheader elements. You can continue this pattern if you have more nested elements. */
-.tocify-subheader .tocify-subheader .tocify-subheader {
-  text-indent: 5rem;
-}
-/* Twitter Bootstrap Override Style */
-.nav-list > li > a,
-.nav-list .nav-header {
-  margin: 0;
-}
-/* Twitter Bootstrap Override Style */
-.nav-list > li > a {
-  padding: 0;
-}
-/* Updated styles */
-.tocify-subheader[data-tag="3"] {
-  display: block;
-}
-
-.tocify-subheader[data-tag="4"] {
-  li {
-    font-weight: 300;
-    font-size: ms(0);
-    padding-top: 0.5rem;
-    padding-bottom: 0.25rem;
-  }
-}
-
-.tocify ul {
-  margin-top: get('rhythm') / 4;
-  margin-bottom: get('rhythm') / 4;
 }
