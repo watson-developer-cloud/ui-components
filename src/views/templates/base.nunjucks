@@ -9,7 +9,7 @@
   {% block styles %}
     <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
   {% endblock %}
-  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
