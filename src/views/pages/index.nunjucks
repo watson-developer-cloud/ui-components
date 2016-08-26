@@ -52,16 +52,20 @@
   </div>
   <div class="flex-layout--box-2">
     <div class="_container _container_large content--link-section">
-      <div class="navigation--block navigation--block_COOL">
-        <div class="navigation--text">
-          COMPONENTS
+      <a href="components.html">
+        <div class="navigation--block navigation--block_COOL">
+          <div class="navigation--text">
+            COMPONENTS
+          </div>
         </div>
-      </div>
-      <div class="navigation--block navigation--block_WARM">
-        <div class="navigation--text">
-          STYLE
+      </a>
+      <a href="style.html">
+        <div class="navigation--block navigation--block_WARM">
+          <div class="navigation--text">
+            STYLE
+          </div>
         </div>
-      </div>
+      </a>
     </div>
 
     <div class="bottom-nav-bar--container">
