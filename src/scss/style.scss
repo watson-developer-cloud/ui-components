@@ -101,6 +101,35 @@
   }
 }
 
+html, body {
+  height: 100%;
+}
+
+.flex-layout {
+  display: block;
+  position: static;
+  height: auto;
+  width: auto;
+
+  &--box-1 {
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+  }
+
+  @include breakpoint(get('medium')) {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 0rem;
+    position: absolute;
+    top: 0rem;
+    padding-top: 3rem;
+  }
+}
+
 .home {
   &--left {
     margin-top: 0;
@@ -146,16 +175,29 @@
 
 .navigation{
   &--block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: get('rhythm') * 4;
     cursor: pointer;
     color: color('purple', 70);
 
     &_COOL{
       background-color: #ECF0F2;
+
+      @include breakpoint(get('medium')) {
+        @include grid(6);
+        margin-top: 0rem;
+      }
     }
 
     &_WARM{
       background-color: #F2EEEE;
+
+      @include breakpoint(get('medium')) {
+        @include grid(6, $has-right-gutter: false);
+        margin-top: 0rem;
+      }
     }
   }
 
@@ -165,9 +207,9 @@
   }
 }
 
-.content{
-  &--description{
-    margin: get('rhythm') * 2 0;
+.content {
+  &--description {
+    margin: get('rhythm') * 2 auto;
   }
 
   &--session-container{
@@ -188,14 +230,18 @@
 
 }
 
-.bottom-nav-bar{
-  &--container{
-    position: absolute;
-    bottom: get('rhythm') / 2;
+.bottom-nav-bar {
+  &--container {
     width: 100%;
+    padding: 1rem 0rem;
+
+    @include breakpoint(get('medium')) {
+      // position: absolute;
+      // bottom: get('rhythm') / 2;
+    }
   }
 
-  &--nav{
+  &--nav {
     text-align: center;
     margin: 0 auto;
     font-size: ms(-1);
