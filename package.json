@@ -32,7 +32,10 @@
     "run-sequence": "^1.1.5",
     "wrench": "^1.5.8"
   },
-  "engine": "node >= 5.5.0",
+  "engines": {
+    "node": ">4.4",
+    "npm": ">3.0"
+  },
   "dependencies": {
     "breakpoint-sass": "^2.7.0",
     "modular-scale": "^4.4.1",
