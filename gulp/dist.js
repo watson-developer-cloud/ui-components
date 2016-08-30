@@ -18,8 +18,6 @@ var watchPath = config.paths.src.styles + '/**/*.scss',
 
 var projectName = config.projectName;
 
-// gulp.task('dist', ['bower:scss', 'bower:css', 'bower:bower-configs', 'bower:icons', 'bower:icon-fonts']);
-
 gulp.task('dist', function() {
   return runSequence('dist:clean', [
     'dist:scss',
