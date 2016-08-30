@@ -41,11 +41,8 @@
 
   <div class="content--session-container">
     <h4 class="content--session-title">Installation</h4>
-    <p class="content--session-text">
-      It is recommended that you install through Bower in your project:
-    </p>
     <pre class="content--session-pre base--pre prism language-bash" style="margin: 1rem 0rem;">
-      <code class="base--code language-bash">$ bower install watson-developer-cloud-components</code>
+      <code class="base--code language-bash">$ npm install watson-developer-cloud-ui-components</code>
     </pre>
     <p class="content--session-text base--p_inline">
       Or you can download a <a href="https://github.com/watson-developer-cloud/ui-components/releases" target="_blank" class="base--a">release version</a> from github.

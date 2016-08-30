@@ -1,11 +1,12 @@
 'use strict';
 
-var src = './src',
-    docs = './docs',
-    dist = './dist';
+var pkg = require('./package.json');
+var src = './src';
+var docs = './docs';
+var dist = './dist';
 
 module.exports = {
-  projectName: 'watson-developer-cloud-components',
+  projectName: pkg.name,
   paths: {
     src: {
       root: src,

@@ -1,8 +1,8 @@
 {
-  "name": "watson-developer-cloud-components",
+  "name": "watson-developer-cloud-ui-components",
   "version": "0.3.0",
-  "description": "UI component to build sample application",
-  "main": "dist/_watson-developer-cloud-components.scss",
+  "description": "UI component to build web application",
+  "main": "dist/",
   "scripts": {
     "deploy": "sh scripts/deploy.sh",
     "deploy-from-local": "npm run compile && git subtree push --prefix docs origin gh-pages",

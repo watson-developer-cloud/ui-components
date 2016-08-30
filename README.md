@@ -1,43 +1,40 @@
 # Watson Developer Cloud Component Library [![Build Status](https://travis-ci.org/watson-developer-cloud/ui-components.svg?branch=master)](https://travis-ci.org/watson-developer-cloud/ui-components)
 
-Welcome to the git repo for the Watson Developer Cloud Component Library.
-This SASS library is a development resource to help developers quickly and consistently develop quality ui.
+The Watson Platform Component Library is a Sass library that translates Watson design language into UI components to help develop web UI.
 
-The Main Website: https://watson-developer-cloud.github.io/ui-components/
+Demo: https://watson-developer-cloud.github.io/ui-components/
 
-# Getting Started
-
-## Prerequisites
-
-1. [NodeJS](https://nodejs.org/en/) - make sure your node version matches the version specified in `package.json`.
-
-## Running the project
-
-1. Make sure to have all prerequisites before continuing further.
-
-1. Install [Gulp](http://gulpjs.com/) globally if you have not already
-
+## Install
   ```bash
-  $ npm install -g gulp
+  $ npm install watson-developer-cloud-ui-components
   ```
 
-1. Install node modules
+## Usage
 
-  ```bash
-  $ npm install
-  ```
+All needed CSS, images, and javascript are found in `/dist`.
 
-1. Run the app
 
-  ```bash
-  $ gulp
-  ```
+In Sass, you just need to import the sass file:
+```css
+@import 'watson-developer-cloud-ui-components/dist/_watson-developer-cloud-ui-components.scss';
+```
 
-## Publishing a Github Page
+Make sure `node_modules` is a loaded path so that sass can find the route above.
 
-To publish to the [main site](https://watson-developer-cloud.github.io/ui-components/), use the `npm deploy` top update to `gh-pages` branch.
+## How to Contribute
 
-## Installation and Dependencies
+### Install Dependencies
+
+```bash
+npm install
+gulp
+```
+
+### CSS Primarily Written in BEM format
+* [Side Effects in CSS](http://philipwalton.com/articles/side-effects-in-css/)
+* [BEM 101](https://css-tricks.com/bem-101/)
+* [A New Front-End Methodology: BEM](http://www.smashingmagazine.com/2012/04/16/a-new-front-end-methodology-bem/)
+* [BEM: Technology for creating web applications](https://en.bem.info/)
 
 You will need to make sure the icon-fonts are referenced properly.
 The path of the icon-fonts must be relative to the path of the compiled css file.
@@ -47,6 +44,22 @@ You will also need to make sure to load the paths of your `node_modules` directo
 The javascript of this library relies on `JQuery 2.*.*` and above.  Make sure it is
 included before this library.
 
+## Directory Structure
+
+```none
+.
+│
+└── dist
+    ├── _watson-developer-cloud-ui-components.scss    // Compiled Sass
+    ├── icons
+    │   ├── link.svg
+    │   └── reset.svg
+    ├── watson-developer-cloud-ui-components.css      // Compiled css
+    ├── watson-developer-cloud-ui-components.js
+    ├── watson-developer-cloud-ui-components.min.css
+    └── watson-developer-cloud-ui-components.min.js
+```
+
 ## Credits
 
-This project could not have been made possible without the hard work from the team that worked on the previous [Watson Design Guide](https://github.com/IBM-Watson/design-guide).  Many concepts and Sass techniques were borrowed from their project, while others were modified.
+This project could not have been made possible without the hard work from the team that worked on the previous [Watson Design Guide](https://github.com/IBM-Watson/design-guide). Many concepts and Sass techniques were borrowed from their project, while others were modified.
