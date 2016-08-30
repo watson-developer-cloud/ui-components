@@ -37,17 +37,6 @@ The Main Website: https://watson-developer-cloud.github.io/ui-components/
 
 To publish to the [main site](https://watson-developer-cloud.github.io/ui-components/), use the `npm deploy` top update to `gh-pages` branch.
 
-## Versioning Bower Component
-
-To bump the version of the bower component, update the version property in `bower.json`, and then match the version with git tags.
-
-Example of git tags:
-
-```bash
-$ git tag -a v0.0.5 -m "Release version 0.0.5"
-$ git push origin master --tags
-```
-
 ## Installation and Dependencies
 
 You will need to make sure the icon-fonts are referenced properly.
