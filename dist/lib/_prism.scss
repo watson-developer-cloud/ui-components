@@ -30,11 +30,11 @@ code[class*="language-"] ::selection {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: color('gray', 40);
+  color: color('gray', 50);
 }
 
 .token.punctuation {
-  color: #999;
+  color: color('gray', 50);
 }
 
 .namespace {
@@ -48,7 +48,7 @@ code[class*="language-"] ::selection {
 .token.constant,
 .token.symbol,
 .token.deleted {
-  color: #905;
+  color: color('purple', 50);
 }
 
 .token.selector,
@@ -57,7 +57,7 @@ code[class*="language-"] ::selection {
 .token.char,
 .token.builtin,
 .token.inserted {
-  color: #690;
+  color: color('magenta', 50);
 }
 
 .token.operator,
@@ -72,7 +72,7 @@ code[class*="language-"] ::selection {
 .token.atrule,
 .token.attr-value,
 .token.keyword {
-  color: #07a;
+  color: color('teal', 40);
 }
 
 .token.function {

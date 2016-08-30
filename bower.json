@@ -17,9 +17,10 @@
   ],
   "homepage": "",
   "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components"
+    "*",
+    "!bower.json",
+    "!dist/**.*",
+    "!docs/**.*"
   ],
   "dependencies": {
     "breakpoint-sass": "^2.7.0",

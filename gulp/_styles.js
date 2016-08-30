@@ -11,7 +11,7 @@ module.exports = function(watchPath, destPath, gulpInstance) {
     }))
     .pipe(sass({
       errLogToConsole: true,
-      includePaths: ['./bower_components']
+      includePaths: ['./node_modules']
     }))
     .pipe(autoprefixer())
     .pipe(gulpInstance.dest(destPath));
