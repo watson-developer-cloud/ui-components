@@ -101,7 +101,8 @@
   }
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -174,8 +175,9 @@ html, body {
   }
 }
 
-.navigation{
-  &--block{
+.navigation {
+
+  &--block {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -183,8 +185,8 @@ html, body {
     cursor: pointer;
     color: color('purple', 70);
 
-    &_COOL{
-      background-color: #ECF0F2;
+    &_COOL {
+      background-color: color('cool white', 40);
 
       @include breakpoint(get('medium')) {
         @include grid(6);
@@ -192,8 +194,8 @@ html, body {
       }
     }
 
-    &_WARM{
-      background-color: #F2EEEE;
+    &_WARM {
+      background-color: color('warm white', 40);
 
       @include breakpoint(get('medium')) {
         @include grid(6, $has-right-gutter: false);
@@ -202,7 +204,7 @@ html, body {
     }
   }
 
-  &--text{
+  &--text {
     margin: 0 auto;
     text-align: center;
   }
@@ -228,7 +230,7 @@ html, body {
   }
 
   &--session-pre {
-    background-color: #F7f5f5;
+    background-color: color('warm white', 30);
     font-size: 0.875rem;
   }
 
@@ -477,6 +479,7 @@ html, body {
   .components & {
     background-color: color('cool white', 30);
   }
+
   .style & {
     background-color: color('warm white', 30);
   }
