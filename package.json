@@ -1,6 +1,6 @@
 {
   "name": "watson-developer-cloud-components",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "UI component to build sample application",
   "main": "dist/_watson-developer-cloud-components.scss",
   "scripts": {
