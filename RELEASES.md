@@ -23,10 +23,8 @@ pip install bumpversion
     ```
 
 `bumpversion *` will update the version field appropriately, create a git commit and tag for the version, and publish the tag to github.
-`git push origin master` will publish the changes to package.json.
+`git push origin master` will publish the changes to `package.json`.
 `git push origin --tags` will publish the tag to github., and then immediately.
-
-The reason for this is that it allows someone to easily view the source code (and readme) for whatever version they happen to have downloaded from bower. This is particularly helpful when github is ahead of bower.
 
 
 [bumpversion]: https://pypi.python.org/pypi/bumpversion
