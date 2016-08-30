@@ -32,6 +32,13 @@
     "run-sequence": "^1.1.5",
     "wrench": "^1.5.8"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/watson-developer-cloud/ui-components.git"
+  },
+  "bugs": {
+    "url": "https://github.com/watson-developer-cloud/ui-components/issues"
+  },
   "engines": {
     "node": ">4.4",
     "npm": ">3.0"
