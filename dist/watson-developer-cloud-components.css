@@ -343,6 +343,9 @@ body {
 .base--p_light {
   color: #777677; }
 
+.base--p_inline {
+  display: inline; }
+
 .base--code {
   padding: .2em .5em;
   font-size: .8em;
@@ -370,9 +373,10 @@ body {
   overflow: auto;
   margin-top: 0rem;
   white-space: normal;
-  border-left: 4px solid #9855d4;
-  padding: 1rem;
-  background-color: #f9f9f9; }
+  padding: 1rem 2rem;
+  background-color: #f0f2f4;
+  color: #121212;
+  font-size: 0.875em; }
   .base--pre code, .base--pre .base--code {
     font-size: 1em;
     outline: 0;
@@ -380,15 +384,13 @@ body {
     padding: 0rem; }
 
 .base--ul, .base--ol {
-  display: table;
   padding-left: 0;
   margin-left: 0;
-  list-style: none; }
+  list-style: none;
+  width: 100%; }
   .base--ul li, .base--ol li, .base--ul .base--li, .base--ol .base--li {
-    display: table-row;
-    counter-increment: table-ol; }
+    margin-top: 0rem; }
     .base--ul li::before, .base--ol li::before, .base--ul .base--li::before, .base--ol .base--li::before {
-      display: table-cell;
       padding-right: 0.4em;
       text-align: right; }
 
@@ -518,11 +520,11 @@ input[type="week"]::-webkit-inner-spin-button {
   padding: 0.6em 1em;
   font-size: 1em;
   font-weight: 300;
-  border: 2px solid #c7c7c7;
+  border: 2px solid #464646;
   background-color: #fff; }
   .base--textarea:focus {
-    outline: #5aaafa auto 5px;
-    border-color: #c7c7c7; }
+    outline: 3px solid #9855d4;
+    border-color: #9855d4; }
   .base--textarea:disabled {
     background-color: #c7c7c7; }
 
@@ -966,10 +968,10 @@ code[class*="language-"] ::selection {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: #959595; }
+  color: #777677; }
 
 .token.punctuation {
-  color: #999; }
+  color: #777677; }
 
 .namespace {
   opacity: 0.7; }
@@ -981,7 +983,7 @@ code[class*="language-"] ::selection {
 .token.constant,
 .token.symbol,
 .token.deleted {
-  color: #905; }
+  color: #9855d4; }
 
 .token.selector,
 .token.attr-name,
@@ -989,7 +991,7 @@ code[class*="language-"] ::selection {
 .token.char,
 .token.builtin,
 .token.inserted {
-  color: #690; }
+  color: #db2780; }
 
 .token.operator,
 .token.entity,
@@ -1002,7 +1004,7 @@ code[class*="language-"] ::selection {
 .token.atrule,
 .token.attr-value,
 .token.keyword {
-  color: #07a; }
+  color: #00b4a0; }
 
 .token.function {
   color: #dd4a68; }

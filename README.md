@@ -15,28 +15,16 @@ The Main Website: https://watson-developer-cloud.github.io/ui-components/
 
 1. Make sure to have all prerequisites before continuing further.
 
-1. Install [Bower](https://bower.io/) globally if you have not already.
-
-  ```bash
-  $ npm install -g bower
-  ```
-
-1. Install [Gulp](http://gulpjs.com/) globally if you have not already.
+1. Install [Gulp](http://gulpjs.com/) globally if you have not already
 
   ```bash
   $ npm install -g gulp
   ```
 
-1. Install node modules.
+1. Install node modules
 
   ```bash
   $ npm install
-  ```
-
-1. Install bower modules.
-
-  ```bash
-  $ bower install
   ```
 
 1. Run the app
@@ -48,15 +36,6 @@ The Main Website: https://watson-developer-cloud.github.io/ui-components/
 ## Publishing a Github Page
 
 To publish to the [main site](https://watson-developer-cloud.github.io/ui-components/), use the `npm deploy` top update to `gh-pages` branch.
-
-
-## Build the public Bower Component
-
-1. Use gulp command
-
-  ```bash
-  $ gulp bower
-  ```
 
 ## Versioning Bower Component
 
@@ -74,7 +53,7 @@ $ git push origin master --tags
 You will need to make sure the icon-fonts are referenced properly.
 The path of the icon-fonts must be relative to the path of the compiled css file.
 
-You will also need to make sure to load the paths of your `bower_components` directory into your Sass configurations, so that the library can reference its bower_components dependencies properly.
+You will also need to make sure to load the paths of your `node_modules` directory into your Sass configurations, so that the library can reference its npm dependencies properly.
 
 The javascript of this library relies on `JQuery 2.*.*` and above.  Make sure it is
 included before this library.

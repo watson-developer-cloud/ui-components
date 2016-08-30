@@ -19,9 +19,10 @@
   margin-top: 0rem;
 
   white-space: normal;
-  border-left: 4px solid color('purple', 50);
-  padding: get('rhythm') / 2;
-  background-color: color('white', 30);
+  padding: get('rhythm') / 2 get('rhythm');
+  background-color: color('cool white', 30);
+  color: color('gray', 90);
+  font-size: 0.875em;
 
   code,
   .base--code {
