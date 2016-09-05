@@ -1,5 +1,5 @@
-// eslint-disable-next-line
-'use strict'
+/* eslint-disable import/no-extraneous-dependencies */
+
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const scsslint = require('gulp-scss-lint');
@@ -50,22 +50,21 @@ gulp.task('css', () =>
     .pipe(gulp.dest('dist'))
 );
 
-
-gulp.task('styles:lint-base', () =>
-  gulp.src(['src/scss/**/*'])
+gulp.task('scss:lint-base', () =>
+  gulp.src(['src/scss/**/*.scss'])
     .pipe(scsslint({
       maxBuffer: 1000000,
       reporterOutput: 'scss-report.json',
     }))
 );
 
-gulp.task('styles:lint-with-report', () =>
+gulp.task('scss:lint-with-report', () =>
   gulp.src('scss-report.json')
     .pipe(beautify())
     .pipe(gulp.dest('.'))
 );
 
-gulp.task('styles:lint', () => ['styles:lint-base', 'styles:lint-with-report']);
+gulp.task('scss:lint', () => ['scss:lint-base', 'scss:lint-with-report']);
 
 gulp.task('example-css', () =>
   gulp.src('example/src/scss/main.scss')
