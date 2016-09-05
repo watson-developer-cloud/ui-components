@@ -41,23 +41,14 @@ The path of the icon-fonts must be relative to the path of the compiled css file
 
 You will also need to make sure to load the paths of your `node_modules` directory into your Sass configurations, so that the library can reference its npm dependencies properly.
 
-The javascript of this library relies on `JQuery 2.*.*` and above.  Make sure it is
-included before this library.
-
 ## Directory Structure
 
 ```none
 .
-│
-└── dist
-    ├── _watson-developer-cloud-ui-components.scss    // Compiled Sass
-    ├── icons
-    │   ├── link.svg
-    │   └── reset.svg
-    ├── watson-developer-cloud-ui-components.css      // Compiled css
-    ├── watson-developer-cloud-ui-components.js
-    ├── watson-developer-cloud-ui-components.min.css
-    └── watson-developer-cloud-ui-components.min.js
+└─ dist
+ ├── _watson-developer-cloud-ui-components.scss   // Compiled Sass
+ ├── watson-developer-cloud-ui-components.css     // Compiled css
+ └── watson-developer-cloud-ui-components.min.css
 ```
 
 ## Credits

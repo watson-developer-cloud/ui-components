@@ -4,7 +4,7 @@ GH_REPO="@github.com/watson-developer-cloud/ui-components.git"
 FULL_REPO="https://$GH_TOKEN$GH_REPO"
 
 gulp compile
-cd docs
+cd example
 git init
 git config user.name "Travis Ci"
 git config user.email "james.zhang75024@gmail.com"
