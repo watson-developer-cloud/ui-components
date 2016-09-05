@@ -119,7 +119,7 @@ gulp.task('serve', ['example'], () => {
     server: './example',
   });
 
-  gulp.watch(['example/src/scss/**/*.scss'], ['example-css']);
+  gulp.watch(['example/src/scss/**/*.scss', 'src/scss/**/*.scss'], ['example-css']);
   gulp.watch(['example/src/js/**/*.js'], ['example-js-watch']);
   gulp.watch(['example/src/views/**/*.nunjucks'], ['example-html-watch']);
 });
