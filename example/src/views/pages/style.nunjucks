@@ -572,6 +572,4 @@ $ColorScheme: (
 
 {% block scripts %}
 {{ super() }}
-<script src="js/vendors/jquery-ui-1.9.1.custom.min.js"></script>
-<script src="js/vendors/jquery.tocify.min.js"></script>
 {% endblock %}
