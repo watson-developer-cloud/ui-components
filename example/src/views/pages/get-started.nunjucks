@@ -52,10 +52,8 @@
   <div class="content--session-container">
     <h4 class="content--session-title">How to use</h4>
     <p class="content--session-text">
-      In the <code class="base--code">dist/</code> directory, you'll find the CSS code, the SCSS code, the JS code, icons, and icon-fonts.
-      If you're using SCSS, make sure you have the path to the <code class="base--code">bower_components</code> directory included in the SASS compiling configurations so that bower dependencies are referenced correctly in the code.
-      For the Javascript, make sure that you're using <code class="base--code">JQuery 2.*.*</code> or above.
-      To use components that use icon fonts, make sure that the icon-fonts files are correctly referenced in your project relative to the CSS output file.
+      In the <code class="base--code">dist/</code> directory, you'll find the CSS and the SCSS library.
+      If you're using SCSS, make sure you have the path to the <code class="base--code">node_modules</code> directory included in the SASS compiling configurations so that the library's dependencies are referenced correctly in the code.
     </p>
   </div>
 
