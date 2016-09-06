@@ -12,8 +12,8 @@ pip install bumpversion
 ### 2. Doing a release
 
 - [ ] Commit all the local changes
-- [ ] Run `npm run dist`
-- [ ] Commit the changes in `dist`
+- [ ] Run `npm run compile`
+- [ ] Commit the changes
 - [ ] Use `bumpversion` to update the version and commit the changes
 
     ```sh

@@ -1,0 +1,12 @@
+{
+  "extends": "airbnb",
+  "import/no-extraneous-dependencies": ["warn", {
+    "devDependencies": true,
+    "optionalDependencies": true,
+    "peerDependencies": true
+  }],
+  "env": {
+    "node": true,
+    "browser": true
+  }
+}

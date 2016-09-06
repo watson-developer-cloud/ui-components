@@ -1,0 +1,728 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Watson Platform Component Library</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="og:title" content="Watson Developer Cloud - UI Components Library">
+  <meta name="og:description" content="SASS library that helps developers to create UIs quickly and consistently.">
+  <link rel="icon" href="images/favicon.png?v=2" />
+
+  
+  <link rel="stylesheet" href="build/bundle.css" media="screen" title="no title" charset="utf-8">
+  
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  
+
+<header class="top-nav">
+  <div class="_container _container_large">
+    <div class="top-nav--wordmark">
+      <a href="." class="top-nav--wordmark-link">
+        Watson Platform Component Library
+      </a>
+    </div>
+    <div class="top-nav--spacer"></div>
+    <nav role="menubar" class="top-nav--nav">
+      <a href="index.html" role="menuitem" class="base--a top-nav--nav-li-link">
+        <li role="presentation" class="base--li top-nav--nav-li">
+          ABOUT
+        </li>
+      </a>
+      <a href="get-started.html" role="menuitem" class="base--a top-nav--nav-li-link">
+        <li role="presentation" class="base--li top-nav--nav-li">
+          GETTING STARTED
+        </li>
+      </a>
+      <a href="components.html" role="menuitem" class="base--a top-nav--nav-li-link">
+        <li role="presentation" class="base--li top-nav--nav-li">
+          COMPONENTS
+        </li>
+      </a>
+      <a href="style.html" role="menuitem" class="base--a top-nav--nav-li-link selected">
+        <li role="presentation" class="base--li top-nav--nav-li">
+          STYLE
+        </li>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<div class="_container _container_large style">
+  <div class="content--content-container">
+    <h4 class="content--content-title">Content</h4>
+    <div class="content--content-item-container">
+      <a href="#typography">
+        <div class="content--content-item">
+          TYPOGRAPHY
+        </div>
+      </a>
+      <a href="#colors">
+        <div class="content--content-item">
+          COLORS
+        </div>
+      </a>
+      <a href="#layout">
+        <div class="content--content-item">
+          LAYOUT
+        </div>
+      </a>
+    </div>
+
+  </div>
+
+
+  <h4 id="typography" class="base--h4 basic-header">Headers</h4>
+  
+
+<div class="code-block">
+  <div class="code-block--ui">
+    
+<h1 class="base--h1">Header 1</h1>
+
+<h2 class="base--h2">Header 2</h2>
+
+<h3 class="base--h3">Header 3</h3>
+
+<h4 class="base--h4">Header 4</h4>
+
+<h5 class="base--h5">Header 5</h5>
+
+<h6 class="base--h6">Header 6</h6>
+
+  
+  </div>
+  <div class="code-block--code">
+    <pre class="base--pre prism language-markup">
+    <code class="language-markup">
+&lt;h1 class="base--h1">Header 1&lt;/h1>
+
+&lt;h2 class="base--h2">Header 2&lt;/h2>
+
+&lt;h3 class="base--h3">Header 3&lt;/h3>
+
+&lt;h4 class="base--h4">Header 4&lt;/h4>
+
+&lt;h5 class="base--h5">Header 5&lt;/h5>
+
+&lt;h6 class="base--h6">Header 6&lt;/h6>
+    </code>
+    </pre>
+  </div>
+</div>
+
+
+
+  <h4 class="base--h4 basic-header">Paragraph</h4>
+  
+
+<div class="code-block">
+  <div class="code-block--ui">
+    
+<p class="base--p">Visual Recognition uses deep learning algorithms to analyze images for scenes, objects, faces, text, and other subjects that can give you insights into your visual content.</p>
+<p class="base--p base--p_light">Visual Recognition uses deep learning algorithms to analyze images for scenes, objects, faces, text, and other subjects that can give you insights into your visual content.</p>
+
+  
+  </div>
+  <div class="code-block--code">
+    <pre class="base--pre prism language-markup">
+    <code class="language-markup">
+&lt;p class="base--p">Visual Recognition uses deep learning algorithms to analyze images for scenes, objects, faces, text, and other subjects that can give you insights into your visual content.&lt;/p>
+&lt;p class="base--p base--p_light">Visual Recognition uses deep learning algorithms to analyze images for scenes, objects, faces, text, and other subjects that can give you insights into your visual content.&lt;/p>
+    </code>
+    </pre>
+  </div>
+</div>
+
+
+
+  <h4 class="base--h4 basic-header">Link, Emphasized, Strong</h4>
+  
+
+<div class="code-block">
+  <div class="code-block--ui">
+    
+<a href="#" class="base--a">Hyperlink</a>
+
+<em class="base--em">emphasized text</em>
+
+<strong class="base--strong">Strong Text</strong>
+
+  
+  </div>
+  <div class="code-block--code">
+    <pre class="base--pre prism language-markup">
+    <code class="language-markup">
+&lt;a href="#" class="base--a">Hyperlink&lt;/a>
+
+&lt;em class="base--em">emphasized text&lt;/em>
+
+&lt;strong class="base--strong">Strong Text&lt;/strong>
+    </code>
+    </pre>
+  </div>
+</div>
+
+
+
+  
+
+  
+
+  <h4 class="base--h4 basic-header">Typography Settings</h4>
+  <div class="code-block">
+    <pre class="base--pre language-scss">
+      <code class="language-scss">
+$TypographySettings: (
+  'sans serif': ('Helvetica Neue', Helvetica, 'Open Sans', Arial, 'Lucida Grande', 'Roboto', sans-serif),
+  'monospace': (source-code-pro, Menlo, Consolas, monospace),
+  'weight bold': 700,
+  'weight normal': 400,
+  'weight light': 200,
+  'rhythm': 2rem
+);
+      </code>
+    </pre>
+  </div>
+
+  <h4 id="colors" class="base--h4 basic-header">Colors</h4>
+  <div class="code-block">
+    <div class="colors">
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+  <div class="color-tile"></div>
+</div>
+
+<script>
+var unquote = function(str) {
+  var result = str;
+  if (str.charAt(0) == '\"') {
+    result = result.substring(1, result.length);
+  }
+  if (str.charAt(str.length - 1) == '\"') {
+    result = result.substring(0, result.length - 1);
+  }
+  return result;
+}
+var colorTiles = document.querySelectorAll('.color-tile');
+var content = [];
+for (var i = 0; i < colorTiles.length; i++) {
+  content = window.getComputedStyle(colorTiles[i], ':after').content.split('|');
+  for (var j = 0; j < content.length; j++) {
+    colorTiles[i].innerHTML += '<p class="base--p color-tile--details">' + unquote(content[j]) + '</p>';
+  }
+}
+  </script>
+
+  </div>
+
+  <h4 class="base--h4 basic-header">Colors Settings</h4>
+  <div class="code-block">
+    <pre class="base--pre language-scss">
+      <code class="language-scss">
+$ColorScheme: (
+  'primary color': color('purple', 50),
+  'secondary color': color('teal', 50),
+  'background color': color('white', 10),
+  'text color': color('gray', 80),
+  'white': color('white', 10),
+  'black': color('gray', 100)
+);
+      </code>
+    </pre>
+  </div>
+
+  <h4 class="base--h4 basic-header">set-text-color Function</h4>
+
+  <p class="base--p">The <code class="base--code">set-text-color</code> function can find a contrasting text color given a background color.</p>
+
+  <div class="code-block">
+    <div class="code-block--code">
+      <pre class="base--pre language-scss">
+        <code class="language-scss">
+.element-with-dark-text {
+  display: block;
+  padding: get('rhythm') / 2;
+  background-color: color('purple', 20);
+  color: set-text-color(color('purple', 20));
+  }
+
+  .element-with-light-text {
+  display: block;
+  padding: get('rhythm') / 2;
+  background-color: color('purple', 80);
+  color: set-text-color(color('purple', 80));
+}
+        </code>
+      </pre>
+    </div>
+    <div class="code-block--ui">
+      <div class="element-with-dark-text">
+        Dark text, light background
+      </div>
+      <div class="element-with-light-text">
+        Light text, dark background
+      </div>
+    </div>
+  </div>
+
+  <h4 class="base--h4 basic-header">color Function</h4>
+
+  <p class="base--p">The <code class="base--code">color</code> function can pull a color from the IBM Design Color palette given a color name and tone.</p>
+
+  <div class="code-block">
+    <div class="code-block--code">
+      <pre class="base--pre language-scss">
+        <code class="language-scss">
+.lots-of-colors {
+  display: block;
+  padding: get('rhythm') / 2;
+  background-color: color('white', 40);
+
+  span:nth-of-type(1) {
+    color: color('green', 50);
+  }
+
+  span:nth-of-type(2) {
+    color: color('blue', 40);
+  }
+
+  span:nth-of-type(3) {
+    color: color('yellow', 30);
+  }
+}
+        </code>
+      </pre>
+    </div>
+    <div class="code-block--ui">
+      <div class="lots-of-colors">
+        <span>green 50</span>
+        <span>blue 40</span>
+        <span>yellow 30</span>
+      </div>
+    </div>
+  </div>
+
+  <h4 class="base--h4 basic-header">get Function</h4>
+
+  <p class="base--p">The <code class="base--code">get</code> function can look up a key in any global setting (Breakpoints, Typography, etc.) defined in the Sass library.</p>
+
+  <div class="code-block">
+    <div class="code-block--code">
+      <pre class="base--pre language-scss">
+        <code class="language-scss">
+.get-example {
+  display: block;
+  padding: get('rhythm') / 2;
+  background-color: get('background color');
+  color: get('primary color');
+
+  @include breakpoint(get('medium')) {
+    @include grid(6);
+
+    &:nth-of-type(2) {
+      margin-right: 0rem;
+    }
+  }
+}
+        </code>
+      </pre>
+    </div>
+    <div class="code-block--ui">
+      <div class="get-example">
+        Get
+      </div>
+      <div class="get-example">
+        Get
+      </div>
+    </div>
+  </div>
+
+
+  <h4 id="layout" class="base--h4 basic-header">Container</h4>
+  <p class="base--p">
+    Containers define main body layouts and contain responsive grid elements.
+  </p>
+  <div class="code-block">
+    <pre class="base--pre language-scss">
+      <code class="language-html">
+&lt;div class="_container"&gt;
+  &lt;div class="row"&gt;
+    &lt;!-- responsive grid elements --&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+      </code>
+    </pre>
+  </div>
+  <p class="base--p">
+    In this library, there are containers of different widths.
+  </p>
+  <div class="code-block">
+    <pre class="base--pre language-scss">
+      <code class="language-html">
+&lt;!-- max-width of 768px --&gt;
+&lt;div class="_container"&gt;&lt;/div&gt;
+&lt;!-- max-width of 1024px --&gt;
+&lt;div class="_container _container_large"&gt;&lt;/div&gt;
+&lt;!-- max-width of 1200px --&gt;
+&lt;div class="_container _container_x-large"&gt;&lt;/div&gt;
+&lt;!-- max-width of 1280px --&gt;
+&lt;div class="_container _container_xx-large"&gt;&lt;/div&gt;
+      </code>
+    </pre>
+  </div>
+
+
+  <h4 class="base--h4 basic-header">Grid Mixin</h4>
+
+  <p class="base--p">For layouts designed with responsive grids, you can use the <code class="base--code">grid</code> mixin.</p>
+
+  <div class="code-block">
+    <div class="code-block--ui">
+      <div class="column-1"></div>
+      <div class="column-2"></div>
+      <div class="column-3"></div>
+    </div>
+    <div class="code-block--code">
+      <pre class="base--pre language-scss">
+        <code class="language-scss">
+.column-1 {
+  @include grid(6);
+  background-color: color('purple', 50);
+  height: 3rem;
+}
+
+.column-2 {
+  @include grid(3);
+  background-color: color('teal', 50);
+  height: 3rem;
+  margin-top: 0rem;
+}
+
+.column-3 {
+  @include grid(3, $has-right-gutter: false);
+  background-color: color('gray', 50);
+  height: 3rem;
+  margin-top: 0rem;
+}
+        </code>
+      </pre>
+    </div>
+  </div>
+
+  <h4 class="base--h4 basic-header">Divisions Mixin</h4>
+
+  <p class="base--p">For layouts made with basic divisions, you can use the <code class="base--code">divisions</code> mixin.</p>
+
+  <div class="code-block">
+    <div class="code-block--ui">
+      <div class="left-division"></div>
+      <div class="right-division"></div>
+    </div>
+    <div class="code-block--code">
+      <pre class="base--pre language-scss">
+        <code class="language-scss">
+.left-division {
+  @include divisions(2);
+  background-color: color('purple', 30);
+  height: 7rem;
+}
+
+.right-division {
+  @include divisions(2);
+  margin-top: 0rem;
+  background-color: color('teal', 30);
+  height: 7rem;
+}
+        </code>
+      </pre>
+    </div>
+  </div>
+
+  <p class="base--p"><code class="base--code">Divisions</code> is also useful for ui like grid-view list items that don't align with a responsive grid layout.</p>
+
+  <div class="code-block">
+    <div class="code-block--ui">
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+    </div>
+    <div class="code-block--code">
+      <pre class="base--pre language-scss">
+        <code class="language-scss">
+.grid-item {
+  @include divisions(5);
+  background-color: color('purple', 50);
+  height: 3rem;
+  margin-top: 0rem;
+
+  &:nth-of-type(2n) {
+    background-color: color('teal', 50);
+  }
+}
+        </code>
+      </pre>
+    </div>
+  </div>
+
+  <h4 class="base--h4 basic-header">Breakpoints</h4>
+
+  <p class="base--p">Below is a basic usage of defining responsive breakpoints using the <a href="http://breakpoint-sass.com/" class="base--a">Breakpoints-Sass</a> mixin.</p>
+  <div class="code-block">
+    <div class="code-block--ui">
+      <div class="breakpoint-example-1">
+        first item
+      </div>
+      <div class="breakpoint-example-2">
+        second item
+      </div>
+    </div>
+    <div class="code-block--code">
+      <pre class="base--pre language-scss">
+        <code class="language-scss">
+.breakpoint-example-1 {
+  display: block;
+  background-color: color('purple', 50);
+
+  @include breakpoint(get('large')) {
+    @include grid(6);
+  }
+  }
+
+  .breakpoint-example-2 {
+  display: block;
+  background-color: color('teal', 50);
+
+  @include breakpoint(get('large')) {
+    @include grid(6);
+  }
+}
+        </code>
+      </pre>
+    </div>
+  </div>
+
+  <h4 class="base--h4 basic-header">Breakpoint Settings</h4>
+  <div class="code-block">
+    <pre class="base--pre language-scss">
+      <code class="language-scss">
+$BreakpointSettings: (
+  'xx-small': 320px,
+  'x-small': 360px,
+  'small': 640px,
+  'medium': 768px,
+  'large': 1024px,
+  'x-large': 1200px,
+  'xx-large': 1280px
+);
+      </code>
+    </pre>
+  </div>
+
+  <h4 class="base--h4 basic-header">Typography Settings</h4>
+  <div class="code-block">
+    <pre class="base--pre language-scss">
+      <code class="language-scss">
+$TypographySettings: (
+  'sans serif': ('Helvetica Neue', Helvetica, 'Open Sans', Arial, 'Lucida Grande', 'Roboto', sans-serif),
+  'monospace': (source-code-pro, Menlo, Consolas, monospace),
+  'weight bold': 700,
+  'weight normal': 400,
+  'weight light': 200,
+  'rhythm': 2rem
+);
+      </code>
+    </pre>
+  </div>
+
+  <h4 class="base--h4 basic-header">Colors Settings</h4>
+  <div class="code-block">
+    <pre class="base--pre language-scss">
+      <code class="language-scss">
+$ColorScheme: (
+  'primary color': color('purple', 50),
+  'secondary color': color('teal', 50),
+  'background color': color('white', 10),
+  'text color': color('gray', 80),
+  'white': color('white', 10),
+  'black': color('gray', 100)
+);
+      </code>
+    </pre>
+  </div>
+
+  <h4 class="base--h4 basic-header">set-text-color Function</h4>
+
+  <p class="base--p">The <code class="base--code">set-text-color</code> function can find a contrasting text color given a background color.</p>
+
+  <div class="code-block">
+    <div class="code-block--ui">
+      <div class="element-with-dark-text">
+        Dark text, light background
+      </div>
+      <div class="element-with-light-text">
+        Light text, dark background
+      </div>
+    </div>
+    <div class="code-block--code">
+      <pre class="base--pre language-scss">
+        <code class="language-scss">
+.element-with-dark-text {
+  display: block;
+  padding: get('rhythm') / 2;
+  background-color: color('purple', 20);
+  color: set-text-color(color('purple', 20));
+  }
+
+  .element-with-light-text {
+  display: block;
+  padding: get('rhythm') / 2;
+  background-color: color('purple', 80);
+  color: set-text-color(color('purple', 80));
+}
+        </code>
+      </pre>
+    </div>
+  </div>
+
+  <h4 class="base--h4 basic-header">color Function</h4>
+
+  <p class="base--p">The <code class="base--code">color</code> function can pull a color from the IBM Design Color palette given a color name and tone.</p>
+
+  <div class="code-block">
+    <div class="code-block--ui">
+      <div class="lots-of-colors">
+        <span>green 50</span>
+        <span>blue 40</span>
+        <span>yellow 30</span>
+      </div>
+    </div>
+    <div class="code-block--code">
+      <pre class="base--pre language-scss">
+        <code class="language-scss">
+.lots-of-colors {
+  display: block;
+  padding: get('rhythm') / 2;
+  background-color: color('white', 40);
+
+  span:nth-of-type(1) {
+    color: color('green', 50);
+  }
+
+  span:nth-of-type(2) {
+    color: color('blue', 40);
+  }
+
+  span:nth-of-type(3) {
+    color: color('yellow', 30);
+  }
+}
+        </code>
+      </pre>
+    </div>
+  </div>
+
+  <h4 class="base--h4 basic-header">get Function</h4>
+
+  <p class="base--p">The <code class="base--code">get</code> function can look up a key in any global setting (Breakpoints, Typography, etc.) defined in the Sass library.</p>
+
+  <div class="code-block">
+    <div class="code-block--ui">
+      <div class="get-example">
+        Get
+      </div>
+      <div class="get-example">
+        Get
+      </div>
+    </div>
+    <div class="code-block--code">
+      <pre class="base--pre language-scss">
+        <code class="language-scss">
+.get-example {
+  display: block;
+  padding: get('rhythm') / 2;
+  background-color: get('background color');
+  color: get('primary color');
+
+  @include breakpoint(get('medium')) {
+    @include grid(6);
+
+    &:nth-of-type(2) {
+      margin-right: 0rem;
+    }
+  }
+}
+        </code>
+      </pre>
+    </div>
+  </div>
+
+</div>
+
+<div class="bottom-nav-bar--container">
+  <nav class="bottom-nav-bar--nav">
+    <ul class="bottom-nav-bar--nav-ul base--ul base--ul_inline base--ul_no-bullets">
+      <li class="bottom-nav-bar--nav-li base--li"><a href="http://www.ibm.com/" class="base--a bottom-nav-bar--nav-link" target="_blank">ibm.com</a></li>
+      <li class="bottom-nav-bar--nav-li base--li"><a href="#" class="base--a bottom-nav-bar--nav-link" target="_blank">Terms of Use</a></li>
+      <li class="bottom-nav-bar--nav-li base--li"><a href="http://www.ibm.com/privacy/us/en/?lnk=flg-priv-usen?lnk=flg" class="base--a bottom-nav-bar--nav-link" target="_blank">Privacy Policy</a></li>
+      <li class="bottom-nav-bar--nav-li base--li">© 2016 IBM</li>
+    </ul>
+  </nav>
+</div>
+
+
+  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="build/bundle.js"></script>
+  
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-59827755-19', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+
+</html>

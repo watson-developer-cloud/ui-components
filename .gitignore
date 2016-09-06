@@ -151,3 +151,6 @@ node_modules
 scss-report.json
 docs/
 .jshint*
+example/build
+example/*.html
+dist/main.scss

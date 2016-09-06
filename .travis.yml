@@ -1,6 +1,7 @@
 language: node_js
 sudo: true
 node_js: 4
+script: npm run lint
 deploy:
   provider: script
   script:

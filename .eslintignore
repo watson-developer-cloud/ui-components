@@ -1,0 +1,5 @@
+node_modules
+dist
+example/src/js/prism.min.js
+example/build
+coverage

@@ -1,0 +1,1015 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Watson Platform Component Library</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="og:title" content="Watson Developer Cloud - UI Components Library">
+  <meta name="og:description" content="SASS library that helps developers to create UIs quickly and consistently.">
+  <link rel="icon" href="images/favicon.png?v=2" />
+
+  
+  <link rel="stylesheet" href="build/bundle.css" media="screen" title="no title" charset="utf-8">
+  
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  
+
+<header class="top-nav">
+  <div class="_container _container_large">
+    <div class="top-nav--wordmark">
+      <a href="." class="top-nav--wordmark-link">
+        Watson Platform Component Library
+      </a>
+    </div>
+    <div class="top-nav--spacer"></div>
+    <nav role="menubar" class="top-nav--nav">
+      <a href="index.html" role="menuitem" class="base--a top-nav--nav-li-link">
+        <li role="presentation" class="base--li top-nav--nav-li">
+          ABOUT
+        </li>
+      </a>
+      <a href="get-started.html" role="menuitem" class="base--a top-nav--nav-li-link">
+        <li role="presentation" class="base--li top-nav--nav-li">
+          GETTING STARTED
+        </li>
+      </a>
+      <a href="components.html" role="menuitem" class="base--a top-nav--nav-li-link selected">
+        <li role="presentation" class="base--li top-nav--nav-li">
+          COMPONENTS
+        </li>
+      </a>
+      <a href="style.html" role="menuitem" class="base--a top-nav--nav-li-link">
+        <li role="presentation" class="base--li top-nav--nav-li">
+          STYLE
+        </li>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<div class="_container _container_large components">
+  <div class="content--content-container">
+    <h4 class="content--content-title">Content</h4>
+    <div class="content--content-item-container">
+      <a href="#buttons">
+        <div class="content--content-item">
+          BUTTONS
+        </div>
+      </a>
+      <a href="#tab-panels">
+        <div class="content--content-item">
+          TAB PANELS
+        </div>
+      </a>
+      <a href="#clickable-tabs">
+        <div class="content--content-item">
+          CLICKABLE TABS
+        </div>
+      </a>
+      <a href="#rounded-tags">
+        <div class="content--content-item">
+          ROUNDED TAGS
+        </div>
+      </a>
+      <a href="#loader">
+        <div class="content--content-item">
+          LOADER
+        </div>
+      </a>
+      <a href="#hr">
+        <div class="content--content-item">
+          HR
+        </div>
+      </a>
+      <a href="#others">
+        <div class="content--content-item">
+          OTHERS
+        </div>
+      </a>
+
+    </div>
+
+  </div>
+
+  <h4 id="buttons" class="base--h4 basic-header">Buttons</h4>
+  
+
+<div class="code-block">
+  <div class="code-block--ui">
+    
+<!-- BUTTONS -->
+<button class="base--button">Button</button>
+
+<!-- SUBMIT AND RESET BUTTONS -->
+<button class="base--button base--button_submit" type="submit">Submit Button</button>
+<button class="base--button base--button_reset" type="reset">Reset Button</button>
+
+<!-- COLOR BUTTONS -->
+<button class="base--button base--button_black">Black Button</button>
+<button class="base--button base--button_teal">Teal Button</button>
+
+  
+  </div>
+  <div class="code-block--code">
+    <pre class="base--pre prism language-markup">
+    <code class="language-markup">
+&lt;!-- BUTTONS -->
+&lt;button class="base--button">Button&lt;/button>
+
+&lt;!-- SUBMIT AND RESET BUTTONS -->
+&lt;button class="base--button base--button_submit" type="submit">Submit Button&lt;/button>
+&lt;button class="base--button base--button_reset" type="reset">Reset Button&lt;/button>
+
+&lt;!-- COLOR BUTTONS -->
+&lt;button class="base--button base--button_black">Black Button&lt;/button>
+&lt;button class="base--button base--button_teal">Teal Button&lt;/button>
+    </code>
+    </pre>
+  </div>
+</div>
+
+
+
+  <h4 id="tab-panels" class="base--h4 basic-header">Tab Panels</h4>
+  
+
+<div class="code-block">
+  <div class="code-block--ui">
+    
+<div class="tab-panels" role="tabpanel">
+  <ul class="tab-panels--tab-list" role="tablist">
+    <li class="tab-panels--tab-list-item base--li" role="presentation">
+      <a class="tab-panels--tab base--a active" href="#panel1" aria-controls="panel1" role="tab">Tab 1</a>
+    </li>
+    <li class="tab-panels--tab-list-item base--li" role="presentation">
+      <a class="tab-panels--tab base--a" href="#panel2" aria-controls="panel2" role="tab">Tab 2</a>
+    </li>
+  </ul>
+  <div class="tab-panels--tab-content">
+    <div id="panel1" class="tab-panels--tab-pane active" role="tab-panel">
+      This is panel 1
+    </div>
+    <div id="panel2" class="tab-panels--tab-pane" role="tab-panel">
+      This is panel 2
+    </div>
+  </div>
+</div>
+
+  
+  </div>
+  <div class="code-block--code">
+    <pre class="base--pre prism language-markup">
+    <code class="language-markup">
+&lt;div class="tab-panels" role="tabpanel">
+  &lt;ul class="tab-panels--tab-list" role="tablist">
+    &lt;li class="tab-panels--tab-list-item base--li" role="presentation">
+      &lt;a class="tab-panels--tab base--a active" href="#panel1" aria-controls="panel1" role="tab">Tab 1&lt;/a>
+    &lt;/li>
+    &lt;li class="tab-panels--tab-list-item base--li" role="presentation">
+      &lt;a class="tab-panels--tab base--a" href="#panel2" aria-controls="panel2" role="tab">Tab 2&lt;/a>
+    &lt;/li>
+  &lt;/ul>
+  &lt;div class="tab-panels--tab-content">
+    &lt;div id="panel1" class="tab-panels--tab-pane active" role="tab-panel">
+      This is panel 1
+    &lt;/div>
+    &lt;div id="panel2" class="tab-panels--tab-pane" role="tab-panel">
+      This is panel 2
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+    </code>
+    </pre>
+  </div>
+</div>
+
+
+
+  <h4 id="clickable-tabs" class="base--h4 basic-header">Clickable Tabs</h4>
+  
+
+<div class="code-block">
+  <div class="code-block--ui">
+    
+<div class="clickable-tab">
+  Clickable Tab
+</div>
+
+  
+  </div>
+  <div class="code-block--code">
+    <pre class="base--pre prism language-markup">
+    <code class="language-markup">
+&lt;div class="clickable-tab">
+  Clickable Tab
+&lt;/div>
+    </code>
+    </pre>
+  </div>
+</div>
+
+
+
+  <h4 class="base--h4 basic-header">Clickable Tabs as Radio Buttons</h4>
+  
+
+<div class="code-block">
+  <div class="code-block--ui">
+    
+<input role="radio" class="base--radio" type="radio" id="tab-1" name="tab-radio" value="1">
+<label class="base--inline-label clickable-tab" for="tab-1">
+  Option 1
+</label>
+
+<input role="radio" class="base--radio" type="radio" id="tab-2" name="tab-radio" value="2">
+<label class="base--inline-label clickable-tab" for="tab-2">
+  Option 2
+</label>
+
+  
+  </div>
+  <div class="code-block--code">
+    <pre class="base--pre prism language-markup">
+    <code class="language-markup">
+&lt;input role="radio" class="base--radio" type="radio" id="tab-1" name="tab-radio" value="1">
+&lt;label class="base--inline-label clickable-tab" for="tab-1">
+  Option 1
+&lt;/label>
+
+&lt;input role="radio" class="base--radio" type="radio" id="tab-2" name="tab-radio" value="2">
+&lt;label class="base--inline-label clickable-tab" for="tab-2">
+  Option 2
+&lt;/label>
+    </code>
+    </pre>
+  </div>
+</div>
+
+
+
+  <h4 id="rounded-tags" class="base--h4 basic-header">Rounded Tags</h4>
+  
+
+<div class="code-block">
+  <div class="code-block--ui">
+    
+<div class="metatag">
+  tag 1
+</div>
+<div class="metatag">
+  tag 2
+</div>
+
+  
+  </div>
+  <div class="code-block--code">
+    <pre class="base--pre prism language-markup">
+    <code class="language-markup">
+&lt;div class="metatag">
+  tag 1
+&lt;/div>
+&lt;div class="metatag">
+  tag 2
+&lt;/div>
+    </code>
+    </pre>
+  </div>
+</div>
+
+
+
+  <h4 id="loader" class="base--h4 basic-header">Loader</h4>
+  
+
+<div class="code-block">
+  <div class="code-block--ui">
+    
+<div class="loader-container">
+  <svg viewBox="25 25 50 50" class="loader">
+    <circle cx="50" cy="50" r="20" class="loader--path"></circle>
+  </svg>
+</div>
+
+<div class="loader-container loader-container_small">
+  <svg viewBox="25 25 50 50" class="loader">
+    <circle cx="50" cy="50" r="20" class="loader--path"></circle>
+  </svg>
+</div>
+
+  
+  </div>
+  <div class="code-block--code">
+    <pre class="base--pre prism language-markup">
+    <code class="language-markup">
+&lt;div class="loader-container">
+  &lt;svg viewBox="25 25 50 50" class="loader">
+    &lt;circle cx="50" cy="50" r="20" class="loader--path">&lt;/circle>
+  &lt;/svg>
+&lt;/div>
+
+&lt;div class="loader-container loader-container_small">
+  &lt;svg viewBox="25 25 50 50" class="loader">
+    &lt;circle cx="50" cy="50" r="20" class="loader--path">&lt;/circle>
+  &lt;/svg>
+&lt;/div>
+    </code>
+    </pre>
+  </div>
+</div>
+
+
+
+  <h4 id="hr" class="base--h4 basic-header">HR</h4>
+  
+
+<div class="code-block">
+  <div class="code-block--ui">
+    
+<hr class="base--hr">
+<hr class="base--hr base--hr_small">
+
+  
+  </div>
+  <div class="code-block--code">
+    <pre class="base--pre prism language-markup">
+    <code class="language-markup">
+&lt;hr class="base--hr">
+&lt;hr class="base--hr base--hr_small">
+    </code>
+    </pre>
+  </div>
+</div>
+
+
+
+  <h4 id="others" class="base--h4 basic-header">Checkboxes</h4>
+  
+
+<div class="code-block">
+  <div class="code-block--ui">
+    
+<input role="checkbox" class="base--checkbox" type="checkbox" id="cb1" name="cb" value="some cb">
+<label class="base--inline-label" for="cb1">Option 1</label>
+
+  
+  </div>
+  <div class="code-block--code">
+    <pre class="base--pre prism language-markup">
+    <code class="language-markup">
+&lt;input role="checkbox" class="base--checkbox" type="checkbox" id="cb1" name="cb" value="some cb">
+&lt;label class="base--inline-label" for="cb1">Option 1&lt;/label>
+    </code>
+    </pre>
+  </div>
+</div>
+
+
+
+  <h4 class="base--h4 basic-header">Radio Buttons</h4>
+  
+
+<div class="code-block">
+  <div class="code-block--ui">
+    
+<input role="radio" class="base--radio" type="radio" id="rb1" name="rb" value="">
+<label class="base--inline-label" for="rb1">Option 1</label>
+<input role="radio" class="base--radio" type="radio" id="rb2" name="rb" value="">
+<label class="base--inline-label" for="rb2">Option 2</label>
+
+  
+  </div>
+  <div class="code-block--code">
+    <pre class="base--pre prism language-markup">
+    <code class="language-markup">
+&lt;input role="radio" class="base--radio" type="radio" id="rb1" name="rb" value="">
+&lt;label class="base--inline-label" for="rb1">Option 1&lt;/label>
+&lt;input role="radio" class="base--radio" type="radio" id="rb2" name="rb" value="">
+&lt;label class="base--inline-label" for="rb2">Option 2&lt;/label>
+    </code>
+    </pre>
+  </div>
+</div>
+
+
+
+  <h4 class="base--h4 basic-header">Table</h4>
+  
+
+<div class="code-block">
+  <div class="code-block--ui">
+    
+<table class="base--table">
+  <thead class="base--thead">
+    <tr class="base--tr">
+      <td class="base--td">First Name</td>
+      <td class="base--td">Last Name</td>
+      <td class="base--td">Role</td>
+    </tr>
+  </thead>
+  <tbody class="base--tbody">
+    <tr class="base--tr">
+      <td class="base--td">Westley</td>
+      <td class="base--td">--</td>
+      <td class="base--td">The Man in Black</td>
+    </tr>
+    <tr class="base--tr">
+      <td class="base--td">Princess</td>
+      <td class="base--td">Buttercup</td>
+      <td class="base--td">The Princess Bride</td>
+    </tr>
+    <tr class="base--tr">
+      <td class="base--td">Prince</td>
+      <td class="base--td">Humperdinck</td>
+      <td class="base--td">The Obnoxious Prince</td>
+    </tr>
+    <tr class="base--tr">
+      <td class="base--td">Barack</td>
+      <td class="base--td">Obama</td>
+      <td class="base--td">President</td>
+    </tr>
+    <tr class="base--tr">
+      <td class="base--td">John</td>
+      <td class="base--td">Doe</td>
+      <td class="base--td">Placeholder</td>
+    </tr>
+  </tbody>
+</table>
+
+  
+  </div>
+  <div class="code-block--code">
+    <pre class="base--pre prism language-markup">
+    <code class="language-markup">
+&lt;table class="base--table">
+  &lt;thead class="base--thead">
+    &lt;tr class="base--tr">
+      &lt;td class="base--td">First Name&lt;/td>
+      &lt;td class="base--td">Last Name&lt;/td>
+      &lt;td class="base--td">Role&lt;/td>
+    &lt;/tr>
+  &lt;/thead>
+  &lt;tbody class="base--tbody">
+    &lt;tr class="base--tr">
+      &lt;td class="base--td">Westley&lt;/td>
+      &lt;td class="base--td">--&lt;/td>
+      &lt;td class="base--td">The Man in Black&lt;/td>
+    &lt;/tr>
+    &lt;tr class="base--tr">
+      &lt;td class="base--td">Princess&lt;/td>
+      &lt;td class="base--td">Buttercup&lt;/td>
+      &lt;td class="base--td">The Princess Bride&lt;/td>
+    &lt;/tr>
+    &lt;tr class="base--tr">
+      &lt;td class="base--td">Prince&lt;/td>
+      &lt;td class="base--td">Humperdinck&lt;/td>
+      &lt;td class="base--td">The Obnoxious Prince&lt;/td>
+    &lt;/tr>
+    &lt;tr class="base--tr">
+      &lt;td class="base--td">Barack&lt;/td>
+      &lt;td class="base--td">Obama&lt;/td>
+      &lt;td class="base--td">President&lt;/td>
+    &lt;/tr>
+    &lt;tr class="base--tr">
+      &lt;td class="base--td">John&lt;/td>
+      &lt;td class="base--td">Doe&lt;/td>
+      &lt;td class="base--td">Placeholder&lt;/td>
+    &lt;/tr>
+  &lt;/tbody>
+&lt;/table>
+    </code>
+    </pre>
+  </div>
+</div>
+
+
+
+  <h4 class="base--h4 basic-header">Lists</h4>
+  
+
+<div class="code-block">
+  <div class="code-block--ui">
+    
+<ul class="base--ul">
+  <li class="base--li">List item 1</li>
+  <li class="base--li">List item 2</li>
+  <li class="base--li">List item 3</li>
+</ul>
+<ul class="base--ul base--ul_inline">
+  <li class="base--li">List item 1</li>
+  <li class="base--li">List item 2</li>
+  <li class="base--li">List item 3</li>
+</ul>
+<ul class="base--ul base--ul_no-bullets">
+  <li class="base--li">List item 1</li>
+  <li class="base--li">List item 2</li>
+  <li class="base--li">List item 3</li>
+</ul>
+
+  
+  </div>
+  <div class="code-block--code">
+    <pre class="base--pre prism language-markup">
+    <code class="language-markup">
+&lt;ul class="base--ul">
+  &lt;li class="base--li">List item 1&lt;/li>
+  &lt;li class="base--li">List item 2&lt;/li>
+  &lt;li class="base--li">List item 3&lt;/li>
+&lt;/ul>
+&lt;ul class="base--ul base--ul_inline">
+  &lt;li class="base--li">List item 1&lt;/li>
+  &lt;li class="base--li">List item 2&lt;/li>
+  &lt;li class="base--li">List item 3&lt;/li>
+&lt;/ul>
+&lt;ul class="base--ul base--ul_no-bullets">
+  &lt;li class="base--li">List item 1&lt;/li>
+  &lt;li class="base--li">List item 2&lt;/li>
+  &lt;li class="base--li">List item 3&lt;/li>
+&lt;/ul>
+    </code>
+    </pre>
+  </div>
+</div>
+
+
+
+  <h4 class="base--h4 basic-header">TextArea</h4>
+  
+
+<div class="code-block">
+  <div class="code-block--ui">
+    
+<textarea class="base--textarea" name="text-area" id="textarea1" cols="30" rows="10"></textarea>
+
+  
+  </div>
+  <div class="code-block--code">
+    <pre class="base--pre prism language-markup">
+    <code class="language-markup">
+&lt;textarea class="base--textarea" name="text-area" id="textarea1" cols="30" rows="10">&lt;/textarea>
+    </code>
+    </pre>
+  </div>
+</div>
+
+
+
+  <h4 class="base--h4 basic-header">Dropdown Select</h4>
+  
+
+<div class="code-block">
+  <div class="code-block--ui">
+    
+<select name="pick-a-value" id="any-value" class="base--select">
+  <option value="value1">Value 1</option>
+  <option value="value2">Value 2</option>
+  <option value="value3">Value 3</option>
+</select>
+
+  
+  </div>
+  <div class="code-block--code">
+    <pre class="base--pre prism language-markup">
+    <code class="language-markup">
+&lt;select name="pick-a-value" id="any-value" class="base--select">
+  &lt;option value="value1">Value 1&lt;/option>
+  &lt;option value="value2">Value 2&lt;/option>
+  &lt;option value="value3">Value 3&lt;/option>
+&lt;/select>
+    </code>
+    </pre>
+  </div>
+</div>
+
+
+
+  <h4 class="base--h4 basic-header">Basic Input</h4>
+  
+
+<div class="code-block">
+  <div class="code-block--ui">
+    
+<input type="" id="input1" class="base--input"></input>
+<input type="" id="input2" placeholder="This is placeholder text" class="base--input"></input>
+<input type="" id="input3" placeholder="Can't touch this" class="base--input" disabled></input>
+
+  
+  </div>
+  <div class="code-block--code">
+    <pre class="base--pre prism language-markup">
+    <code class="language-markup">
+&lt;input type="" id="input1" class="base--input">&lt;/input>
+&lt;input type="" id="input2" placeholder="This is placeholder text" class="base--input">&lt;/input>
+&lt;input type="" id="input3" placeholder="Can't touch this" class="base--input" disabled>&lt;/input>
+    </code>
+    </pre>
+  </div>
+</div>
+
+
+
+  <h4 class="base--h4 basic-header">Color Input</h4>
+  
+
+<div class="code-block">
+  <div class="code-block--ui">
+    
+<input type="color" id="input4" class="base--color-input" disabled></input>
+
+  
+  </div>
+  <div class="code-block--code">
+    <pre class="base--pre prism language-markup">
+    <code class="language-markup">
+&lt;input type="color" id="input4" class="base--color-input" disabled>&lt;/input>
+    </code>
+    </pre>
+  </div>
+</div>
+
+
+
+  <h4 class="base--h4 basic-header">Date Input</h4>
+  
+
+<div class="code-block">
+  <div class="code-block--ui">
+    
+<input type="date" id="input5" class="base--date-input"></input>
+<input type="date" id="input6" placeholder="Can't click me" class="base--date-input" disabled></input>
+
+  
+  </div>
+  <div class="code-block--code">
+    <pre class="base--pre prism language-markup">
+    <code class="language-markup">
+&lt;input type="date" id="input5" class="base--date-input">&lt;/input>
+&lt;input type="date" id="input6" placeholder="Can't click me" class="base--date-input" disabled>&lt;/input>
+    </code>
+    </pre>
+  </div>
+</div>
+
+
+
+  <h4 class="base--h4 basic-header">Date Time Local Input</h4>
+  
+
+<div class="code-block">
+  <div class="code-block--ui">
+    
+<input type="datetime-local" id="input7" class="base--datetime-local-input"></input>
+<input type="datetime-local" id="input8" placeholder="Can't click me" class="base--datetime-local-input" disabled></input>
+
+  
+  </div>
+  <div class="code-block--code">
+    <pre class="base--pre prism language-markup">
+    <code class="language-markup">
+&lt;input type="datetime-local" id="input7" class="base--datetime-local-input">&lt;/input>
+&lt;input type="datetime-local" id="input8" placeholder="Can't click me" class="base--datetime-local-input" disabled>&lt;/input>
+    </code>
+    </pre>
+  </div>
+</div>
+
+
+
+  <h4 class="base--h4 basic-header">File Input</h4>
+  
+
+<div class="code-block">
+  <div class="code-block--ui">
+    
+<input type="file" id="input12" class="base--file-input"></input>
+<input type="file" id="input13" placeholder="This is a placeholder file" class="base--file-input"></input>
+<input type="file" id="input14" placeholder="Can't click me" class="base--file-input" disabled></input>
+
+  
+  </div>
+  <div class="code-block--code">
+    <pre class="base--pre prism language-markup">
+    <code class="language-markup">
+&lt;input type="file" id="input12" class="base--file-input">&lt;/input>
+&lt;input type="file" id="input13" placeholder="This is a placeholder file" class="base--file-input">&lt;/input>
+&lt;input type="file" id="input14" placeholder="Can't click me" class="base--file-input" disabled>&lt;/input>
+    </code>
+    </pre>
+  </div>
+</div>
+
+
+
+  <h4 class="base--h4 basic-header">Hidden Input</h4>
+  
+
+<div class="code-block">
+  <div class="code-block--ui">
+    
+<input type="hidden" id="input15" class="base--hidden-input"></input>
+<input type="hidden" id="input16" placeholder="This is placeholder hidden" class="base--hidden-input"></input>
+<input type="hidden" id="input17" placeholder="Can't click me" class="base--hidden-input" disabled></input>
+
+  
+  </div>
+  <div class="code-block--code">
+    <pre class="base--pre prism language-markup">
+    <code class="language-markup">
+&lt;input type="hidden" id="input15" class="base--hidden-input">&lt;/input>
+&lt;input type="hidden" id="input16" placeholder="This is placeholder hidden" class="base--hidden-input">&lt;/input>
+&lt;input type="hidden" id="input17" placeholder="Can't click me" class="base--hidden-input" disabled>&lt;/input>
+    </code>
+    </pre>
+  </div>
+</div>
+
+
+
+  <h4 class="base--h4 basic-header">Month Input</h4>
+  
+
+<div class="code-block">
+  <div class="code-block--ui">
+    
+<input type="month" id="input18" class="base--month-input"></input>
+<input type="month" id="input19" placeholder="Placeholder Month" class="base--month-input" ></input>
+<input type="month" id="input20" placeholder="Can't click me" class="base--month-input" disabled></input>
+
+  
+  </div>
+  <div class="code-block--code">
+    <pre class="base--pre prism language-markup">
+    <code class="language-markup">
+&lt;input type="month" id="input18" class="base--month-input">&lt;/input>
+&lt;input type="month" id="input19" placeholder="Placeholder Month" class="base--month-input" >&lt;/input>
+&lt;input type="month" id="input20" placeholder="Can't click me" class="base--month-input" disabled>&lt;/input>
+    </code>
+    </pre>
+  </div>
+</div>
+
+
+
+  <h4 class="base--h4 basic-header">Number Input</h4>
+  
+
+<div class="code-block">
+  <div class="code-block--ui">
+    
+<input type="number" id="input21" class="base--number-input"></input>
+<input type="number" id="input22" placeholder="This is placeholder number" class="base--number-input"></input>
+<input type="number" id="input23" placeholder="Can't touch this" class="base--number-input" disabled></input>
+
+  
+  </div>
+  <div class="code-block--code">
+    <pre class="base--pre prism language-markup">
+    <code class="language-markup">
+&lt;input type="number" id="input21" class="base--number-input">&lt;/input>
+&lt;input type="number" id="input22" placeholder="This is placeholder number" class="base--number-input">&lt;/input>
+&lt;input type="number" id="input23" placeholder="Can't touch this" class="base--number-input" disabled>&lt;/input>
+    </code>
+    </pre>
+  </div>
+</div>
+
+
+
+  <h4 class="base--h4 basic-header">Password Input</h4>
+  
+
+<div class="code-block">
+  <div class="code-block--ui">
+    
+<input type="password" id="input24" class="base--password-input"></input>
+<input type="password" id="input25" placeholder="This is placeholder password" class="base--password-input"></input>
+<input type="password" id="input26" placeholder="Can't touch this" class="base--password-input" disabled></input>
+
+  
+  </div>
+  <div class="code-block--code">
+    <pre class="base--pre prism language-markup">
+    <code class="language-markup">
+&lt;input type="password" id="input24" class="base--password-input">&lt;/input>
+&lt;input type="password" id="input25" placeholder="This is placeholder password" class="base--password-input">&lt;/input>
+&lt;input type="password" id="input26" placeholder="Can't touch this" class="base--password-input" disabled>&lt;/input>
+    </code>
+    </pre>
+  </div>
+</div>
+
+
+
+  <h4 class="base--h4 basic-header">Range Input</h4>
+  
+
+<div class="code-block">
+  <div class="code-block--ui">
+    
+<input type="range" id="input27" class="base--range-input"></input>
+<input type="range" id="input28" class="base--range-input" disabled></input>
+
+  
+  </div>
+  <div class="code-block--code">
+    <pre class="base--pre prism language-markup">
+    <code class="language-markup">
+&lt;input type="range" id="input27" class="base--range-input">&lt;/input>
+&lt;input type="range" id="input28" class="base--range-input" disabled>&lt;/input>
+    </code>
+    </pre>
+  </div>
+</div>
+
+
+
+  <h4 class="base--h4 basic-header">Search Input</h4>
+  
+
+<div class="code-block">
+  <div class="code-block--ui">
+    
+<input type="search" id="input29" class="base--search-input"></input>
+<input type="search" id="input30" placeholder="This is placeholder search" class="base--search-input"></input>
+<input type="search" id="input31" placeholder="Can't touch this" class="base--search-input" disabled></input>
+
+  
+  </div>
+  <div class="code-block--code">
+    <pre class="base--pre prism language-markup">
+    <code class="language-markup">
+&lt;input type="search" id="input29" class="base--search-input">&lt;/input>
+&lt;input type="search" id="input30" placeholder="This is placeholder search" class="base--search-input">&lt;/input>
+&lt;input type="search" id="input31" placeholder="Can't touch this" class="base--search-input" disabled>&lt;/input>
+    </code>
+    </pre>
+  </div>
+</div>
+
+
+
+  <h4 class="base--h4 basic-header">Telephone Input</h4>
+  
+
+<div class="code-block">
+  <div class="code-block--ui">
+    
+<input type="tel" id="input32" class="base--tel-input"></input>
+<input type="tel" id="input33" placeholder="8882121881" class="base--tel-input"></input>
+<input type="tel" id="input34" placeholder="123-343-9938" pattern="\d{3}[\-]\d{3}[\-]\d{4}" class="base--tel-input"></input>
+<input type="tel" id="input35" placeholder="8882121881" class="base--tel-input" disabled></input>
+
+  
+  </div>
+  <div class="code-block--code">
+    <pre class="base--pre prism language-markup">
+    <code class="language-markup">
+&lt;input type="tel" id="input32" class="base--tel-input">&lt;/input>
+&lt;input type="tel" id="input33" placeholder="8882121881" class="base--tel-input">&lt;/input>
+&lt;input type="tel" id="input34" placeholder="123-343-9938" pattern="\d{3}[\-]\d{3}[\-]\d{4}" class="base--tel-input">&lt;/input>
+&lt;input type="tel" id="input35" placeholder="8882121881" class="base--tel-input" disabled>&lt;/input>
+    </code>
+    </pre>
+  </div>
+</div>
+
+
+
+  <h4 class="base--h4 basic-header">Text Input</h4>
+  
+
+<div class="code-block">
+  <div class="code-block--ui">
+    
+<input type="text" id="input36" class="base--text-input"></input>
+<input type="text" id="input37" placeholder="This is placeholder text" class="base--text-input"></input>
+<input type="text" id="input38" placeholder="Can't touch this" class="base--text-input" disabled></input>
+
+  
+  </div>
+  <div class="code-block--code">
+    <pre class="base--pre prism language-markup">
+    <code class="language-markup">
+&lt;input type="text" id="input36" class="base--text-input">&lt;/input>
+&lt;input type="text" id="input37" placeholder="This is placeholder text" class="base--text-input">&lt;/input>
+&lt;input type="text" id="input38" placeholder="Can't touch this" class="base--text-input" disabled>&lt;/input>
+    </code>
+    </pre>
+  </div>
+</div>
+
+
+
+  <h4 class="base--h4 basic-header">Time Input</h4>
+  
+
+<div class="code-block">
+  <div class="code-block--ui">
+    
+<input type="time" id="input39" class="base--time-input"></input>
+<input type="time" id="input40" placeholder="This is placeholder time" class="base--time-input"></input>
+<input type="time" id="input41" placeholder="Can't Click me" class="base--time-input" disabled></input>
+
+  
+  </div>
+  <div class="code-block--code">
+    <pre class="base--pre prism language-markup">
+    <code class="language-markup">
+&lt;input type="time" id="input39" class="base--time-input">&lt;/input>
+&lt;input type="time" id="input40" placeholder="This is placeholder time" class="base--time-input">&lt;/input>
+&lt;input type="time" id="input41" placeholder="Can't Click me" class="base--time-input" disabled>&lt;/input>
+    </code>
+    </pre>
+  </div>
+</div>
+
+
+
+  <h4 class="base--h4 basic-header">Url Input</h4>
+  
+
+<div class="code-block">
+  <div class="code-block--ui">
+    
+<input type="url" id="input42" class="base--url-input"></input>
+<input type="url" id="input43" placeholder="Placeholder URL" class="base--url-input"></input>
+<input type="url" id="input44" placeholder="Placeholder URL" class="base--url-input" disabled></input>
+
+  
+  </div>
+  <div class="code-block--code">
+    <pre class="base--pre prism language-markup">
+    <code class="language-markup">
+&lt;input type="url" id="input42" class="base--url-input">&lt;/input>
+&lt;input type="url" id="input43" placeholder="Placeholder URL" class="base--url-input">&lt;/input>
+&lt;input type="url" id="input44" placeholder="Placeholder URL" class="base--url-input" disabled>&lt;/input>
+    </code>
+    </pre>
+  </div>
+</div>
+
+
+
+  <h4 class="base--h4 basic-header">Week Input</h4>
+  
+
+<div class="code-block">
+  <div class="code-block--ui">
+    
+<input type="week" id="input45" class="base--week-input"></input>
+<input type="week" id="input46" placeholder="This is placeholder week" class="base--week-input"></input>
+<input type="week" id="input47" placeholder="Can't click me" class="base--week-input" disabled></input>
+
+  
+  </div>
+  <div class="code-block--code">
+    <pre class="base--pre prism language-markup">
+    <code class="language-markup">
+&lt;input type="week" id="input45" class="base--week-input">&lt;/input>
+&lt;input type="week" id="input46" placeholder="This is placeholder week" class="base--week-input">&lt;/input>
+&lt;input type="week" id="input47" placeholder="Can't click me" class="base--week-input" disabled>&lt;/input>
+    </code>
+    </pre>
+  </div>
+</div>
+
+
+
+
+
+
+
+</div>
+<div class="bottom-nav-bar--container">
+  <nav class="bottom-nav-bar--nav">
+    <ul class="bottom-nav-bar--nav-ul base--ul base--ul_inline base--ul_no-bullets">
+      <li class="bottom-nav-bar--nav-li base--li"><a href="http://www.ibm.com/" class="base--a bottom-nav-bar--nav-link" target="_blank">ibm.com</a></li>
+      <li class="bottom-nav-bar--nav-li base--li"><a href="#" class="base--a bottom-nav-bar--nav-link" target="_blank">Terms of Use</a></li>
+      <li class="bottom-nav-bar--nav-li base--li"><a href="http://www.ibm.com/privacy/us/en/?lnk=flg-priv-usen?lnk=flg" class="base--a bottom-nav-bar--nav-link" target="_blank">Privacy Policy</a></li>
+      <li class="bottom-nav-bar--nav-li base--li">© 2016 IBM</li>
+    </ul>
+  </nav>
+</div>
+
+  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="build/bundle.js"></script>
+  
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-59827755-19', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+
+</html>
