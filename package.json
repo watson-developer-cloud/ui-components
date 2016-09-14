@@ -47,5 +47,10 @@
     "breakpoint-sass": "^2.7.0",
     "modular-scale": "^4.4.1",
     "modularscale-sass": "^2.1.1"
+  },
+  "peerDependencies": {
+    "breakpoint-sass": "^2.7.0",
+    "modular-scale": "^4.4.1",
+    "modularscale-sass": "^2.1.1"
   }
 }
