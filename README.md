@@ -16,7 +16,7 @@ All needed CSS, images, and javascript are found in `/dist`.
 
 In Sass, you just need to import the sass file:
 ```css
-@import 'watson-developer-cloud-ui-components/dist/_watson-developer-cloud-ui-components.scss';
+@import 'watson-ui-components/dist/_watson-developer-cloud-ui-components.scss';
 ```
 
 Make sure `node_modules` is a loaded path so that sass can find the route above.
