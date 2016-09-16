@@ -1,26 +1,24 @@
 language: node_js
 sudo: true
 node_js: 6
-script: npm run lint
+script:
+- npm run lint
+- npm run compile
 deploy:
-# this publishes to npm (on tagged builds only)
 - provider: npm
-    email: nathan@nfriedly.com
-    api_key:
-      secure: SPayKFCZfsEznCkOuH/tX9R1ZmtZZ98JkPOv6AiVatGrFIsAx0WWQWyebx1X9dvtxznTwslP0u/nv+i5ErtMdjutyhylz/rwJ7v1s0vR8+4E8JpnPOIOHX1YWybCz38N6u7Ue6+Km4AxmtnTeEhfChn3R4qgJK3qlit8GRxpOlBzUWDFbUYHz6TZOn3YnU2i1bruxcWLwfwXs0Pef1tIZrNC3LrvqpU39REX+vAFMSCTN+1F7u/Aax+zSp2POJkbpV9ijVXtQiNW643Di8XkaeGedzt7L/VtNG+6iJ//fqpULwYktTSdlNzwvNdu8IJ70VmhTOxVWWTcBlJOQNkjHXcU/E3N7keieQo7yE1dWoignNqUrTOaQIOnLxbmfjWAsRsieMSPNRIRvboXJfA5oppZ5lhfiAkyfJV8rNzc9Yt+KWO9uLbdfYJjok7CnICzlPhn2Ho7NHpfqLpJiT/V52C8I0UDMEDBMxCDee2/zHqoTJzzdJpbsGG/6LaEiLoO6+GWnreeBLlPSCE3GmIB1sJGaqJ7Zyfo0/LdTnCM+R2QHh1ju4YGLk8EKsSYfmlDRuat+qCstjOAEmpz3OmJENRAmTMHDkyaPL5v0RuR4S9uN/mlvAEPhSn4w4CZwuWLEpHolG4Zb7ltTgTsE6k4NpWUo2tx/uSb/D4cVzWB4u4=
-    skip_cleanup: true
-    on:
-      tags: true
-      repo: watson-developer-cloud/ui-components
-# this publishes to github pages (on every commit to master)
+  email: nathan@nfriedly.com
+  api_key:
+    secure: SPayKFCZfsEznCkOuH/tX9R1ZmtZZ98JkPOv6AiVatGrFIsAx0WWQWyebx1X9dvtxznTwslP0u/nv+i5ErtMdjutyhylz/rwJ7v1s0vR8+4E8JpnPOIOHX1YWybCz38N6u7Ue6+Km4AxmtnTeEhfChn3R4qgJK3qlit8GRxpOlBzUWDFbUYHz6TZOn3YnU2i1bruxcWLwfwXs0Pef1tIZrNC3LrvqpU39REX+vAFMSCTN+1F7u/Aax+zSp2POJkbpV9ijVXtQiNW643Di8XkaeGedzt7L/VtNG+6iJ//fqpULwYktTSdlNzwvNdu8IJ70VmhTOxVWWTcBlJOQNkjHXcU/E3N7keieQo7yE1dWoignNqUrTOaQIOnLxbmfjWAsRsieMSPNRIRvboXJfA5oppZ5lhfiAkyfJV8rNzc9Yt+KWO9uLbdfYJjok7CnICzlPhn2Ho7NHpfqLpJiT/V52C8I0UDMEDBMxCDee2/zHqoTJzzdJpbsGG/6LaEiLoO6+GWnreeBLlPSCE3GmIB1sJGaqJ7Zyfo0/LdTnCM+R2QHh1ju4YGLk8EKsSYfmlDRuat+qCstjOAEmpz3OmJENRAmTMHDkyaPL5v0RuR4S9uN/mlvAEPhSn4w4CZwuWLEpHolG4Zb7ltTgTsE6k4NpWUo2tx/uSb/D4cVzWB4u4=
+  skip_cleanup: true
+  on:
+    tags: true
+    repo: watson-developer-cloud/ui-components
 - provider: script
-    script:
-    - npm run compile
-    - npm run deploy
-    on:
-      branch: master
-      repo: watson-developer-cloud/ui-components
-    skip_cleanup: true
+  script: npm run deploy
+  on:
+    branch: master
+    repo: watson-developer-cloud/ui-components
+  skip_cleanup: true
 env:
   global:
   - secure: Bd805RBfKwm8ikfCKW4dcrz1gPtTN1pwnQ8eayQ6soI4nfD9PlJ+TcbAaGTScIr9X0rj9SR1bNxVscdwiGbb43NizyFikm75y70ox5nrEH7RVKex43P977kiqy2F7iMr9RC2it7wDz8BPe5Gya1Jjkb2QIDSo+U0L74K78LLoocIf1UA70kabIyYcyQkvIox0D/KW/B+/82jr2QTu7hZHxkxfuq/J5YmY5CEPG3aeF2hWhZ+tPCPpEyixWj3hccdG+l362RlWdD0a63HCKn34O4EejgPlY3RRTNeRo/m3HKCbqT4E26J98tkuFboPlcY2lVZKilEMSsb3M1GsfUsXJERUPk9SpK6hxPIg9S2ORqFV21uRLvGXkqD/aYlkbKgZLcqmiDxiAHTc04nI0ZDfuB/6scsQFbFpxPVdZXmbRb6pmVHsY/XGlA4Dkqi90uNH20ycV8Vci2X5jtA+PGcWWkKXvGHJ57aoRhGHp1DfFI6pRq4bGVEaWvlxXuaK38RXrKVwNtRlRjkJ08jYLNo3rhHKlBZWXuH/Y9WhoAKrpj7rUsn5pAG0JDReUruMznfyglFADCoFxP4fAVrLSk2h3DslX3vNedAp/WQpf7hnN2ockAt0D7vpA5KYuzr2cLCdDs64VglrJCxEefwP92FoFcgTg7SbdesLW2P58F3Akc=
