@@ -1,7 +1,7 @@
 {
   "name": "watson-ui-components",
   "version": "0.4.0",
-  "description": "UI component to build web application",
+  "description": "UI components (CSS & SCSS) used in Watson Developer Cloud demo apps",
   "main": "dist/",
   "scripts": {
     "deploy": "sh scripts/deploy.sh",
