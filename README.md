@@ -6,7 +6,7 @@ Demo: https://watson-developer-cloud.github.io/ui-components/
 
 ## Install
   ```bash
-  $ npm install watson-developer-cloud-ui-components
+  $ npm install watson-ui-components
   ```
 
 ## Usage
@@ -16,7 +16,7 @@ All needed CSS, images, and javascript are found in `/dist`.
 
 In Sass, you just need to import the sass file:
 ```css
-@import 'watson-ui-components/dist/_watson-developer-cloud-ui-components.scss';
+@import 'watson-ui-components/dist/_watson-ui-components.scss';
 ```
 
 Make sure `node_modules` is a loaded path so that sass can find the route above.
@@ -46,9 +46,9 @@ You will also need to make sure to load the paths of your `node_modules` directo
 ```none
 .
 └─ dist
- ├── _watson-developer-cloud-ui-components.scss   // Compiled Sass
- ├── watson-developer-cloud-ui-components.css     // Compiled css
- └── watson-developer-cloud-ui-components.min.css
+ ├── _watson-ui-components.scss   // Compiled Sass
+ ├── watson-ui-components.css     // Compiled css
+ └── watson-ui-components.min.css
 ```
 
 ## Credits
