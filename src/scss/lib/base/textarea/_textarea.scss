@@ -1,5 +1,6 @@
 @import 'extends';
 
+textarea,
 .base--textarea {
   @extend %base--textarea;
 }

@@ -4,6 +4,7 @@
   @extend %base--inline-label;
 }
 
+label,
 .base--block-label {
   @extend %base--block-label;
 }

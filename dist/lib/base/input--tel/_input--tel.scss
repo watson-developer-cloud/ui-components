@@ -1,5 +1,6 @@
 @import 'extends';
 
+input[type="tel"],
 .base--tel-input {
   @extend %base--tel-input;
 }

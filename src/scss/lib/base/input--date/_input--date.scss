@@ -1,5 +1,6 @@
 @import 'extends';
 
+input[type="date"],
 .base--date-input {
   @extend %base--date-input;
 }

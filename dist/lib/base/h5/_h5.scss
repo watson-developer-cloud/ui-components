@@ -1,6 +1,7 @@
 @import 'mixins';
 @import 'extends';
 
+h5,
 .base--h5 {
   @extend %base--h5;
 }

@@ -1,17 +1,12 @@
 @import 'mixins';
 @import 'extends';
 
+button,
 .base--button {
   @extend %base--button;
+}
 
-  &_submit {
-    @include base--button();
-  }
-
-  &_reset {
-    @include base--button();
-  }
-
+.base--button {
   &_black {
     @include base--button($color: color('gray', 90), $border: color('gray', 90));
   }
@@ -38,4 +33,16 @@
       padding-bottom: 0.1em;
     }
   }
+}
+
+input[type="submit"],
+button[type="submit"],
+.base--button_submit {
+  @include base--button();
+}
+
+input[type="reset"],
+button[type="reset"],
+.base--button_reset {
+  @include base--button();
 }

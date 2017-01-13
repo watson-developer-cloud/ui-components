@@ -1,5 +1,6 @@
 @import 'extends';
 
+input[type="time"],
 .base--time-input {
   @extend %base--time-input;
 }

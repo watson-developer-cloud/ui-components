@@ -1,9 +1,11 @@
 @import 'mixins';
 @import 'extends';
 
+p,
 .base--p {
   @extend %base--p;
-
+}
+.base--p {
   &_light {
     color: color('gray', 50);
   }

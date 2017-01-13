@@ -1,6 +1,7 @@
 @import 'settings';
 @import 'extends';
 
+input,
 .base--input {
   @extend %base--input;
 }
