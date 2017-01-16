@@ -13,6 +13,10 @@
     margin-top: 0rem;
   }
 
+  &--tab-list-item::before {
+    display: none;
+  }
+
   &--tab {
     display: block;
     text-decoration: none;
