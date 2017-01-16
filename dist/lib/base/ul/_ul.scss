@@ -1,9 +1,12 @@
 @import 'mixins';
 @import 'extends';
 
+ul,
 .base--ul {
   @extend %base--ul;
+}
 
+.base--ul {
   &_inline {
     .base--li {
       display: inline-block;

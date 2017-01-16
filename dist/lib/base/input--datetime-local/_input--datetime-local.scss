@@ -1,5 +1,6 @@
 @import 'extends';
 
+input[type="datetime-local"],
 .base--datetime-local-input {
   @extend %base--datetime-local-input;
 }

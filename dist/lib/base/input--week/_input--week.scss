@@ -1,5 +1,6 @@
 @import 'extends';
 
+input[type="week"],
 .base--week-input {
   @extend %base--week-input;
 }

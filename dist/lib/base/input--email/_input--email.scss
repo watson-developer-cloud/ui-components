@@ -1,5 +1,6 @@
 @import 'extends';
 
+input[type="email"],
 .base--email-input {
   @extend %base--email-input;
 }

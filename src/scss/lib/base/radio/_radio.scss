@@ -1,6 +1,7 @@
 @import 'mixins';
 @import 'extends';
 
+input[type="radio"],
 .base--radio {
   @extend %base--radio;
 }

@@ -1,17 +1,21 @@
 @import 'extends';
 
+table,
 .base--table {
   @extend %base--table;
 }
 
+thead,
 .base--thead {
   @extend %base--thead;
 }
 
+td,
 .base--td {
   @extend %base--td;
 }
 
+tr,
 .base--tr {
   @extend %base--tr;
 }

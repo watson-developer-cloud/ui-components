@@ -1,5 +1,6 @@
 @import 'extends';
 
+input[type="text"],
 .base--text-input {
   @extend %base--text-input;
 }

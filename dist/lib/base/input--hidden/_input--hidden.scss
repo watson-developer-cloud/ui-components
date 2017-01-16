@@ -1,5 +1,6 @@
 @import 'extends';
 
+input[type="hidden"],
 .base--hidden-input {
   @extend %base--hidden-input;
 }

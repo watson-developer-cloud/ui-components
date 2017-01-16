@@ -1,6 +1,7 @@
 @import 'mixins';
 @import 'extends';
 
+blockquote,
 .base--blockquote {
   @extend %base--blockquote;
 }

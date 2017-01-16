@@ -1,5 +1,6 @@
 @import 'extends';
 
+input[type="month"],
 .base--month-input {
   @extend %base--month-input;
 }

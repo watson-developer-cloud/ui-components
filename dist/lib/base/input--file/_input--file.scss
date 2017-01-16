@@ -1,5 +1,6 @@
 @import 'extends';
 
+input[type="file"],
 .base--file-input {
   @extend %base--file-input;
 }

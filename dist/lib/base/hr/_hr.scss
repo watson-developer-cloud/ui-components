@@ -1,9 +1,12 @@
 @import 'mixins';
 @import 'extends';
 
+hr,
 .base--hr {
   @extend %base--hr;
+}
 
+.base--hr {
   &_small {
     @include grid(3, $has-right-gutter: false);
     @include reset-float();

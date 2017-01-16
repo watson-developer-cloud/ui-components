@@ -2,6 +2,7 @@
 @import 'mixins';
 @import 'extends';
 
+input[type="range"],
 .base--range-input {
   @extend %base--range-input;
 }
