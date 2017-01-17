@@ -1,6 +1,12 @@
 CHANGELOG
 =========
 
+
+## Version 0.6.0
+
+:new: The `0.6.0` removes the need to use `base--xxx`. Now when using the component library, all the base html elements will have the style applied automatically.
+
+
 ## Version 0.4.0
 
 :new: The `0.4.0` removes the static assets transforming this into a sass only library. We will be releasing icons, images and javascript as part of the (soon to be release) React component library.
