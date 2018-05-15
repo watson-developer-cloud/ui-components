@@ -6,9 +6,9 @@ FULL_REPO="https://$GH_TOKEN$GH_REPO"
 gulp compile
 cd example
 git init
-git config user.name "Travis Ci"
-git config user.email "james.zhang75024@gmail.com"
+git config user.name "Watson Github Bot"
+git config user.email "gattana@us.ibm.com"
 
 git add .
-git commit -m "deployed to github pages"
+git commit -m "Automatic update to github pages"
 git push --force --quiet $FULL_REPO master:gh-pages

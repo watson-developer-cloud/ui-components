@@ -6,9 +6,8 @@ script:
 - npm run compile
 deploy:
 - provider: npm
-  email: nathan@nfriedly.com
-  api_key:
-    secure: JlQWW7a6Nh9FCU5WYoSCa+cCBTxwoKJ0q5XWdX4c72O1PCA2/NAInAZc9+WtJIpeh3J8gJQEKNK9PwuBMGBqCMLEBIZXuZeGSdsopSTGjavK54yya8uMw0WE//bcmwWoyTYc4l9B2f8dO8GidwIpky4iQSUu9LqClRg1zs5M5pdFwxxA13Tfur+jsfVmWH8HICKbRjkOyZ0vfsD5NHGW3SsWz8uvLl4+cERsxJ/yGXNKgzj1b539jA7wi+hPqXCYa4ezJ5OTFpjedLqP9x5zV0sQPM6Rht0eFeXeqfhf1ArXkm1Z0TlGnTHUPaudHl4dMZfeHcA+DCRepv6XPhBIDh36mpye1gk08itVyu9VaymnQTGmgOj6vsUKVTD/+ozfzkRDTgvNnUtSIw+GH/LvLtgG/jLXqKCRyzSi1otR5SgzkOIb20IPsYs7kgTWRELlHJiht0mOTEZU/PEENKXAoTFEo/tb0LR0wK+yu768JF0LV1WXYkazxNBzkjzAGfG4IEAgWFOhxYUuhQO+IDzmiBuRfYmrUdq4/ecSRt9UhPieiTQRtQCeI5w3j2D65XjhF0934Jl6tCDKCutV+033Ayxour9fwqpGjyPLd8qkLbi3fye/sY6D31UXN+hCHOxrIHO2pKDKtR/fGmfFPXl/VnzmTt64nREFjEtL6I110Ns=
+  email: germanattanasio@gmail.com
+  api_key: $NPM_API_KEY
   on:
     tags: true
     repo: watson-developer-cloud/ui-components
@@ -19,12 +18,8 @@ deploy:
     repo: watson-developer-cloud/ui-components
   skip_cleanup: true
 - provider: releases
-  api_key:
-    secure: mX/xQvWP86s1UpR87Z5zbdrpMoWAHDPF0LXIla/la+q78xOMqOopmcBcxOOoUghrUW/uZfQ3Dd5L+KoPCAgYSbIWSaLq0f+YILvJ6DXct1kLsbp17Z5Fkj6O+t2rY3fMlEMsy3vihwPdELsnR3pAmkl/OWGW4mn6yZKh9raewQZe0fosytdss/cV947I5S3+cfyzVe/T36GRmNVnMauoxA+8RKE3pKtjFRXAdxpOEf+oRINTsjIn0t2qcjODtIsLnL83LGZJ52xmunlhS1BF9TuMMRZJN7XW1Cq4se58Z5Q7xHqgZbthI8k/Qo1FRiJFbgvnGr2/49VaCxghC5bZxG5oSMQiu59tP7NxHUXlGFjQggixu0Bnimoe0iC62JG05o4LvqyqCzNgfcHJv3BPV4mef7u4ACRwKP24aYhiVUZE7H92bR3MS0HjctOCA5EzG0hAWs8m6ZzhgidoY5XyyPkD7GwLLvheKcrEObNPibQVh7hKNuSJRbckcklblxrodZ9e/YXwPDIKxpzJGg4fJ+3vBhcLyuDzdWqDI16zUr4KdIhU+QkSrIQaLvCR18woG8hBQRpTzZl+l2iCznx/1EuT4cdGR1ziBrQXqonBeCvy+wuTNggFJ6W6iI+ueK5UUV2+SKT5VZ0PLg/PUDHN5kQ09mROLoa+s+aADXLPkNE=
+  api_key: $GH_TOKEN
   on:
     tags: true
     repo: watson-developer-cloud/ui-components
   skip_cleanup: true
-env:
-  global:
-  - secure: Bd805RBfKwm8ikfCKW4dcrz1gPtTN1pwnQ8eayQ6soI4nfD9PlJ+TcbAaGTScIr9X0rj9SR1bNxVscdwiGbb43NizyFikm75y70ox5nrEH7RVKex43P977kiqy2F7iMr9RC2it7wDz8BPe5Gya1Jjkb2QIDSo+U0L74K78LLoocIf1UA70kabIyYcyQkvIox0D/KW/B+/82jr2QTu7hZHxkxfuq/J5YmY5CEPG3aeF2hWhZ+tPCPpEyixWj3hccdG+l362RlWdD0a63HCKn34O4EejgPlY3RRTNeRo/m3HKCbqT4E26J98tkuFboPlcY2lVZKilEMSsb3M1GsfUsXJERUPk9SpK6hxPIg9S2ORqFV21uRLvGXkqD/aYlkbKgZLcqmiDxiAHTc04nI0ZDfuB/6scsQFbFpxPVdZXmbRb6pmVHsY/XGlA4Dkqi90uNH20ycV8Vci2X5jtA+PGcWWkKXvGHJ57aoRhGHp1DfFI6pRq4bGVEaWvlxXuaK38RXrKVwNtRlRjkJ08jYLNo3rhHKlBZWXuH/Y9WhoAKrpj7rUsn5pAG0JDReUruMznfyglFADCoFxP4fAVrLSk2h3DslX3vNedAp/WQpf7hnN2ockAt0D7vpA5KYuzr2cLCdDs64VglrJCxEefwP92FoFcgTg7SbdesLW2P58F3Akc=
