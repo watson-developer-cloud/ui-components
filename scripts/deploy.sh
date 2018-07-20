@@ -1,7 +1,7 @@
 #!/bin/bash
 
 GH_REPO="@github.com/watson-developer-cloud/ui-components.git"
-FULL_REPO="https://$GH_TOKEN$GH_REPO"
+FULL_REPO="https://$GITHUB_TOKEN$GH_REPO"
 
 gulp compile
 cd example
