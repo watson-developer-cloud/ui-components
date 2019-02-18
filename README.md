@@ -1,4 +1,4 @@
-# Watson Developer Cloud Component Library [![Build Status](https://travis-ci.org/watson-developer-cloud/ui-components.svg?branch=master)](https://travis-ci.org/watson-developer-cloud/ui-components)
+# Watson Developer Cloud Component Library [![Build Status](https://travis-ci.org/watson-developer-cloud/ui-components.svg?branch=master)](https://travis-ci.org/watson-developer-cloud/ui-components) [![Greenkeeper badge](https://badges.greenkeeper.io/watson-developer-cloud/ui-components.svg)](https://greenkeeper.io/)
 
 The Watson Platform Component Library is a Sass library that translates Watson design language into UI components to help develop web UI.
 
