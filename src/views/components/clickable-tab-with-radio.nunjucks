@@ -1,0 +1,9 @@
+<input role="radio" class="base--radio" type="radio" id="tab-1" name="tab-radio" value="1">
+<label class="base--inline-label clickable-tab" for="tab-1">
+  Option 1
+</label>
+
+<input role="radio" class="base--radio" type="radio" id="tab-2" name="tab-radio" value="2">
+<label class="base--inline-label clickable-tab" for="tab-2">
+  Option 2
+</label>

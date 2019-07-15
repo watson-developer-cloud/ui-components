@@ -1,0 +1,3 @@
+<input type="month" id="input18" class="base--month-input"></input>
+<input type="month" id="input19" placeholder="Placeholder Month" class="base--month-input" ></input>
+<input type="month" id="input20" placeholder="Can't click me" class="base--month-input" disabled></input>

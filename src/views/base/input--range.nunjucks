@@ -1,0 +1,2 @@
+<input type="range" id="input27" class="base--range-input"></input>
+<input type="range" id="input28" class="base--range-input" disabled></input>

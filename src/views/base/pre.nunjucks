@@ -1,0 +1,12 @@
+<pre class="base--pre">
+  <code class="base--code">
+h1 {
+  font-size: ms(5);
+  font-weight: normal;
+
+  @include breakpoint($large-typography) {
+    font-size: ms(6);
+  }
+}
+  </code>
+</pre>

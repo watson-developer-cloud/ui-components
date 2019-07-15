@@ -1,0 +1,15 @@
+<ul class="base--ul">
+  <li class="base--li">List item 1</li>
+  <li class="base--li">List item 2</li>
+  <li class="base--li">List item 3</li>
+</ul>
+<ul class="base--ul base--ul_inline">
+  <li class="base--li">List item 1</li>
+  <li class="base--li">List item 2</li>
+  <li class="base--li">List item 3</li>
+</ul>
+<ul class="base--ul base--ul_no-bullets">
+  <li class="base--li">List item 1</li>
+  <li class="base--li">List item 2</li>
+  <li class="base--li">List item 3</li>
+</ul>

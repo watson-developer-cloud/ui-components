@@ -1,0 +1,4 @@
+<input role="radio" class="base--radio" type="radio" id="rb1" name="rb" value="">
+<label class="base--inline-label" for="rb1">Option 1</label>
+<input role="radio" class="base--radio" type="radio" id="rb2" name="rb" value="">
+<label class="base--inline-label" for="rb2">Option 2</label>

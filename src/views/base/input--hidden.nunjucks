@@ -1,0 +1,3 @@
+<input type="hidden" id="input15" class="base--hidden-input"></input>
+<input type="hidden" id="input16" placeholder="This is placeholder hidden" class="base--hidden-input"></input>
+<input type="hidden" id="input17" placeholder="Can't click me" class="base--hidden-input" disabled></input>

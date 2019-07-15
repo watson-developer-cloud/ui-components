@@ -1,0 +1,18 @@
+<div class="tab-panels" role="tabpanel">
+  <ul class="tab-panels--tab-list" role="tablist">
+    <li class="tab-panels--tab-list-item base--li" role="presentation">
+      <a class="tab-panels--tab base--a active" href="#panel1" aria-controls="panel1" role="tab">Tab 1</a>
+    </li>
+    <li class="tab-panels--tab-list-item base--li" role="presentation">
+      <a class="tab-panels--tab base--a" href="#panel2" aria-controls="panel2" role="tab">Tab 2</a>
+    </li>
+  </ul>
+  <div class="tab-panels--tab-content">
+    <div id="panel1" class="tab-panels--tab-pane active" role="tab-panel">
+      This is panel 1
+    </div>
+    <div id="panel2" class="tab-panels--tab-pane" role="tab-panel">
+      This is panel 2
+    </div>
+  </div>
+</div>

@@ -1,0 +1,3 @@
+<input type="text" id="input36" class="base--text-input"></input>
+<input type="text" id="input37" placeholder="This is placeholder text" class="base--text-input"></input>
+<input type="text" id="input38" placeholder="Can't touch this" class="base--text-input" disabled></input>

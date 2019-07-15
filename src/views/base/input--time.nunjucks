@@ -1,0 +1,3 @@
+<input type="time" id="input39" class="base--time-input"></input>
+<input type="time" id="input40" placeholder="This is placeholder time" class="base--time-input"></input>
+<input type="time" id="input41" placeholder="Can't Click me" class="base--time-input" disabled></input>

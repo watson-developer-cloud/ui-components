@@ -1,0 +1,2 @@
+<input type="datetime-local" id="input7" class="base--datetime-local-input"></input>
+<input type="datetime-local" id="input8" placeholder="Can't click me" class="base--datetime-local-input" disabled></input>

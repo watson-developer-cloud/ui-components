@@ -1,0 +1,2 @@
+<input type="date" id="input5" class="base--date-input"></input>
+<input type="date" id="input6" placeholder="Can't click me" class="base--date-input" disabled></input>

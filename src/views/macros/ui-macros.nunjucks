@@ -1,0 +1,16 @@
+{% macro codeblock(language) %}
+
+<div class="code-block">
+  <div class="code-block--ui">
+    {{ caller() }}
+  </div>
+  <div class="code-block--code">
+    <pre class="base--pre prism language-{{language}}">
+    <code class="language-{{language}}">
+{{ caller() | replace('<', '&lt;') | trim() }}
+    </code>
+    </pre>
+  </div>
+</div>
+
+{% endmacro %}

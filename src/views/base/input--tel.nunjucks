@@ -1,0 +1,4 @@
+<input type="tel" id="input32" class="base--tel-input"></input>
+<input type="tel" id="input33" placeholder="8882121881" class="base--tel-input"></input>
+<input type="tel" id="input34" placeholder="123-343-9938" pattern="\d{3}[\-]\d{3}[\-]\d{4}" class="base--tel-input"></input>
+<input type="tel" id="input35" placeholder="8882121881" class="base--tel-input" disabled></input>
