@@ -1,5 +1,8 @@
 # Watson Developer Cloud Component Library [![Build Status](https://travis-ci.org/watson-developer-cloud/ui-components.svg?branch=master)](https://travis-ci.org/watson-developer-cloud/ui-components)
 
+## DEPRECATED: this repo is no longer actively maintained. It can still be used as reference, but may contain outdated or unpatched code.
+
+
 The Watson Platform Component Library is a Sass library that translates Watson design language into UI components to help develop web UI.
 
 Demo: https://watson-developer-cloud.github.io/ui-components/
